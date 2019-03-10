@@ -15,5 +15,9 @@ def suite():
     suite = unittest.TestSuite()
 
     # add each tests
+    suite.addTest(unittest.makeSuite(test_slimelove.StoryTest))
+    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_brokenbody))
+    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_comeloose))
+    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_meltsomething))
 
     return suite
