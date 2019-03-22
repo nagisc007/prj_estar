@@ -4,7 +4,8 @@
 import unittest
 
 # import each tests
-import test_slimelove
+#import test_slimelove
+import test_kujosaeko
 
 def suite():
     '''Packing all tests.
@@ -14,10 +15,14 @@ def suite():
     '''
     suite = unittest.TestSuite()
 
-    # add each tests
-    suite.addTest(unittest.makeSuite(test_slimelove.StoryTest))
-    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_brokenbody))
-    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_comeloose))
-    suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_meltsomething))
+    # story of the slime love
+    #suite.addTest(unittest.makeSuite(test_slimelove.StoryTest))
+    #suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_brokenbody))
+    #suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_comeloose))
+    #suite.addTest(unittest.makeSuite(test_slimelove.EpisodeTest_meltsomething))
+
+    # story of the kujo saeko
+    suite.addTest(unittest.makeSuite(test_kujosaeko.StoryTest))
+    suite.addTest(unittest.makeSuite(test_kujosaeko.EpisodeTest))
 
     return suite
