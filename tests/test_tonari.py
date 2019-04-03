@@ -5,7 +5,8 @@
 import unittest
 import storybuilder.builder.testtools as testtools
 
-from src.tonari.story import story, sdb
+from src.tonari.story import Master,story, sdb, something
+from src.tonari.story import ep_intro, ep_oldman, ep_ordinary
 
 
 _FILENAME = "tonari.story.py"
@@ -31,7 +32,7 @@ class StoryTest(unittest.TestCase):
     def test_has_outline_infos(self):
         self.assertTrue(testtools.has_outline_infos(self, self.story,
             self.db.yuno.know(self.db.forgotten).must(),
-            self.db.yuno.curious(about=self.db.ghost_seat),
+            self.db.yuno.curious(about=self.db.ghost),
             self.db.yuno.meet(self.db.kenjo),
             self.db.yuno.remember(about=self.db.promise),
             ))
@@ -48,43 +49,62 @@ class EpisodesTest(unittest.TestCase):
 
     def setUp(self):
         self.ma = Master('test')
-        self.ep1 = ()
-        self.ep2 = ()
-        self.ep3 = ()
+        self.db = db = sdb()
+        self.ep1 = ep_intro(self.ma,
+                db.yuno, db.kenjo, db.girls,
+                db.ghost, db.forgotten,
+                db.meetday,
+                db.univ, db.hall, db.station, db.bus, db.train,
+                )
+        self.ep2 = ep_oldman(self.ma,
+                db.yuno, db.kenjo, db.mitsuro, db.suitman,
+                db.ghost, db.promise,
+                db.meetday, db.pastday,
+                db.train,
+                )
+        self.ep3 = ep_ordinary(self.ma,
+                db.yuno, db.kenjo, db.mitsuro, db.bigman,
+                db.sick, db.yunowill,
+                db.nextday, db.futureday,
+                db.bus,
+                )
 
-    @unittest.skip('in preparation')
     def test_has_basic_infos(self):
         data = [
-                (self.ep1, Info("hero"), Info("rival")),
-                (self.ep2, Info("hero"), Info("rival")),
-                (self.ep3, Info('hero'), Info('rival')),
+                ("ep1", self.ep1, self.db.yuno, self.db.kenjo),
+                ("ep2", self.ep2, self.db.yuno, self.db.kenjo),
+                ("ep3", self.ep3, self.db.yuno, self.db.mitsuro),
                 ]
-        for ep, hero, rival in data:
-            with self.subTest(ep=ep, hero=hero, rival=rival):
+        for title, ep, hero, rival in data:
+            with self.subTest(title=title, ep=ep, hero=hero, rival=rival):
                 self.assertTrue(testtools.has_basic_infos(self, ep, hero, rival))
 
-    @unittest.skip('in preparation')
     def test_has_outline_infos(self):
+        db = self.db
         data = [
-                (self.ep1,
-                    Info('what'),
-                    Info('why'),
-                    Info('how'),
-                    Info('result')),
-                (self.ep2,
-                    Info('what'),
-                    Info('why'),
-                    Info('how'),
-                    Info('result')),
-                (self.ep3,
-                    Info('what'),
-                    Info('why'),
-                    Info('how'),
-                    Info('result')),
+                ("ep1", self.ep1,
+                    db.yuno.curious(db.ghost),
+                    db.yuno.sit(something(), "隣に").non(),
+                    db.yuno.ride(db.train),
+                    db.kenjo.sit(by=db.yuno),
+                    ),
+                ("ep2", self.ep2,
+                    db.yuno.hear(db.ghost, frm=db.kenjo),
+                    db.kenjo.talk(to=db.yuno, about=db.ghost),
+                    db.kenjo.teach(db.yuno, about=db.suitman),
+                    db.yuno.remember(db.mitsuro),
+                    ),
+                ("ep3", self.ep3,
+                    db.yuno.die().must(),
+                    db.yuno.be(db.sick),
+                    db.yuno.beg(db.kenjo, of=db.yunowill),
+                    db.yuno.bury("彼の隣", of=db.mitsuro),
+                    ),
                 ]
 
-        for ep, what, why, how, result in data:
-            with self.subTest(ep=ep, what=what, why=why, how=how, result=result):
+        for title, ep, what, why, how, result in data:
+            with self.subTest(title=title, ep=ep, what=what, why=why, how=how,
+                    result=result):
                 self.assertTrue(testtools.has_outline_infos(self, ep, what, why, how, result))
 
 
