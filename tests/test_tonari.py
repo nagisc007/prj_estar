@@ -5,7 +5,7 @@
 import unittest
 import storybuilder.builder.testtools as testtools
 
-from src.tonari.story import story
+from src.tonari.story import story, sdb
 
 
 _FILENAME = "tonari.story.py"
@@ -19,22 +19,21 @@ class StoryTest(unittest.TestCase):
 
     def setUp(self):
         self.story = story()
+        self.db = sdb()
 
     def test_is_all_actions(self):
         self.assertTrue(testtools.is_all_actions(self.story))
 
-    @unittest.skip('in preparation')
     def test_has_basic_infos(self):
         self.assertTrue(testtools.has_basic_infos(self, self.story,
-            testtools.Item('hero'), testtools.Item('rival')))
+            self.db.yuno, self.db.kenjo))
 
-    @unittest.skip('in preparation')
     def test_has_outline_infos(self):
         self.assertTrue(testtools.has_outline_infos(self, self.story,
-            testtools.Info('what'),
-            testtools.Info('why'),
-            testtools.Info('how'),
-            testtools.Info('result'),
+            self.db.yuno.know(self.db.forgotten).must(),
+            self.db.yuno.curious(about=self.db.ghost_seat),
+            self.db.yuno.meet(self.db.kenjo),
+            self.db.yuno.remember(about=self.db.promise),
             ))
 
     def test_followed_flags(self):
