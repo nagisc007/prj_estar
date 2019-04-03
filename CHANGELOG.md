@@ -6,18 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.0.1] - 2019-03-10
+## [0.0.1] - 2019-04-03
 ### Added
 - This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README one line implemented.
 - TravisCI yml file.
 - Setup file for python.
 - Submodule: storybuilder is a library to build a story.
-- Test suites for basic features.
-- Character classes.
-- Stage classes.
-- Item classes.
-- DayTime classes.
+- Production: slime love story
+- Production: kujo saeko
 
 [Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.1...HEAD
 [0.0.1]: https://github.com/nagisc007/prj_estar/releases/v0.0.1
