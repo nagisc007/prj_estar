@@ -51,8 +51,8 @@ class EpisodesTest(unittest.TestCase):
         self.ma = Master('test')
         self.db = db = sdb()
         self.ep1 = ep_intro(self.ma,
-                db.yuno, db.kenjo, db.girls,
-                db.ghost, db.forgotten,
+                db.yuno, db.kenjo, db.girls, db.lecture,
+                db.ghost, db.forgotten, db.rumor,
                 db.meetday,
                 db.univ, db.hall, db.station, db.bus, db.train,
                 )
@@ -60,13 +60,13 @@ class EpisodesTest(unittest.TestCase):
                 db.yuno, db.kenjo, db.mitsuro, db.suitman,
                 db.ghost, db.promise,
                 db.meetday, db.pastday,
-                db.train,
+                db.train, db.chicenter,
                 )
         self.ep3 = ep_ordinary(self.ma,
-                db.yuno, db.kenjo, db.mitsuro, db.bigman,
+                db.yuno, db.kenjo, db.mitsuro, db.bigman, db.doctor,
                 db.sick, db.yunowill,
                 db.nextday, db.futureday,
-                db.bus,
+                db.bus, db.hospital, db.cemetary,
                 )
 
     def test_has_basic_infos(self):
