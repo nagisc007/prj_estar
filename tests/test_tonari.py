@@ -86,7 +86,7 @@ class EpisodesTest(unittest.TestCase):
                     db.yuno.curious(db.ghost),
                     db.yuno.sit(something(), "隣に").non(),
                     db.yuno.ride(db.train),
-                    db.kenjo.sit(by=db.yuno),
+                    db.yuno.sit(by=db.kenjo).ps(),
                     ),
                 ("ep2", self.ep2,
                     db.yuno.hear(db.ghost, frm=db.kenjo),
