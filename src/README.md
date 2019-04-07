@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | [#m100](100/README.md) | _In progress_ | [妄想コンテスト「100」](https://estar.jp/) |
 | [#m99](hiyori/READMD.md) | _In progress_ | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
-| [#m98](tonari/README.md) | _In progress_ | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
+| [#m98](tonari/README.md) | わたしの隣はいつも空席 | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
 | [#m97](okaeshi/README.md) | 九条冴子は返さない | [妄想コンテスト「お返し」](https://estar.jp/_ofcl_evt_outline?e=158796) |
 | [#m96](tokeru/README.md) | その傭兵をとかすもの | [妄想コンテスト「とける」](https://estar.jp/_ofcl_evt_outline?e=158669) |
 | [#m95](choco/README.md) | 二月十四日が消えた日 | [妄想コンテスト「チョコかと思ったら……」](https://estar.jp/_ofcl_evt_outline?e=158512) |

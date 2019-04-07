@@ -1,8 +1,8 @@
-# わたしの隣席はいつも不在 
+# わたしの隣はいつも空席 
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.4.- | 2019.4.03 | Love, Human, Mystery | 5K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
+| v0.1.0 | Develop | 2019.4.7 | 2019.4.7 | Love, Human, Mystery | 6.4K | [エブリスタ](https://estar.jp/_novel_view?w=25393013) | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
 
 **「いつも不自然に、隣の席は空いていた」**
 
