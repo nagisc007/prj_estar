@@ -31,31 +31,34 @@ class StoryTest(unittest.TestCase):
     def test_followed_flags(self):
         self.assertTrue(testtools.followed_all_flags(self, self.st))
 
-    @unittest.skip("in preparation")
     def test_has_basic_infos(self):
         data = [
-                ("story", self.st, "hero", "rival"),
+                ("story", self.st, self.ma.yuko, self.ma.tagawa),
                 ("ep1", self.ep1, "hero", "rival"),
                 ("ep2", self.ep2, "hero", "rival"),
                 ("ep3", self.ep3, "hero", "rival"),
                 ("ep4", self.ep4, "hero", "rival"),
                 ]
 
-        for title, story, hero, rival in data:
+        for title, story, hero, rival in data[0:1]:
             with self.subTest(title=title, story=story, hero=hero, rival=rival):
                 self.assertTrue(testtools.has_basic_infos(self, story, hero, rival))
 
-    @unittest.skip("in preparation")
     def test_has_outline_infos(self):
+        ma = self.ma
         data = [
-                ("story", self.st, "what", "why", "how", "result"),
+                ("story", self.st,
+                    ma.yuko.know(ma.tagawa, "サボる理由").want(),
+                    ma.yuko.look(ma.tagawa, "サボる"),
+                    ma.yuko.go(ma.tagawa, ma.tanbo),
+                    ma.yuko.talk("自分日和")),
                 ("ep1", self.ep1, "what", "why", "how", "result"),
                 ("ep2", self.ep2, "what", "why", "how", "result"),
                 ("ep3", self.ep3, "what", "why", "how", "result"),
                 ("ep4", self.ep4, "what", "why", "how", "result"),
                 ]
 
-        for title, story, what, why, how, result in data:
+        for title, story, what, why, how, result in data[0:1]:
             with self.subTest(title=title, story=story, what=what, why=why, how=how, result=result):
-                self.assertTrue(testtools.has_outline_infos(self, story, what, why, how, result))
+                self.assertTrue(testtools.has_outline_infos(self, story, what, why, how, result, True))
 
