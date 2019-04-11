@@ -6,7 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
-| [#m100](100/README.md) | _In progress_ | [妄想コンテスト「100」](https://estar.jp/) |
+| [#m100](s100/README.md) | 百妄想騙り | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m99](hiyori/READMD.md) | _In progress_ | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
 | [#m98](tonari/README.md) | わたしの隣はいつも空席 | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
 | [#m97](okaeshi/README.md) | 九条冴子は返さない | [妄想コンテスト「お返し」](https://estar.jp/_ofcl_evt_outline?e=158796) |
