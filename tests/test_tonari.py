@@ -4,9 +4,9 @@
 """
 import unittest
 import storybuilder.builder.testtools as testtools
-
-from src.tonari.story import Master,story, sdb, something
-from src.tonari.story import ep_intro, ep_oldman, ep_ordinary
+from storybuilder.builder.sbutils import print_test_title
+from src.tonari.story import Something
+from src.tonari.story import master, story, ep_intro, ep_oldman, ep_ordinary
 
 
 _FILENAME = "tonari.story.py"
@@ -16,25 +16,25 @@ class StoryTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        _print_title(_FILENAME, "story")
+        print_test_title(_FILENAME, "story")
 
     def setUp(self):
         self.story = story()
-        self.db = sdb()
+        self.ma = master()
 
     def test_is_all_actions(self):
         self.assertTrue(testtools.is_all_actions(self.story))
 
     def test_has_basic_infos(self):
         self.assertTrue(testtools.has_basic_infos(self, self.story,
-            self.db.yuno, self.db.kenjo))
+            self.ma.yuno, self.ma.kenjo))
 
     def test_has_outline_infos(self):
         self.assertTrue(testtools.has_outline_infos(self, self.story,
-            self.db.yuno.know(self.db.forgotten).must(),
-            self.db.yuno.curious(about=self.db.ghost),
-            self.db.yuno.meet(self.db.kenjo),
-            self.db.yuno.remember(about=self.db.promise),
+            self.ma.yuno.know(self.ma.forgotten).must(),
+            self.ma.yuno.feel(self.ma.ghost),
+            self.ma.yuno.do("meet", self.ma.kenjo),
+            self.ma.yuno.remember(self.ma.promise),
             ))
 
     def test_followed_flags(self):
@@ -45,53 +45,48 @@ class EpisodesTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        _print_title(_FILENAME, "episodes")
+        print_test_title(_FILENAME, "episodes")
 
     def setUp(self):
-        self.ma = Master('test')
-        self.db = db = sdb()
-        self.ep1 = ep_intro(self.ma, self.db)
-        self.ep2 = ep_oldman(self.ma, self.db)
-        self.ep3 = ep_ordinary(self.ma, self.db)
+        self.ma = master()
+        self.ep1 = ep_intro(self.ma)
+        self.ep2 = ep_oldman(self.ma)
+        self.ep3 = ep_ordinary(self.ma)
 
     def test_has_basic_infos(self):
         data = [
-                ("ep1", self.ep1, self.db.yuno, self.db.kenjo),
-                ("ep2", self.ep2, self.db.yuno, self.db.kenjo),
-                ("ep3", self.ep3, self.db.yuno, self.db.mitsuro),
+                ("ep1", self.ep1, self.ma.yuno, self.ma.kenjo),
+                ("ep2", self.ep2, self.ma.yuno, self.ma.kenjo),
+                ("ep3", self.ep3, self.ma.yuno, self.ma.mitsuro),
                 ]
         for title, ep, hero, rival in data:
             with self.subTest(title=title, ep=ep, hero=hero, rival=rival):
                 self.assertTrue(testtools.has_basic_infos(self, ep, hero, rival))
 
     def test_has_outline_infos(self):
-        db = self.db
         data = [
                 ("ep1", self.ep1,
-                    db.yuno.curious(db.ghost),
-                    db.yuno.sit(something(), "隣に").non(),
-                    db.yuno.ride(db.train),
-                    db.yuno.sit(by=db.kenjo).ps(),
+                    self.ma.yuno.feel(self.ma.ghost),
+                    self.ma.yuno.behav(Something(), "隣に").non(),
+                    self.ma.yuno.move(self.ma.train),
+                    self.ma.yuno.behav("座る", self.ma.kenjo).ps(),
                     ),
                 ("ep2", self.ep2,
-                    db.yuno.hear(db.ghost, frm=db.kenjo),
-                    db.kenjo.talk(to=db.yuno, about=db.ghost),
-                    db.kenjo.teach(db.yuno, about=db.suitman),
-                    db.yuno.remember(db.mitsuro),
+                    self.ma.yuno.hear(self.ma.ghost, self.ma.kenjo),
+                    self.ma.kenjo.talk(self.ma.yuno, self.ma.ghost),
+                    self.ma.kenjo.talk("教える", self.ma.yuno, self.ma.suitman),
+                    self.ma.yuno.remember(self.ma.mitsuro),
                     ),
                 ("ep3", self.ep3,
-                    db.yuno.die().must(),
-                    db.yuno.be(db.sick),
-                    db.yuno.beg(db.kenjo, of=db.yunowill),
-                    db.yuno.bury("彼の隣", of=db.mitsuro),
+                    self.ma.yuno.do("死").must(),
+                    self.ma.yuno.be(self.ma.sick),
+                    self.ma.yuno.talk("お願い", self.ma.kenjo, self.ma.yunowill),
+                    self.ma.yuno.do("埋葬", "彼の隣", self.ma.mitsuro).ps(),
                     ),
                 ]
 
         for title, ep, what, why, how, result in data:
             with self.subTest(title=title, ep=ep, what=what, why=why, how=how,
                     result=result):
-                self.assertTrue(testtools.has_outline_infos(self, ep, what, why, how, result))
+                self.assertTrue(testtools.has_outline_infos(self, ep, what, why, how, result, True))
 
-
-def _print_title(fname: str, title: str):
-    print("\n**** TEST: {} - {} ****".format(fname, title))
