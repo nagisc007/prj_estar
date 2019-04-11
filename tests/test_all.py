@@ -7,6 +7,7 @@ import unittest
 #import test_slimelove
 #import test_kujosaeko
 import test_tonari
+import test_hiyori
 import test_100
 
 
@@ -31,6 +32,9 @@ def suite():
     # tonari
     suite.addTest(unittest.makeSuite(test_tonari.StoryTest))
     suite.addTest(unittest.makeSuite(test_tonari.EpisodesTest))
+
+    # hiyori project
+    suite.addTest(unittest.makeSuite(test_hiyori.StoryTest))
 
     # 100 stories
     suite.addTest(unittest.makeSuite(test_100.StoryTest))
