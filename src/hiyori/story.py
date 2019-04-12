@@ -22,10 +22,15 @@ STAGES = (
         ("school", "高校"),
         ("classroom", "教室"),
         ("tanbo", "田んぼ"),
+        ("tahouse", "田川家"),
+        ("myhouse", "自宅"),
         )
 
 DAYS = (
         ("sunnyday", "天気な日", 4, 15, 2019),
+        ("rainyday", "雨の日", 4, 20, 2019),
+        ("examday", "試験日", 4, 24, 2019),
+        ("gwday", "ゴールデンウィーク", 5, 3, 2019),
         )
 
 ITEMS = (
@@ -34,33 +39,78 @@ ITEMS = (
 
 WORDS = (
         ("hiyori", "田川日和"),
+        ("myhiyori", "自分日和"),
+        ("reason", "サボる理由"),
+        ("circs", "田川の事情"),
+        ("myfuture", "自分の将来"),
         )
 
 
 # episodes
-def ep1(ma: Master):
+def ep_intro(ma: Master):
     yuko, tagawa = ma.yuko, ma.tagawa
     sunnyday = ma.sunnyday
     classroom = ma.classroom
     tanbo = ma.tanbo
-    return ma.story("Intro",
+    reason = ma.reason
+    return ma.story("田川日和",
             yuko.be(classroom, sunnyday),
             yuko.look(tagawa, "サボる"),
             yuko.go(tagawa, tanbo),
             yuko.talk(tagawa, "将来"),
-            yuko.know(tagawa, "サボる理由").want(),
+            yuko.know(tagawa, reason).want(),
+            sunnyday.explain("翌日もよく晴れた"),
+            tagawa.be(classroom).non(),
+            yuko.think("サボる決断"),
+            yuko.go("学校を抜け出す"),
             )
 
-def ep2(ma: Master):
-    return ma.story("Middle")
-
-def ep3(ma: Master):
-    return ma.story("Climax")
-
-def ep4(ma: Master):
+def ep_tagawa(ma: Master):
     yuko, tagawa = ma.yuko, ma.tagawa
-    return ma.story("End",
-            yuko.talk(tagawa, "自分日和"),
+    sunnyday = ma.sunnyday
+    tanbo = ma.tanbo
+    reason = ma.reason
+    return ma.story("学校外の田川",
+            yuko.look(tagawa, "どこにいるか"),
+            yuko.know(tagawa, reason).want(),
+            yuko.go(tagawa, "尾行"),
+            yuko.look(tagawa, tanbo, sunnyday),
+            yuko.talk(tagawa, reason),
+            tagawa.reply(yuko, reason),
+            yuko.know(tagawa, reason),
+            )
+
+def ep_future(ma: Master):
+    yuko, tagawa, takemura = ma.yuko, ma.tagawa, ma.takemura
+    classroom = ma.classroom
+    rainyday, examday = ma.rainyday, ma.examday
+    myfuture, reason = ma.myfuture, ma.reason
+    return ma.story("自分の将来",
+            yuko.hear(tagawa, reason, rainyday),
+            tagawa.be(classroom, examday).non(),
+            examday.explain("試験が終わる"),
+            yuko.look(tagawa),
+            yuko.talk(tagawa, "試験をサボったことを咎める"),
+            tagawa.talk(yuko, "将来に試験が大事か"),
+            yuko.reply(tagawa, "大事と思う"),
+            yuko.talk(takemura, "相談"),
+            yuko.think(myfuture),
+            )
+
+def ep_myhiyori(ma: Master):
+    yuko, tagawa = ma.yuko, ma.tagawa
+    gwday = ma.gwday
+    tahouse, myhouse = ma.tahouse, ma.myhouse
+    myhiyori, myfuture = ma.myhiyori, ma.myfuture
+    return ma.story("自分日和",
+            yuko.be(myhouse, gwday),
+            yuko.think(myfuture),
+            yuko.look(myfuture).want(),
+            yuko.go(tahouse, gwday),
+            tagawa.talk(yuko, "自分の日和を持てよ"),
+            yuko.talk(tagawa, myhiyori),
+            yuko.talk(tagawa, "告白"),
+            yuko.look(myhiyori),
             )
 
 
@@ -72,10 +122,10 @@ def master():
 
 def story(ma: Master):
     return ma.story("田川日和と恋の雨",
-            ep1(ma),
-            ep2(ma),
-            ep3(ma),
-            ep4(ma),
+            ep_intro(ma),
+            ep_tagawa(ma),
+            ep_future(ma),
+            ep_myhiyori(ma),
             )
 
 def main(): # pragma: no cover

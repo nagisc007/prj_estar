@@ -5,7 +5,7 @@ import unittest
 import storybuilder.builder.testtools as testtools
 from storybuilder.builder.sbutils import print_test_title
 from src.hiyori.story import Something
-from src.hiyori.story import master, story, ep1, ep2, ep3, ep4
+from src.hiyori.story import master, story, ep_intro, ep_tagawa, ep_future, ep_myhiyori
 
 
 _FILENAME = "hiyori.story.py"
@@ -20,10 +20,10 @@ class StoryTest(unittest.TestCase):
     def setUp(self):
         self.ma = master()
         self.st = story(self.ma)
-        self.ep1 = ep1(self.ma)
-        self.ep2 = ep2(self.ma)
-        self.ep3 = ep3(self.ma)
-        self.ep4 = ep4(self.ma)
+        self.ep1 = ep_intro(self.ma)
+        self.ep2 = ep_tagawa(self.ma)
+        self.ep3 = ep_future(self.ma)
+        self.ep4 = ep_myhiyori(self.ma)
 
     def test_is_all_actions(self):
         self.assertTrue(testtools.is_all_actions(self.st))
@@ -34,13 +34,13 @@ class StoryTest(unittest.TestCase):
     def test_has_basic_infos(self):
         data = [
                 ("story", self.st, self.ma.yuko, self.ma.tagawa),
-                ("ep1", self.ep1, "hero", "rival"),
-                ("ep2", self.ep2, "hero", "rival"),
-                ("ep3", self.ep3, "hero", "rival"),
-                ("ep4", self.ep4, "hero", "rival"),
+                ("ep1", self.ep1, self.ma.yuko, self.ma.tagawa),
+                ("ep2", self.ep2, self.ma.yuko, self.ma.tagawa),
+                ("ep3", self.ep3, self.ma.yuko, self.ma.tagawa),
+                ("ep4", self.ep4, self.ma.yuko, self.ma.tagawa),
                 ]
 
-        for title, story, hero, rival in data[0:1]:
+        for title, story, hero, rival in data:
             with self.subTest(title=title, story=story, hero=hero, rival=rival):
                 self.assertTrue(testtools.has_basic_infos(self, story, hero, rival))
 
@@ -48,17 +48,33 @@ class StoryTest(unittest.TestCase):
         ma = self.ma
         data = [
                 ("story", self.st,
-                    ma.yuko.know(ma.tagawa, "サボる理由").want(),
+                    ma.yuko.know(ma.tagawa, ma.reason).want(),
                     ma.yuko.look(ma.tagawa, "サボる"),
                     ma.yuko.go(ma.tagawa, ma.tanbo),
-                    ma.yuko.talk("自分日和")),
-                ("ep1", self.ep1, "what", "why", "how", "result"),
-                ("ep2", self.ep2, "what", "why", "how", "result"),
-                ("ep3", self.ep3, "what", "why", "how", "result"),
-                ("ep4", self.ep4, "what", "why", "how", "result"),
+                    ma.yuko.talk(ma.myhiyori)),
+                ("ep1", self.ep1,
+                    ma.yuko.know(ma.tagawa, ma.reason).want(),
+                    ma.yuko.look(ma.tagawa, "サボる"),
+                    ma.yuko.think("サボる決断"),
+                    ma.yuko.go("学校を抜け出す")),
+                ("ep2", self.ep2,
+                    ma.yuko.look(ma.tagawa, "どこにいるか"),
+                    ma.yuko.know(ma.tagawa, ma.reason).want(),
+                    ma.yuko.go(ma.tagawa, "尾行"),
+                    ma.yuko.know(ma.tagawa, ma.reason)),
+                ("ep3", self.ep3,
+                    ma.yuko.think(ma.myfuture),
+                    ma.yuko.hear(ma.tagawa, ma.reason),
+                    ma.yuko.talk(ma.takemura, "相談"),
+                    ma.yuko.think(ma.myfuture)),
+                ("ep4", self.ep4,
+                    ma.yuko.look(ma.myfuture).want(),
+                    ma.yuko.think(ma.myfuture),
+                    ma.yuko.talk(ma.tagawa, "告白"),
+                    ma.yuko.look(ma.myhiyori)),
                 ]
 
-        for title, story, what, why, how, result in data[0:1]:
+        for title, story, what, why, how, result in data:
             with self.subTest(title=title, story=story, what=what, why=why, how=how, result=result):
                 self.assertTrue(testtools.has_outline_infos(self, story, what, why, how, result, True))
 
