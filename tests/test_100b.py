@@ -40,10 +40,10 @@ class StoryTest(unittest.TestCase):
         m = self.m
         data = [
                 ("story", self.story,
-                    m.my.be(),
-                    m.my.be(),
-                    m.my.be(),
-                    m.my.be(),
+                    m.my.deal("伝える", m.you, m.some()).want(),
+                    m.my.know(m.estar),
+                    m.my.deal(m.phone),
+                    m.my.do(m.firstword, "書く"),
                     ),
                 ]
 

@@ -25,12 +25,18 @@ DAYS = (
         )
 
 ITEMS = (
+        ("phone", "スマートフォン"),
         )
 
 WORDS = (
+        ("firstword", "はじめまして"),
+        ("estar", "エブリスタ"),
+        ("website", "交流サイト"),
+        ("contest", "コンテスト"),
         )
 
 FLAGS = (
+        ("first", "最初の言葉"),
         )
 
 # main
@@ -43,7 +49,15 @@ def master():
 def story(m: Master):
     return m.story("はじめましての百文字語り",
             m.my.be(m.apart, m.day1),
-            m.my.be(m.you),
+            m.my.remember(m.you, m.website),
+            m.my.talk(m.you).non(),
+            m.my.deal("伝える", m.you, m.some()).want(),
+            m.my.look(m.estar, m.contest),
+            m.my.know(m.estar),
+            m.my.think("何もない"),
+            m.my.think("気づく", "原稿も真っ白"),
+            m.my.deal(m.phone),
+            m.my.do(m.firstword, "書く"),
             )
 
 def main(): # pragma: no cover
