@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.- | 2019.4.10 | Love, Human, Mystery | 100b | [エブリスタ](https://estar.jp/) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
+| v0.1.0 | Released | 2019.4.19 | 2019.4.20 | Love, Human, Mystery | 100b | [エブリスタ](https://estar.jp/novels/25403186) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 
 **「はじめまして、から始まる百文字」**
 
