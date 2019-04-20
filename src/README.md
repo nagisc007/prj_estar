@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#cw1](mofu/README.mf) | もふもふのきもち | [執筆応援キャンペーン「犬/猫/もふもふ」](https://estar.jp/official_contests/158795) |
 | [#m100b](s100b/README.md) | はじめましての百文字 | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100](s100/README.md) | 百妄想騙り | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m99](hiyori/READMD.md) | 田植え日和と恋の雨 | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |

@@ -10,6 +10,7 @@ import test_tonari
 import test_hiyori
 import test_100
 import test_100b
+import test_mofu
 
 
 def suite():
@@ -34,12 +35,12 @@ def suite():
     suite.addTest(unittest.makeSuite(test_tonari.StoryTest))
     suite.addTest(unittest.makeSuite(test_tonari.EpisodesTest))
 
-    # hiyori project
+    # mousou contests
     suite.addTest(unittest.makeSuite(test_hiyori.StoryTest))
-
-    # 100 stories
     suite.addTest(unittest.makeSuite(test_100.StoryTest))
-
     suite.addTest(unittest.makeSuite(test_100b.StoryTest))
+
+    # writing cheer campains
+    suite.addTest(unittest.makeSuite(test_mofu.StoryTest))
 
     return suite
