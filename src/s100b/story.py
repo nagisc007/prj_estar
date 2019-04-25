@@ -6,8 +6,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append('storybuilder')
 
-from storybuilder.builder.master import Master
-from storybuilder.builder.tools import build_to_story
+from storybuilder.builder import world as wd
 
 
 # configs
@@ -28,7 +27,7 @@ ITEMS = (
         ("phone", "スマートフォン"),
         )
 
-WORDS = (
+INFOS = (
         ("firstword", "はじめまして"),
         ("estar", "エブリスタ"),
         ("website", "交流サイト"),
@@ -40,47 +39,50 @@ FLAGS = (
         )
 
 # main
-def master():
-    m = Master("100 characters")
-    m.set_db(CHARAS, STAGES, DAYS, ITEMS, WORDS)
-    m.set_flags(FLAGS)
-    return m
+def world():
+    w = wd.World("100 characters")
+    w.set_db(CHARAS, STAGES, DAYS, ITEMS, INFOS, FLAGS)
+    return w
 
-def story(m: Master):
-    return m.story("はじめましての百文字",
-            m.day1.explain("外は雨").d("外はしっとりと雨に濡れている").omit(),
-            m.combine(
-                m.my.be(m.apart, m.day1).d("天井を見上げて", "ぼんやりと思い出す"),
-                m.my.remember(m.you, m.website),
+def story(w: wd.World):
+    return (w.maintitle("はじめましての百文字"),
+        w.scene("百文字",
+            w.day.day1.explain("外は雨").d("外はしっとりと雨に濡れている").omit(),
+            w.combine(
+                w.my.be(w.stage.apart, w.day.day1).d("天井を見上げて", "ぼんやりと思い出す"),
+                w.my.remember(w.you, w.i.website),
                 ),
-            m.combine(
-                m.my.talk(m.you).non().d("もう言葉を交わすことのないあなたは",
+            w.combine(
+                w.my.talk(w.you, "$not").d("もう言葉を交わすことのないあなたは",
                     "消えてしまったサイトで幽霊のように笑っているだろうか"),
-                m.my.deal("伝える", m.you, m.some()).want(),
+                w.my.deal("伝える", "$want", w.you, w.X()),
                 ),
-            m.my.look(m.estar, m.contest).d("ふと見かけたサイトの小説のコンテスト").omit(),
-            m.my.know(m.estar).d("知らないサイトだが",
+            w.my.look(w.i.estar, w.i.contest).d("ふと見かけたサイトの小説のコンテスト").omit(),
+            w.my.know(w.i.estar).d("知らないサイトだが",
                 "そこにはあなたの想いを作品にしてみませんか",
                 "と書かれている").omit(),
-            m.my.think("何もない").d("だが$Sには何もない").omit(),
-            m.my.think("気づく", "原稿も真っ白").d("けれど思うのだ",
+            w.my.think("何もない").d("だが$Sには何もない").omit(),
+            w.my.think("気づく", "原稿も真っ白").d("けれど思うのだ",
                 "原稿用紙も最初は白じゃないか。",
                 "何かしらの言葉を埋めれば",
                 "あなたがどこかで見てくれるかも知れない"
                 ).omit(),
-            m.my.deal(m.phone).d("$Sはスマートフォンを前に指を挙げる").omit(),
-            m.combine(
-                m.my.remember(m.you, "小説好き").d("それでも小説好きなあなたに向け",
+            w.my.deal(w.phone).d("$Sはスマートフォンを前に指を挙げる").omit(),
+            w.combine(
+                w.my.remember(w.you, "小説好き").d("それでも小説好きなあなたに向け",
                     "この言葉から書き出そう"),
-                m.my.do(m.firstword, "書く").d("最初に書く言葉は決めてある。",
+                w.my.do(w.i.firstword, "書く").d("最初に書く言葉は決めてある。",
                 "あなたに一番最初に伝えた言葉だ。",
                 "それは").omit(),
             ),
-            m.firstword.explain().d("――はじめまして"),
-            )
+            w.my.do(w.i.firstword, "書く"),
+            w.i.firstword.explain().d("――はじめまして"),
+            ),
+        )
 
 def main(): # pragma: no cover
-    return build_to_story(story(master()))
+    w = world()
+    return w.build(story(w))
 
 
 if __name__ == '__main__':

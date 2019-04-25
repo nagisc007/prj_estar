@@ -2,9 +2,8 @@
 """Test the story of 100 chars
 """
 import unittest
-import storybuilder.builder.testtools as testtools
-from storybuilder.builder.sbutils import print_test_title
-from src.s100b.story import story, master
+import storybuilder.builder.testutils as utl
+from src.s100b.story import story, world
 
 
 _FILENAME = "100b.story.py"
@@ -14,40 +13,35 @@ class StoryTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print_test_title(_FILENAME, "100 characters")
+        utl.print_test_title(_FILENAME, "100 characters")
 
     def setUp(self):
-        self.m = master()
-        self.story = story(self.m)
+        self.w = world()
+        self.story = story(self.w)
 
     def test_is_all_actions(self):
-        self.assertTrue(testtools.is_all_actions(self.story))
+        self.assertTrue(utl.is_all_actions_in(self.story))
 
+    @unittest.skip('wip')
     def test_followed_flags(self):
         self.assertTrue(testtools.followed_all_flags(self, self.story))
 
     def test_has_basic_infos(self):
-        m = self.m
+        w = self.w
         data = [
-                ("story", self.story, m.my, m.you),
+                ("story", self.story, w.my, w.you),
                 ]
-
-        for title, story, hero, rival in data:
-            with self.subTest(title=title, story=story, hero=hero, rival=rival):
-                self.assertTrue(testtools.has_basic_infos(self, story, hero, rival))
+        utl.exists_basic_infos_by_data(self, data)
 
     def test_has_outline_infos(self):
-        m = self.m
+        w = self.w
         data = [
                 ("story", self.story,
-                    m.my.deal("伝える", m.you, m.some()).want(),
-                    m.my.know(m.estar),
-                    m.my.deal(m.phone),
-                    m.my.do(m.firstword, "書く"),
+                    w.my.deal("伝える", "$want", w.you, w.X()),
+                    w.my.know(w.i.estar),
+                    w.my.deal(w.phone),
+                    w.my.do(w.i.firstword, "書く"), True,
                     ),
                 ]
-
-        for title, story, what, why, how, result in data:
-            with self.subTest(title=title, story=story, what=what, why=why, how=how, result=result):
-                self.assertTrue(testtools.has_outline_infos(self, story, what, why, how, result, True))
+        utl.exists_outline_infos_by_data(self, data)
 
