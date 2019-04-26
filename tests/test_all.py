@@ -7,7 +7,7 @@ import unittest
 #import test_slimelove
 #import test_kujosaeko
 #import test_tonari
-#import test_hiyori
+import test_hiyori
 #import test_100
 import test_100b
 #import test_mofu
@@ -23,6 +23,7 @@ def suite():
 
     suite.addTests((
         unittest.makeSuite(test_100b.StoryTest),
+        unittest.makeSuite(test_hiyori.StoryTest),
         ))
 
     return suite
