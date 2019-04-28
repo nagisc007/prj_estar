@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.- | 2019.4.11 | Love, Human, Mystery | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
+| v0.1.0 | Released | 2019.4.28 | 2019.4.28 | Love, Human, Mystery | 8K | [エブリスタ](https://estar.jp/novels/25472430) | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
 
 **「どうして彼はいつも教室にいないんだろう」**
 

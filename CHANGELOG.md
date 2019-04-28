@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Project: Mofu life
+
+## [0.0.4] - 2019-04-28
+### Added
+- Project: Mofu life (stopped)
+### Changed
+- Project: Hiyori (released)
+- Updated: storybuilder (minor fix)
 
 ## [0.0.3] - 2019-04-20
 ### Added
@@ -32,7 +38,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.3...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/nagisc007/prj_estar/releases/v0.0.4
 [0.0.3]: https://github.com/nagisc007/prj_estar/releases/v0.0.3
 [0.0.2]: https://github.com/nagisc007/prj_estar/releases/v0.0.2
 [0.0.1]: https://github.com/nagisc007/prj_estar/releases/v0.0.1
