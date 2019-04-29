@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Project: Lv1 Yusha
 
 ## [0.0.4] - 2019-04-28
 ### Added
