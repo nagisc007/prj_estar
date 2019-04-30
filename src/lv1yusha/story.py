@@ -27,6 +27,21 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("レベル１勇者の旅立ち"),
+            w.hero.be("live", w.stage.alaban),
+            w.hero.do(w.i.callhero, w.day.first),
+            w.hero.go(w.stage.castle),
+            w.hero.meet(w.stage, w.king),
+            w.king.talk(w.hero, w.i.reviveboss),
+            w.hero.know(w.i.reviveboss),
+            w.king.ask(w.hero, w.i.voyage),
+            w.hero.reply(w.king, w.i.voyage),
+            w.hero.go(w.i.voyage, "$must"),
+            w.hero.go(w.stage.field1),
+            w.hero.meet(w.daemon1),
+            w.hero.be(w.daemon1, w.i.deadly),
+            w.hero.do(w.hero99, "rescue"),
+            w.hero.know(w.hero99, w.i.worldsecret),
+            w.hero.have(w.hero99, w.i.coop),
             )
 
 

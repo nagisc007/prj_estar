@@ -28,23 +28,21 @@ class StoryTest(unittest.TestCase):
     def test_followed_flags(self):
         self.assertTrue(utl.followed_all_flags(self.story))
 
-    @unittest.skip("wip")
     def test_has_basic_infos(self):
         utl.exists_basic_infos_by_data(self,
                 [
                     ("story", self.story, self.w.hero, self.w.hero99),
                 ])
 
-    @unittest.skip('wip')
     def test_has_outline_infos(self):
         w = self.w
         utl.exists_outline_infos_by_data(self,
                 [
                     ("story", self.story,
-                        w.hero.be(),
-                        w.hero.be(),
-                        w.hero.be(),
-                        w.hero.be(),
+                        w.hero.go(w.i.voyage, "$must"),
+                        w.hero.know(w.i.reviveboss),
+                        w.hero.be(w.i.deadly),
+                        w.hero.have(w.hero99, w.i.coop),
                         True),
                 ])
 

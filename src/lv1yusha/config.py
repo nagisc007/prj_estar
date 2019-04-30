@@ -10,6 +10,8 @@ sys.path.append('storybuilder')
 CHARAS = (
         ("hero", "アリエル", 16, "male", "勇者", "me:僕", "英雄の息子"),
         ("hero99", "アリエル９９", 20, "male", "勇者", "me:俺", "レベル99になったアリエル"),
+        ("king", "アルアバン王", 46, "male", "国王", "me:儂", "アルアバンの国王"),
+        ("daemon1", "アークド・ダエモン", 99, "monster", "魔物", "me:オレサマ"),
         )
 
 
@@ -32,6 +34,12 @@ ITEMS = (
 
 
 INFOS = (
+        ("voyage", "旅立ち"),
+        ("coop", "協力"),
+        ("deadly", "死にそうになる"),
+        ("reviveboss", "魔王復活"),
+        ("callhero", "王の呼び出し"),
+        ("worldsecret", "世界の秘密"),
         )
 
 
