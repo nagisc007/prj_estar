@@ -7,37 +7,57 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
-from . import config as cnf
+from src.lv1yusha import config as cnf
+
 
 # episodes
 def ep_intro(w: wd.World):
     outfield = w.stage.field1.insided("町の外")
     scenes = (
             w.scene("父の背中",
+                w.tag.comment("なるべく説明文じゃなく世界観説明"),
+                w.hero.do("襲われた", w.i.monster, outfield, w.day.childhood),
+                w.hero.look(w.monster1),
+                w.hero.look(w.father, "背中"),
+                w.father.do("beat", w.monster1),
+                w.hero.do("助けられた", w.father),
                 ),
             w.scene("剣の修行",
+                w.day.first.explain("歳月が過ぎた"),
+                w.hero.do("剣の練習", w.bazem, w.stage.church, w.day.first),
+                w.hero.be("十六に成長"),
+                w.hero.explain("体格も大きく"),
+                w.hero.look(w.bazem, "白髪混じり", "微動だにせず隙きがない"),
+                w.hero.do(w.bazem, "やられる"),
+                w.tag.comment("最近の魔物事情"),
+                w.bazem.talk(w.hero, w.i.monster, w.flag.increasing),
+                w.bazem.talk(w.hero, w.i.dadlost),
+                w.hero.know(w.i.dadlost),
+                w.hero.talk(w.bazem, w.i.becomeyusha),
+                w.hero.go(w.i.voyage),
+                w.hero.be(w.i.becomeyusha),
                 ),
             w.scene("欠けた家族",
+                w.tag.comment("ここで少しだけ家族の現状"),
+                w.hero.go(w.stage.myhome, "朝食"),
+                w.hero.talk(w.mother, "剣の修行"),
+                w.mother.explain("髪が長い", "最近目が見えづらい"),
+                w.hero.talk(w.mother, "普通の仕事をしてくれても"),
+                w.hero.think(w.mother, w.i.becomeyusha),
+                w.hero.talk(w.mother, w.i.dadlost),
+                w.hero.talk(w.mother, w.i.callhero),
                 ),
             w.scene("呼び出し",
+                w.tag.comment("ヴェルンは黒幕側だがそれを感じさせない"),
+                w.vern.come(w.stage.myhome),
+                w.vern.talk(w.hero, w.i.callhero),
+                w.hero.deal(w.i.callhero),
+                w.hero.talk(w.mother, "no warry"),
+                w.hero.go(w.stage.castle),
                 ),
             )
     return [w.chaptertitle("旅立ちまでの序章"),
-            w.tag.comment("なるべく説明文じゃなく世界観説明"),
-            w.hero.do("襲われた", w.i.monster, outfield, w.day.childhood),
-            w.hero.do("助けられた", w.father),
-            w.day.first.explain("歳月が過ぎた"),
-            w.hero.do("剣の練習", w.bazem, w.stage.church, w.day.first),
-            w.bazem.talk(w.hero, w.i.monster),
-            w.bazem.talk(w.hero, w.i.dadlost),
-            w.hero.know(w.i.dadlost),
-            w.hero.go(w.i.voyage),
-            w.hero.be(w.i.becomeyusha),
-            w.hero.go(w.stage.myhome, "朝食"),
-            w.hero.talk(w.mother, w.i.dadlost),
-            w.hero.talk(w.mother, w.i.callhero),
-            w.hero.do(w.i.callhero, w.day.first),
-            w.hero.go(w.stage.castle),
+            *scenes,
             ]
 
 
@@ -55,6 +75,7 @@ def ep_heros_sun(w: wd.World):
             w.hero.go(w.stage.myhome),
             w.hero.deal(w.i.callhero),
             w.hero.meet(w.stage.castle, w.king, w.day.first),
+            w.king.talk(w.hero, w.deflag.increasing),
             w.king.talk(w.hero, w.i.reviveboss),
             w.hero.know(w.i.reviveboss),
             w.king.ask(w.hero, w.i.voyage),

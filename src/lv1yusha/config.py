@@ -21,6 +21,7 @@ CHARAS = (
         ("daemon1", "アークド・ダエモン", 99, "monster", "魔物", "me:オレサマ"),
         ("bazem", "バーゼム", 65, "male", "神官", "me:私"),
         ("marc", "マーク", 35, "male", "傭兵", "me:俺"),
+        ("monster1", "化けガラス", 99, "monster", "魔物"),
         )
 
 
@@ -63,5 +64,6 @@ INFOS = (
 
 
 FLAGS = (
+        ("increasing", "増える魔物"),
         )
 
