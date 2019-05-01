@@ -12,6 +12,16 @@ from . import config as cnf
 # episodes
 def ep_intro(w: wd.World):
     outfield = w.stage.field1.insided("町の外")
+    scenes = (
+            w.scene("父の背中",
+                ),
+            w.scene("剣の修行",
+                ),
+            w.scene("欠けた家族",
+                ),
+            w.scene("呼び出し",
+                ),
+            )
     return [w.chaptertitle("旅立ちまでの序章"),
             w.tag.comment("なるべく説明文じゃなく世界観説明"),
             w.hero.do("襲われた", w.i.monster, outfield, w.day.childhood),
@@ -32,6 +42,14 @@ def ep_intro(w: wd.World):
 
 
 def ep_heros_sun(w: wd.World):
+    scenes = (
+            w.scene("英雄の子",
+                ),
+            w.scene("知らされる事実",
+                ),
+            w.scene("勇者誕生",
+                ),
+            )
     return [w.chaptertitle("英雄の息子"),
             w.hero.go(w.stage.castle, "$must"),
             w.hero.go(w.stage.myhome),
@@ -47,6 +65,15 @@ def ep_heros_sun(w: wd.World):
 
 
 def ep_allies(w: wd.World):
+    scenes = (
+            w.scene("秘書官の助言",
+                ),
+            w.scene("酒場にて",
+                ),
+            w.scene("助けられる英雄",
+                ),
+            w.scene("仲間"),
+            )
     return [w.chaptertitle("初めての仲間"),
             w.hero.deal(w.i.gatherally),
             w.hero.know(w.marc, w.i.gatherally),
@@ -58,6 +85,14 @@ def ep_allies(w: wd.World):
 
 
 def ep_destruction(w: wd.World):
+    scenes = (
+            w.scene("街の外",
+                ),
+            w.scene("最強の魔物",
+                ),
+            w.scene("圧倒的虐殺",
+                ),
+            )
     return [w.chaptertitle("全滅"),
             w.hero.know(w.diana, w.stage.tower1),
             w.hero.go(w.stage.tower1, "$must"),
@@ -70,6 +105,14 @@ def ep_destruction(w: wd.World):
 
 
 def ep_anotherhero(w: wd.World):
+    scenes = (
+            w.scene("もう一人の英雄",
+                ),
+            w.scene("世界改変",
+                ),
+            w.scene("レベル１",
+                ),
+            )
     return [w.chaptertitle("もう一人の勇者"),
             w.hero.do("生き延びる"),
             w.hero.be(w.i.massacre),

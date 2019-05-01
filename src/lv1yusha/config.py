@@ -13,6 +13,7 @@ CHARAS = (
         ("mother", "ウリア", 36, "female", "針子", "me:私:hero:アリエル"),
         ("father", "オルンガ", 40, "male", "英雄", "me:ワシ:mother:お前:hero:マイサン"),
         ("king", "アルアバン王", 46, "male", "国王", "me:儂", "アルアバンの国王"),
+        ("vern", "ヴェルン", 35, "male", "宰相付秘書官", "me:私"),
         # chapter1
         ("diana", "ダイナ", 27, "female", "戦士", "me:アタイ"),
         ("kult", "クルト", 25, "male", "僧侶", "me:私"),
