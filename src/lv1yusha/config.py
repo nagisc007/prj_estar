@@ -16,7 +16,7 @@ CHARAS = (
         ("vern", "ヴェルン", 35, "male", "宰相付秘書官", "me:私"),
         ("cornel", "コーネル", 59, "male", "宰相", "me:私"),
         # chapter1
-        ("diana", "ダイナ", 27, "female", "戦士", "me:アタイ"),
+        ("diana", "ディアナ", 27, "female", "戦士", "me:アタイ"),
         ("kult", "クルト", 25, "male", "僧侶", "me:私"),
         ("maririn", "マリリン", 22, "female", "魔法使い", "me:わたし"),
         ("daemon1", "アークド・ダエモン", 99, "monster", "魔物", "me:オレサマ"),
@@ -25,6 +25,7 @@ CHARAS = (
         ("monster1", "化けガラス", 99, "monster", "魔物"),
         ("gandof", "ガンドフ", 39, "male", "武器屋", "me:俺"),
         ("gatekeeper1", "門番１", 28, "male", "兵士（門番）", "me:私"),
+        ("barmaster", "酒場の主", 55, "male", "酒場の店主", "me:私"),
         )
 
 
@@ -53,6 +54,8 @@ ITEMS = (
 
 
 INFOS = (
+        ("ally", "仲間"),
+        ("battle", "戦い"),
         ("monster", "魔物"),
         ("voyage", "旅立ち"),
         ("bustered", "魔王退治"),
@@ -68,10 +71,13 @@ INFOS = (
         ("herosun", "英雄の子"),
         ("worldinfo", "世界の現状"),
         ("case_caravan", "商隊全滅事件"),
+        ("level", "レベル"),
+        ("diana_reason", "ディアナたちの事情"),
         )
 
 
 FLAGS = (
         ("increasing", "増える魔物"),
+        ("strangerogue", "ならず者の噂"),
         )
 
