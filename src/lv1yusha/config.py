@@ -14,6 +14,7 @@ CHARAS = (
         ("father", "オルンガ", 40, "male", "英雄", "me:ワシ:mother:お前:hero:マイサン"),
         ("king", "アルアバン王", 46, "male", "国王", "me:儂", "アルアバンの国王"),
         ("vern", "ヴェルン", 35, "male", "宰相付秘書官", "me:私"),
+        ("cornel", "コーネル", 59, "male", "宰相", "me:私"),
         # chapter1
         ("diana", "ダイナ", 27, "female", "戦士", "me:アタイ"),
         ("kult", "クルト", 25, "male", "僧侶", "me:私"),
@@ -22,12 +23,15 @@ CHARAS = (
         ("bazem", "バーゼム", 65, "male", "神官", "me:私"),
         ("marc", "マーク", 35, "male", "傭兵", "me:俺"),
         ("monster1", "化けガラス", 99, "monster", "魔物"),
+        ("gandof", "ガンドフ", 39, "male", "武器屋", "me:俺"),
+        ("gatekeeper1", "門番１", 28, "male", "兵士（門番）", "me:私"),
         )
 
 
 STAGES = (
         ("alaban", "アルアバン", "英雄が生まれた島国"),
         ("castle", "アルアバン城"),
+        ("town", "アルアバン城下町"),
         ("myhome", "勇者の家"),
         ("church", "教会"),
         ("bar", "酒場"),
@@ -38,6 +42,7 @@ STAGES = (
 
 DAYS = (
         ("childhood", "幼少の頃"),
+        ("dadvoyage", "父旅立ちの日"),
         ("first", "旅立ちの日"),
         )
 
@@ -60,6 +65,9 @@ INFOS = (
         ("becomeyusha", "勇者になる"),
         ("gatherally", "仲間集め"),
         ("massacre", "仲間虐殺"),
+        ("herosun", "英雄の子"),
+        ("worldinfo", "世界の現状"),
+        ("case_caravan", "商隊全滅事件"),
         )
 
 
