@@ -73,11 +73,15 @@ INFOS = (
         ("case_caravan", "商隊全滅事件"),
         ("level", "レベル"),
         ("diana_reason", "ディアナたちの事情"),
+        ("trial_tower", "試練の塔"),
+        ("gameworld", "ゲーム世界"),
+        ("bug", "バグ"),
         )
 
 
 FLAGS = (
         ("increasing", "増える魔物"),
         ("strangerogue", "ならず者の噂"),
+        ("crackworld", "改変された世界"),
         )
 
