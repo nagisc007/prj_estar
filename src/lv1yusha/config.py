@@ -8,19 +8,22 @@ sys.path.append('storybuilder')
 
 
 CHARAS = (
-        ("hero", "アリエル", 16, "male", "勇者", "me:僕", "英雄の息子"),
+        ("hero", "アリエル", 16, "male", "勇者",
+            "me:僕:my:アリエル:dad:父:child_dad:お父さん:bazem:師匠:na_bazem:バーゼム:na_father:オルンガ:anabel:アナベル:vern:ヴェルン",
+            "英雄の息子"),
         ("hero99", "アリエル９９", 20, "male", "勇者", "me:俺", "レベル99になったアリエル"),
-        ("mother", "ウリア", 36, "female", "針子", "me:私:hero:アリエル"),
-        ("father", "オルンガ", 40, "male", "英雄", "me:ワシ:mother:お前:hero:マイサン"),
+        ("mother", "ウリア", 36, "female", "針子", "me:私:hero:アリエル:bazem:バーゼム"),
+        ("father", "オルンガ", 40, "male", "英雄", "me:ワシ:mother:お前:na_motehr:ウリア:hero:マイサン:he_name:アリエル"),
         ("king", "アルアバン王", 46, "male", "国王", "me:儂", "アルアバンの国王"),
-        ("vern", "ヴェルン", 35, "male", "宰相付秘書官", "me:私"),
+        ("vern", "ヴェルン", 35, "male", "宰相付秘書官", "me:私:callme:ヴェルン"),
         ("cornel", "コーネル", 59, "male", "宰相", "me:私"),
+        ("anabel", "アナベル", 16, "female", "花屋", "me:わたし:hero:アリエル"),
         # chapter1
         ("diana", "ディアナ", 27, "female", "戦士", "me:アタイ"),
         ("kult", "クルト", 25, "male", "僧侶", "me:私"),
         ("maririn", "マリリン", 22, "female", "魔法使い", "me:わたし"),
         ("daemon1", "アークド・ダエモン", 99, "monster", "魔物", "me:オレサマ"),
-        ("bazem", "バーゼム", 65, "male", "神官", "me:私"),
+        ("bazem", "バーゼム", 65, "male", "神官", "me:私:hero:アリエル"),
         ("marc", "マーク", 35, "male", "傭兵", "me:俺"),
         ("monster1", "化けガラス", 99, "monster", "魔物"),
         ("gandof", "ガンドフ", 39, "male", "武器屋", "me:俺"),
@@ -38,6 +41,7 @@ STAGES = (
         ("bar", "酒場"),
         ("field1", "アルアバン周辺"),
         ("tower1", "次元の塔"),
+        ("minan", "ミナン", "港町"),
         )
 
 
