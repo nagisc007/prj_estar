@@ -10,8 +10,10 @@ import unittest
 import test_hiyori
 #import test_100
 import test_100b
+import test_emperor100
 #import test_mofu
 import test_lv1yusha
+
 
 def suite():
     '''Packing all tests.
@@ -25,6 +27,7 @@ def suite():
         # mo-con
         unittest.makeSuite(test_100b.StoryTest),
         unittest.makeSuite(test_hiyori.StoryTest),
+        unittest.makeSuite(test_emperor100.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
