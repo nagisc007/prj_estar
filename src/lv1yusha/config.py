@@ -9,9 +9,9 @@ sys.path.append('storybuilder')
 
 CHARAS = (
         ("hero", "アリエル", 16, "male", "勇者",
-            "me:僕:my:アリエル:dad:父:child_dad:お父さん:mam:母:mother:母さん:bazem:師匠:na_bazem:バーゼム:na_father:オルンガ:anabel:アナ:na_anabel:アナベル:vern:ヴェルン:diana:ディアナ:maririn:マリリン:kult:クルト",
+            "me:僕:my:アリエル:dad:父:child_dad:お父さん:mam:母:mother:母さん:bazem:師匠:na_bazem:バーゼム:na_father:オルンガ:anabel:アナ:na_anabel:アナベル:vern:ヴェルン:diana:ディアナ:maririn:マリリン:kult:クルト:lv99:クック",
             "英雄の息子"),
-        ("hero99", "アリエル９９", 20, "male", "勇者", "me:俺", "レベル99になったアリエル"),
+        ("hero99", "アリエル９９", 20, "male", "勇者", "me:俺:hero:お前:mother:母さん", "レベル99になったアリエル"),
         ("mother", "ウリア", 36, "female", "針子", "me:私:hero:アリエル:bazem:バーゼム"),
         ("father", "オルンガ", 40, "male", "英雄", "me:ワシ:mother:お前:na_mother:ウリア:hero:マイサン:he_name:アリエル"),
         ("king", "アルアバン王", 69, "male", "国王", "me:儂:father:オルンガ:princess:エルザ", "アルアバンの国王"),
@@ -61,6 +61,7 @@ ITEMS = (
         # chapter 1
         ("kingmark", "薔薇剣の紋章"),
         ("rosensword", "薔薇剣"),
+        ("warpwing", "シメーレの羽根"),
         )
 
 
