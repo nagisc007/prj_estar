@@ -10,6 +10,9 @@ from storybuilder.builder import world as wd
 from src.emperor100 import config as cnf
 
 
+# episodes
+
+
 # main
 def world():
     w = wd.World("100 characters")
@@ -20,6 +23,12 @@ def world():
 def story(w: wd.World):
     return (w.maintitle("皇帝百代のバグ"),
             w.hero.be(w.stage.castle, w.day.ceremony),
+            w.lion.be("dead"),
+            w.hero.talk(w.garneth, w.i.throne),
+            w.hero.be(w.i.throne, w.i.emperor100),
+            w.hero.do(w.i.enthrone),
+            w.hero.be(w.i.portchara),
+            w.hero.do(w.milea, "殺害"),
         )
 
 

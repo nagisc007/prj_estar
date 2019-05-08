@@ -28,7 +28,7 @@ class StoryTest(unittest.TestCase):
     def test_has_basic_infos(self):
         utl.exists_basic_infos_by_data(self,
                 [
-                    ("story", self.story, self.w.hero, self.w.hero),
+                    ("story", self.story, self.w.hero, self.w.garneth),
                 ])
 
     def test_has_outline_infos(self):
@@ -36,10 +36,10 @@ class StoryTest(unittest.TestCase):
         utl.exists_outline_infos_by_data(self,
                 [
                     ("story", self.story,
-                        w.hero.be(),
-                        w.hero.be(),
-                        w.hero.be(),
-                        w.hero.be(),
+                        w.hero.be(w.i.throne, w.i.emperor100),
+                        w.lion.be("dead"),
+                        w.hero.do(w.i.enthrone),
+                        w.hero.be(w.i.portchara),
                         True),
                 ])
 

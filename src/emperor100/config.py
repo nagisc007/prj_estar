@@ -9,9 +9,10 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("hero", "ヘレウド", 25, "male", "王子"),
-        ("milea", "ミレア", 23, "female", "王妃"),
-        ("lion", "リオン", 55, "male", "皇帝"),
+        ("hero", "ヘレウド", 25, "male", "王子", "me:私"),
+        ("milea", "ミレア", 23, "female", "王妃", "me:わたし"),
+        ("lion", "リオン", 55, "male", "皇帝", "me:俺"),
+        ("garneth", "ガーネス", 78, "male", "教皇", "me:私"),
         )
 
 STAGES = (
@@ -29,6 +30,13 @@ ITEMS = (
         )
 
 INFOS = (
+        ("ceremony", "儀式"),
+        ("enthrone", "即位の儀式"),
+        ("throne", "即位"),
+        ("emperor100", "百代目皇帝"),
+        ("portchara", "人格移植"),
+        # event
+        ("murder_mam", "母殺害疑惑"),
         )
 
 FLAGS = (
