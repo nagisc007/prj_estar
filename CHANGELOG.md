@@ -5,9 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.0.5] - 2019-05-08
 ### Added
 - Project: Emperor
 - Project: Lv1 Yusha
+- Production: Lv1 yusha starting
 
 ## [0.0.4] - 2019-04-28
 ### Added
@@ -40,7 +43,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.4...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/nagisc007/prj_estar/releases/v0.0.5
 [0.0.4]: https://github.com/nagisc007/prj_estar/releases/v0.0.4
 [0.0.3]: https://github.com/nagisc007/prj_estar/releases/v0.0.3
 [0.0.2]: https://github.com/nagisc007/prj_estar/releases/v0.0.2
