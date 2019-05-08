@@ -8,7 +8,7 @@ import unittest
 #import test_kujosaeko
 #import test_tonari
 import test_hiyori
-#import test_100
+import test_100
 import test_100b
 import test_emperor100
 #import test_mofu
@@ -25,6 +25,7 @@ def suite():
 
     suite.addTests((
         # mo-con
+        unittest.makeSuite(test_100.StoryTest),
         unittest.makeSuite(test_100b.StoryTest),
         unittest.makeSuite(test_hiyori.StoryTest),
         unittest.makeSuite(test_emperor100.StoryTest),

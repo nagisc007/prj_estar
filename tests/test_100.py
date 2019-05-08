@@ -2,10 +2,8 @@
 """Test the story of kujo saeko
 """
 import unittest
-import storybuilder.builder.testtools as testtools
-from storybuilder.builder.sbutils import print_test_title
-from src.s100.story import Something
-from src.s100.story import master, story, ep1, ep2, ep3, ep4
+from storybuilder.builder import testutils as utl
+from src.s100.story import world, story, ep_intro, ep_middle, ep_climax, ep_end
 
 
 _FILENAME = "100.story.py"
@@ -15,47 +13,37 @@ class StoryTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print_test_title(_FILENAME, "100 stories")
+        utl.print_test_title(_FILENAME, "100 stories")
 
     def setUp(self):
-        self.ma = master()
-        self.st = story(self.ma)
-        self.ep1 = ep1(self.ma)
-        self.ep2 = ep2(self.ma)
-        self.ep3 = ep3(self.ma)
-        self.ep4 = ep4(self.ma)
+        self.w = world()
+        self.story = story(self.w)
+        self.ep1 = ep_intro(self.w)
+        self.ep2 = ep_middle(self.w)
+        self.ep3 = ep_climax(self.w)
+        self.ep4 = ep_end(self.w)
 
     def test_is_all_actions(self):
-        self.assertTrue(testtools.is_all_actions(self.st))
+        self.assertTrue(utl.is_all_actions_in(self.story))
 
     def test_followed_flags(self):
-        self.assertTrue(testtools.followed_all_flags(self, self.st))
+        self.assertTrue(utl.followed_all_flags_with_error_info(self, self.story))
 
-    @unittest.skip("in preparation")
     def test_has_basic_infos(self):
-        data = [
-                ("story", self.st, "hero", "rival"),
-                ("ep1", self.ep1, "hero", "rival"),
-                ("ep2", self.ep2, "hero", "rival"),
-                ("ep3", self.ep3, "hero", "rival"),
-                ("ep4", self.ep4, "hero", "rival"),
-                ]
+        utl.exists_basic_infos_by_data(self,
+                [
+                    ("story", self.story, self.w.hero, self.w.hero),
+                    ])
 
-        for title, story, hero, rival in data:
-            with self.subTest(title=title, story=story, hero=hero, rival=rival):
-                self.assertTrue(testtools.has_basic_infos(self, story, hero, rival))
-
-    @unittest.skip("in preparation")
     def test_has_outline_infos(self):
-        data = [
-                ("story", self.st, "what", "why", "how", "result"),
-                ("ep1", self.ep1, "what", "why", "how", "result"),
-                ("ep2", self.ep2, "what", "why", "how", "result"),
-                ("ep3", self.ep3, "what", "why", "how", "result"),
-                ("ep4", self.ep4, "what", "why", "how", "result"),
-                ]
-
-        for title, story, what, why, how, result in data:
-            with self.subTest(title=title, story=story, what=what, why=why, how=how, result=result):
-                self.assertTrue(testtools.has_outline_infos(self, story, what, why, how, result))
+        w = self.w
+        utl.exists_outline_infos_by_data(self,
+                [
+                    ("story", self.story,
+                        w.hero.be(),
+                        w.hero.be(),
+                        w.hero.be(),
+                        w.hero.be(),
+                        True),
+                    ])
 
