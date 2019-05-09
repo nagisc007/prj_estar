@@ -13,11 +13,13 @@ CHARAS = (
         ("milea", "ミレア", 23, "female", "王妃", "me:わたし"),
         ("lion", "リオン", 55, "male", "皇帝", "me:俺"),
         ("garneth", "ガーネス", 78, "male", "教皇", "me:私"),
+        ("child", "リドリー", 5, "male", "王子", "me:ボク"),
         )
 
 STAGES = (
         ("kingdom", "アワローヌ"),
         ("castle", "アワローヌ城"),
+        ("hisroom", "ヘレウドの居室"),
         )
 
 DAYS = (
@@ -35,6 +37,10 @@ INFOS = (
         ("throne", "即位"),
         ("emperor100", "百代目皇帝"),
         ("portchara", "人格移植"),
+        ("lion_dead", "皇帝の死"),
+        ("emperor_bug", "皇帝継承のバグ"),
+        ("milea_mind", "ミレアの決意"),
+        ("his_mind", "彼の決意"),
         # event
         ("murder_mam", "母殺害疑惑"),
         )
