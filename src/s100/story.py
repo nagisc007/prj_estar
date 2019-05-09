@@ -14,6 +14,10 @@ from src.s100 import config as cnf
 def ep_intro(w: wd.World):
     return [w.chaptertitle("冒頭"),
             w.hero.be(w.stage.apart, w.day.current),
+            w.hero.do("phone", w.osaki, "原稿締め切り"),
+            w.hero.deal(w.fear_mail),
+            w.hero.do("write", "$must"),
+            w.hero.do("write", w.i.novel),
             ]
 
 
@@ -26,7 +30,9 @@ def ep_climax(w: wd.World):
 
 
 def ep_end(w: wd.World):
-    return [w.chaptertitle("最後の作品"),]
+    return [w.chaptertitle("最後の作品"),
+            w.hero.know(w.i.his_reason),
+            ]
 
 
 # main
