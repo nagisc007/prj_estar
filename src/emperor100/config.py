@@ -20,9 +20,12 @@ STAGES = (
         ("kingdom", "アワローヌ"),
         ("castle", "アワローヌ城"),
         ("hisroom", "ヘレウドの居室"),
+        ("balcony", "バルコニィ"),
+        ("hall", "玄関ホール"),
         )
 
 DAYS = (
+        ("returnemp", "帰還日"),
         ("dead", "崩御日"),
         ("ceremony", "儀式日"),
         )
@@ -32,6 +35,12 @@ ITEMS = (
         )
 
 INFOS = (
+        ("pope", "教皇"),
+        ("marda", "マルダ教"),
+        ("pregnancy", "妊娠"),
+        ("childbirth", "息子出産"),
+        ("peace_nego", "和平交渉"),
+        ("badcondition", "体調不良"),
         ("ceremony", "儀式"),
         ("enthrone", "即位の儀式"),
         ("throne", "即位"),
