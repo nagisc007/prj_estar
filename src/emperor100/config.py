@@ -14,6 +14,9 @@ CHARAS = (
         ("lion", "リオン", 55, "male", "皇帝", "me:俺"),
         ("garneth", "ガーネス", 78, "male", "教皇", "me:私"),
         ("child", "リドリー", 5, "male", "王子", "me:ボク"),
+        ("soldier", "兵士１", 30, "male", "兵士"),
+        ("people", "国民", 99, "male", "国民"),
+        ("believer", "信者", 50, "male", "信者"),
         )
 
 STAGES = (
@@ -22,6 +25,8 @@ STAGES = (
         ("hisroom", "ヘレウドの居室"),
         ("balcony", "バルコニィ"),
         ("hall", "玄関ホール"),
+        ("cathedral", "聖堂"),
+        ("lab", "実験室"),
         )
 
 DAYS = (
@@ -54,6 +59,7 @@ INFOS = (
         ("milea_mind", "ミレアの決意"),
         ("his_mind", "彼の決意"),
         ("lion_word", "前王の言葉"),
+        ("emp_ceremony", "皇位継承の儀式"),
         ("moon", "白磁の月"),
         # event
         ("murder_mam", "母殺害疑惑"),
