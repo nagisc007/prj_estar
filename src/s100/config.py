@@ -24,6 +24,9 @@ STAGES = (
         ("school", "学校"),
         ("bar", "飲み屋"),
         ("subway", "地下鉄"),
+        ("sea", "海"),
+        ("bookstore", "本屋"),
+        ("conveni", "コンビニ"),
         ("indream", "夢の中"),
         )
 
@@ -59,6 +62,7 @@ INFOS = (
         ("hiyori", "小説日和"), # t99
         ("fuyumi_call", "冬美の電話"),
         ("lostmemory", "記憶喪失"),
+        ("absencemaster", "店主が常に不在"),
         )
 
 # 100 themes
