@@ -54,7 +54,7 @@ class StoryTest(unittest.TestCase):
                         w.hero.do("write", "$must"),
                         w.hero.deal(w.fear_mail),
                         w.hero.have(w.terminal),
-                        w.hero.have(w.i.future_mail),
+                        w.hero.meet(w.ft_fuyumi),
                         True),
                     ("ep2", self.ep2,
                         w.hero.talk("説得", w.fuyumi),

@@ -15,6 +15,7 @@ CHARAS = (
         ("futureman", "未来の秋川", 37, "male", "無職", "me:俺"),
         ("pastman", "過去の秋川", 16, "male", "高校生", "me:僕"),
         ("ft_fuyumi", "未来の冬美", 37, "female", "主婦", "me:私"),
+        ("nishikawa", "仁志川貴信", 27, "male", "作家", "me:僕"),
         )
 
 
@@ -57,6 +58,7 @@ INFOS = (
         ("help_mail", "たすけてメール"), # t24
         ("hiyori", "小説日和"), # t99
         ("fuyumi_call", "冬美の電話"),
+        ("lostmemory", "記憶喪失"),
         )
 
 # 100 themes
