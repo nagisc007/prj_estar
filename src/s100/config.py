@@ -14,6 +14,7 @@ CHARAS = (
         ("fuyumi", "田村冬美", 36, "female", "会社員", "me:私:hero:秋川君"),
         ("futureman", "未来の秋川", 37, "male", "無職", "me:俺"),
         ("pastman", "過去の秋川", 16, "male", "高校生", "me:僕"),
+        ("ft_fuyumi", "未来の冬美", 37, "female", "主婦", "me:私"),
         )
 
 
@@ -22,6 +23,7 @@ STAGES = (
         ("school", "学校"),
         ("bar", "飲み屋"),
         ("subway", "地下鉄"),
+        ("indream", "夢の中"),
         )
 
 
