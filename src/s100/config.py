@@ -10,8 +10,10 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         ("hero", "秋川正悟", 36, "male", "作家", "me:私:fuyumi:冬美"),
-        ("osaki", "大崎百代", 38, "female", "編集者", "me:わたし"),
+        ("osaki", "大崎亮介", 38, "male", "編集者", "me:オレ"),
         ("fuyumi", "田村冬美", 36, "female", "会社員", "me:私:hero:秋川君"),
+        ("futureman", "未来の秋川", 37, "male", "無職", "me:俺"),
+        ("pastman", "過去の秋川", 16, "male", "高校生", "me:僕"),
         )
 
 
@@ -49,6 +51,10 @@ INFOS = (
         ("novel", "小説"),
         ("promise", "子供の日の約束"),
         ("his_reason", "書く理由"),
+        ("future_mail", "一年後の私からメール"), # t12
+        ("help_mail", "たすけてメール"), # t24
+        ("hiyori", "小説日和"), # t99
+        ("fuyumi_call", "冬美の電話"),
         )
 
 # 100 themes

@@ -33,6 +33,10 @@ class StoryTest(unittest.TestCase):
         utl.exists_basic_infos_by_data(self,
                 [
                     ("story", self.story, self.w.hero, self.w.osaki),
+                    ("ep1", self.ep1, self.w.hero, self.w.osaki),
+                    ("ep2", self.ep2, self.w.hero, self.w.fuyumi),
+                    ("ep3", self.ep3, self.w.hero, self.w.futureman),
+                    ("ep4", self.ep4, self.w.hero, self.w.pastman),
                     ])
 
     def test_has_outline_infos(self):
@@ -44,6 +48,30 @@ class StoryTest(unittest.TestCase):
                         w.hero.deal(w.fear_mail),
                         w.hero.do("write", w.i.novel),
                         w.hero.know(w.i.his_reason),
+                        True),
+                    ("ep1", self.ep1,
+                        w.hero.do("write", "$must"),
+                        w.hero.deal(w.fear_mail),
+                        w.hero.have(w.terminal),
+                        w.hero.have(w.i.future_mail),
+                        True),
+                    ("ep2", self.ep2,
+                        w.hero.talk("説得", w.fuyumi),
+                        w.hero.talk("別離", w.fuyumi),
+                        w.hero.look(w.fuyumi, "自分の小説"),
+                        w.hero.have(w.i.help_mail),
+                        True),
+                    ("ep3", self.ep3,
+                        w.hero.do("help", w.futureman),
+                        w.hero.know(w.futureman, "dead"),
+                        w.hero.do(w.futureman, "小説を書く"),
+                        w.hero.be("dead"),
+                        True),
+                    ("ep4", self.ep4,
+                        w.hero.go("過去に戻る"),
+                        w.hero.be("dead"),
+                        w.hero.deal(w.terminal),
+                        w.hero.look(w.pastman),
                         True),
                     ])
 
