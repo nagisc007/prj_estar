@@ -35,6 +35,9 @@ ITEMS = (
         )
 
 INFOS = (
+        # themes
+        ("which_important", "国の繁栄か己の最愛の人か"),
+        # common
         ("pope", "教皇"),
         ("marda", "マルダ教"),
         ("pregnancy", "妊娠"),
@@ -50,6 +53,8 @@ INFOS = (
         ("emperor_bug", "皇帝継承のバグ"),
         ("milea_mind", "ミレアの決意"),
         ("his_mind", "彼の決意"),
+        ("lion_word", "前王の言葉"),
+        ("moon", "白磁の月"),
         # event
         ("murder_mam", "母殺害疑惑"),
         )
