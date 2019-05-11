@@ -18,17 +18,22 @@ CHARAS = (
         ("people", "国民", 99, "male", "国民"),
         ("believer", "信者", 50, "male", "信者"),
         ("albert", "アルバート", 25, "male", "近衛兵", "me:オレ"),
+        ("runolf", "ルノルフ", 68, "male", "近衛兵長", "me:儂"),
+        ("marf", "マルフ", 52, "male", "宰相", "me:私"),
         )
 
 STAGES = (
+        # country
         ("kingdom", "アワローヌ"),
+        ("randole", "ランドール"),
+        # places
         ("castle", "アワローヌ城"),
         ("hisroom", "ヘレウドの居室"),
+        ("office", "執務室"),
         ("balcony", "バルコニィ"),
         ("hall", "玄関ホール"),
         ("cathedral", "聖堂"),
         ("lab", "実験室"),
-        ("randole", "ランドール"),
         )
 
 DAYS = (
@@ -39,6 +44,7 @@ DAYS = (
 
 ITEMS = (
         ("tsword", "宝剣"),
+        ("god", "マルダ神"),
         )
 
 INFOS = (
