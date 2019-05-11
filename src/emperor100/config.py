@@ -17,6 +17,7 @@ CHARAS = (
         ("soldier", "兵士１", 30, "male", "兵士"),
         ("people", "国民", 99, "male", "国民"),
         ("believer", "信者", 50, "male", "信者"),
+        ("albert", "アルバート", 25, "male", "近衛兵", "me:オレ"),
         )
 
 STAGES = (
@@ -27,6 +28,7 @@ STAGES = (
         ("hall", "玄関ホール"),
         ("cathedral", "聖堂"),
         ("lab", "実験室"),
+        ("randole", "ランドール"),
         )
 
 DAYS = (
