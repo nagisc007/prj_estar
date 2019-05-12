@@ -9,7 +9,7 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("hero", "秋川正悟", 36, "male", "作家", "me:私:my:秋川:her:冬美"),
+        ("hero", "秋川正悟", 36, "male", "作家", "me:俺:my:秋川:her:冬美"),
         ("osaki", "大崎亮介", 38, "male", "編集者", "me:オレ"),
         ("fuyumi", "田村冬美", 36, "female", "会社員", "me:私:hero:正ちゃん"),
         ("futureman", "未来の秋川", 37, "male", "無職", "me:俺"),
