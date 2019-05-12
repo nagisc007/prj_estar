@@ -36,8 +36,8 @@ class StoryTest(unittest.TestCase):
                     ("story", self.story, self.w.hero, self.w.osaki),
                     ("ep1", self.ep1, self.w.hero, self.w.osaki),
                     ("ep2", self.ep2, self.w.hero, self.w.fuyumi),
-                    ("ep3", self.ep3, self.w.hero, self.w.futureman),
-                    ("ep4", self.ep4, self.w.hero, self.w.pastman),
+                    ("ep3", self.ep3, self.w.hero, self.w.fuyumi),
+                    ("ep4", self.ep4, self.w.hero, self.w.fuyumi),
                     ])
 
     def test_has_outline_infos(self):
@@ -63,10 +63,10 @@ class StoryTest(unittest.TestCase):
                         w.hero.have(w.i.help_mail),
                         True),
                     ("ep3", self.ep3,
-                        w.hero.do("help", w.futureman),
-                        w.hero.know(w.futureman, "dead"),
-                        w.hero.do(w.futureman, "小説を書く"),
-                        w.hero.be("dead"),
+                        w.hero.do("help", w.fuyumi),
+                        w.hero.know(w.fuyumi, "dead"),
+                        w.hero.go(w.stage.subway),
+                        w.hero.talk(w.fuyumi),
                         True),
                     ("ep4", self.ep4,
                         w.hero.go("過去に戻る"),
