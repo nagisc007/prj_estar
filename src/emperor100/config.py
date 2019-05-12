@@ -9,7 +9,7 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("hero", "ヘレウド", 25, "male", "王子", "me:私"),
+        ("hero", "ヘレウド", 25, "male", "王子", "me:私:mine:余"),
         ("milea", "ミレア", 23, "female", "王妃", "me:わたし"),
         ("lion", "リオン", 55, "male", "皇帝", "me:俺"),
         ("garneth", "ガーネス", 78, "male", "教皇", "me:私"),
