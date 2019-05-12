@@ -45,6 +45,7 @@ DAYS = (
 ITEMS = (
         ("tsword", "宝剣"),
         ("god", "マルダ神"),
+        ("emp_title", "平安帝"),
         )
 
 INFOS = (
