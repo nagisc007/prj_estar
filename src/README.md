@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#wc1](redchain/README.md) | 赤い繋がり | [執筆応援キャンペーン「犯罪／サイコ／サスペンス」](https://estar.jp/official_contests/159257) |
 | [#nf1](lv1yusha/README.md) | レベル１勇者の旅立ち | [次に読みたいファンタジー「旅」](https://estar.jp/official_contests/159045) |
 | [#cw1](mofu/README.md) | もふもふのきもち | [未定](https://estar.jp/) |
 | [#m100c](emperor100/README.md) | 皇帝百代の呪（バグ） | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
