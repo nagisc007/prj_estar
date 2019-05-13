@@ -16,6 +16,7 @@ CHARAS = (
         ("pastman", "過去の秋川", 16, "male", "高校生", "me:僕"),
         ("ft_fuyumi", "未来の冬美", 37, "female", "主婦", "me:私"),
         ("nishikawa", "仁志川貴信", 27, "male", "作家", "me:僕"),
+        ("catgod", "猫神", 99, "male", "神様"),
         )
 
 
@@ -40,6 +41,7 @@ DAYS = (
 
 ITEMS = (
         # names
+        ("oldname", "仁志川"),
         ("na_osaki", "大崎"),
         ("na_nishikawa", "仁志川"),
         # items
