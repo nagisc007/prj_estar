@@ -8,6 +8,8 @@ omit =
     src/koitsubu/*
     src/okaeshi/*
     src/tokeru/*
+    src/mofu/*
+    src/tonari/*
     # markdown
     *.md
 

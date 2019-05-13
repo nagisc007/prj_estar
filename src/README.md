@@ -8,9 +8,9 @@
 | --- | --- | --- |
 | [#nf1](lv1yusha/README.md) | レベル１勇者の旅立ち | [次に読みたいファンタジー「旅」](https://estar.jp/official_contests/159045) |
 | [#cw1](mofu/README.md) | もふもふのきもち | [未定](https://estar.jp/) |
-| [#m100c](emperor100/README.md) | 皇帝百代のバグ | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
+| [#m100c](emperor100/README.md) | 皇帝百代の呪（バグ） | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100b](s100b/README.md) | はじめましての百文字 | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
-| [#m100](s100/README.md) | 百妄想騙り | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
+| [#m100](s100/README.md) | 君の為に百の妄想を騙ろう | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m99](hiyori/READMD.md) | 田植え日和と恋の雨 | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
 | [#m98](tonari/README.md) | わたしの隣はいつも空席 | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
 | [#m97](okaeshi/README.md) | 九条冴子は返さない | [妄想コンテスト「お返し」](https://estar.jp/_ofcl_evt_outline?e=158796) |

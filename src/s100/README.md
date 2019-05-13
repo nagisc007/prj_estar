@@ -1,8 +1,8 @@
-# 百妄想騙り 
+# 君の為に百の妄想を騙ろう
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.- | 2019.4.10 | Love, Human, Mystery | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
+| v0.1.0 | Released | 2019.5.12 | 2019.5.13 | Love, Human, Mystery | 8K | [エブリスタ](https://estar.jp/novels/25479897) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 
 **「百もの妄言を繰り返しているのです」**
 

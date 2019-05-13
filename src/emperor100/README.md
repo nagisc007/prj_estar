@@ -1,8 +1,8 @@
-# 皇帝百代のバグ
+# 皇帝百代の呪（バグ）
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.5.- | 2019.5.- | Fantasy, Mystery | 6K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
+| v0.1.0 | Released | 2019.5.12 | 2019.5.13 | Fantasy, Mystery | 8K | [エブリスタ](https://estar.jp/novels/25479707) | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 
 **「皇位継承は、決してしてはならなかった」**
 
