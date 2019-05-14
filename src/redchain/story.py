@@ -11,6 +11,16 @@ from src.redchain import config as cnf
 
 
 # episodes
+def ep_intro(w: wd.World):
+    return [
+            w.masuda.know(w.i.case_fire, w.stage.office, w.day.incident),
+            w.masuda.think(w.hideko, "何か臭う"),
+            w.masuda.deal(w.i.interview),
+            w.masuda.hear(w.doc, w.deadbody),
+            w.masuda.know(w.i.truth),
+            # TODO
+            w.masuda.look(cnf.THEMES["chain"]),
+            ]
 
 
 # main
@@ -22,6 +32,7 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("紅い繋がり"),
+            ep_intro(w),
             )
 
 
