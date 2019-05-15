@@ -3,8 +3,9 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.redchain.story import world, story
+from src.redchain.story import world, story, ep_intro, ep_idolyears, ep_actoryears, ep_lateyears, ep_truth
 from src.redchain.config import THEMES
+
 
 _FILENAME = "redchain.story.py"
 
@@ -18,6 +19,11 @@ class StoryTest(unittest.TestCase):
     def setUp(self):
         self.w = world()
         self.story = story(self.w)
+        self.ep1 = ep_intro(self.w)
+        self.ep2 = ep_actoryears(self.w)
+        self.ep3 = ep_idolyears(self.w)
+        self.ep4 = ep_lateyears(self.w)
+        self.ep5 = ep_truth(self.w)
 
     def test_is_all_actions(self):
         self.assertTrue(utl.is_all_actions_in(self.story))
@@ -29,6 +35,11 @@ class StoryTest(unittest.TestCase):
         utl.exists_basic_infos_by_data(self,
                 [
                     ("story", self.story, self.w.masuda, self.w.hideko),
+                    ("ep1", self.ep1, self.w.masuda, self.w.hideko),
+                    ("ep2", self.ep2, self.w.masuda, self.w.h_actor),
+                    ("ep3", self.ep3, self.w.masuda, self.w.h_idol),
+                    ("ep4", self.ep4, self.w.masuda, self.w.h_later),
+                    ("ep5", self.ep5, self.w.masuda, self.w.benio),
                 ])
 
     def test_has_outline_infos(self):
@@ -40,6 +51,36 @@ class StoryTest(unittest.TestCase):
                         w.masuda.know(w.i.case_fire),
                         w.masuda.deal(w.i.interview),
                         w.masuda.know(w.i.truth),
+                        True),
+                    ("ep1", self.ep1,
+                        w.masuda.deal(w.i.interview, w.stage.thesite),
+                        w.masuda.know(w.i.case_fire),
+                        w.masuda.hear("関係者"),
+                        w.masuda.know(w.deadbody, w.hideko),
+                        True),
+                    ("ep2", self.ep2,
+                        w.masuda.look(w.h_actor, w.i.life),
+                        w.masuda.know(w.h_actor),
+                        w.masuda.deal(w.i.interview, "業界人"),
+                        w.masuda.know(w.hideko, w.h_idol),
+                        True),
+                    ("ep3", self.ep3,
+                        w.masuda.look(w.h_idol, w.i.life),
+                        w.masuda.know(w.h_idol),
+                        w.masuda.deal(w.i.interview, "当時を知る人"),
+                        w.masuda.know(w.i.retire_business),
+                        True),
+                    ("ep4", self.ep4,
+                        w.masuda.have(w.h_later, w.i.life),
+                        w.masuda.know(w.h_later),
+                        w.masuda.deal(w.i.interview, w.stage.town),
+                        w.masuda.know(w.doc),
+                        True),
+                    ("ep5", self.ep5,
+                        w.masuda.meet(w.doc),
+                        w.masuda.know(w.doc),
+                        w.masuda.talk(w.doc, w.i.doc_secret),
+                        w.masuda.know(w.anotherbody, w.benio),
                         True),
                 ])
 
