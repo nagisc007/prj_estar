@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#hm2](mymine/README.md) | わたしとワタシと私 | [氷室冴子青春文学賞](https://estar.jp/official_contests/159347) |
 | [#m101](golden/README.md) | 不幸の黄金少女 | [妄想コンテスト「金」](https://estar.jp/official_contests/159346) |
 | [#wc1](redchain/README.md) | 赤い繋がり | [執筆応援キャンペーン「犯罪／サイコ／サスペンス」](https://estar.jp/official_contests/159257) |
 | [#nf1](lv1yusha/README.md) | レベル１勇者の旅立ち | [次に読みたいファンタジー「旅」](https://estar.jp/official_contests/159045) |
