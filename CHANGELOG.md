@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Project: golden girl
 - Project: the red-chain
 
 ## [0.0.6] - 2019-05-13

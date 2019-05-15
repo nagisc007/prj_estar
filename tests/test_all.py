@@ -14,6 +14,7 @@ import test_emperor100
 #import test_mofu
 import test_lv1yusha
 import test_redchain
+import test_golden
 
 
 def suite():
@@ -30,6 +31,7 @@ def suite():
         unittest.makeSuite(test_100b.StoryTest),
         unittest.makeSuite(test_hiyori.StoryTest),
         unittest.makeSuite(test_emperor100.StoryTest),
+        unittest.makeSuite(test_golden.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
