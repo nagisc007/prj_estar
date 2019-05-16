@@ -12,7 +12,35 @@ from src.golden import config as cnf
 
 # episodes
 def ep_intro(w: wd.World):
-    return []
+    f, hiroko, kana = w.fukuo, w.hiroko, w.kana
+    scenes = [
+            w.scene("黄金になる娘",
+                kana.be(w.i.goldsyndrome, w.stage.home, w.day.current),
+                f.deal("guard", kana),
+                ),
+            w.scene("奪われる黄金の肌",
+                ),
+            w.scene("治療費用",
+                f.deal(w.fund),
+                hiroko.talk("娘の細胞を売るべき"),
+                ),
+            ]
+    return [w.chaptertitle("黄金の娘"),
+            *scenes,
+            ]
+
+
+def ep_decision(w: wd.World):
+    f, kana = w.fukuo, w.kana
+    scenes = [
+            w.scene("決断",
+                f.think(w.kanacell, "資金集めに使う"),
+                ),
+            ]
+    return [w.chaptertitle("決断の時"),
+            *scenes,
+            ]
+
 
 # main
 def world():
@@ -24,6 +52,7 @@ def world():
 def story(w: wd.World):
     return (w.maintitle("不幸の黄金少女"),
             ep_intro(w),
+            ep_decision(w),
             )
 
 
