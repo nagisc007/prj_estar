@@ -13,6 +13,13 @@ CHARAS = (
             "me:わたし"),
         ("shota", "宮内翔太郎", 25, "male", "無職",
             "me:俺"),
+        # univ
+        ("matsumoto", "松本亘", 20, "male", "大学生"),
+        # others
+        ("asumi", "金井亜純", 19, "female", "パート"),
+        # family
+        ("mother", "岩根朝子", 40, "female", "パート"),
+        ("father", "岩根雪雄", 50, "male", "電気店"),
         )
 
 STAGES = (
