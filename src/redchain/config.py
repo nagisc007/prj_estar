@@ -9,17 +9,20 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("masuda", "枡田延彦", 27, "male", "記者", "me:私"),
+        ("masuda", "枡田延彦", 29, "male", "記者",
+            "me:俺:my:私:sugi:杉岡さん:tana:チーフ:taka:高森:neya:根屋さん"),
         ("hideko", "紅崎秀子", 60, "female", "主婦", "me:私"),
         ("benio", "紅緒", 40, "female", "無職", "me:ワタシ"),
         ("doc", "室笠仙三", 79, "male", "医者", "me:儂"),
         ("priest", "左海青州", 58, "male", "住職", "me:私"),
         # office
-        ("tanabe", "田辺厚司", 48, "male", "上司", "me:俺"),
+        ("tanabe", "田辺厚司", 48, "male", "上司", "me:おれ:masu:枡田"),
+        ("miki", "根屋美希", 30, "female", "事務", "me:わたし:masu:枡田君"),
         # town
         ("hino", "日野勝子", 45, "female", "役場職員", "me:わたし"),
-        ("takamori", "高森信幸", 29, "male", "警官", "me:オレ"),
-        ("sugioka", "杉岡卓馬", 36, "male", "新聞記者", "me:俺"),
+        ("takamori", "高森信幸", 30, "male", "警官", "me:オレ:masu:枡やん"),
+        ("sugioka", "杉岡卓馬", 36, "male", "新聞記者", "me:僕"),
+        ("policechief", "警察署長", 55, "male", "警察署長"),
         # family
         ("mam", "枡田百合枝", 57, "female", "農家", "me:あたし"),
         ("dad", "枡田武彦", 60, "male", "農家", "me:おれ"),
@@ -29,6 +32,9 @@ CHARAS = (
         ("h_later", "原崎秀子", 50, "female", "主婦", "me:ワタシ"),
         ("manager", "園原謙太", 55, "male", "芸能事務所社長", "me:僕"),
         ("actoress", "由比ヶ浜凜", 59, "female", "劇団員", "me:アタシ"),
+        # mob
+        ("woman1", "山本静江", 48, "female", "野次馬", "me:あたし:masuda:あんた"),
+        ("woman2", "江森典代", 46, "female", "野次馬", "me:わたし"),
         )
 
 STAGES = (
@@ -52,17 +58,26 @@ STAGES = (
         )
 
 DAYS = (
-        ("incident", "火災事件当日"),
-        ("nextday", "火災事件翌日"),
-        ("interview1", "取材日1"),
-        ("interview2", "取材日2"),
-        ("interview3", "取材日3"),
+        ("incident", "火災事件当日", 5, 15, 2019),
+        ("nextday", "火災事件翌日", 5, 16, 2019),
+        ("interview1", "取材日1", 5, 17, 2019),
+        ("interview2", "取材日2", 5, 18, 2019),
+        ("interview3", "取材日3", 5,19, 2019),
+        # event
+        ("changejob", "転職年", 4,1, 2017), # 2年前
         )
 
 ITEMS = (
         ("deadbody", "遺体"),
         ("anotherbody", "もう一つの遺体"),
         ("movie", "秀子を有名にした映画"),
+        ("newspaper", "新新日報"),
+        # names
+        ("hero", "枡田"),
+        ("na_tanabe", "田辺"),
+        ("na_sugioka", "杉岡"),
+        ("na_takamori", "高森"),
+        ("na_miki", "根屋"),
         )
 
 INFOS = (
