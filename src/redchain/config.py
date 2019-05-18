@@ -23,6 +23,11 @@ CHARAS = (
         ("takamori", "高森信幸", 30, "male", "警官", "me:オレ:masu:枡やん"),
         ("sugioka", "杉岡卓馬", 36, "male", "新聞記者", "me:僕"),
         ("policechief", "警察署長", 55, "male", "警察署長"),
+        # relations
+        ("shoko", "三枝祥子", 54, "female", "女優", "me:あたし"),
+        ("manager", "園原謙太", 55, "male", "芸能事務所社長", "me:僕"),
+        ("coworker", "仙石洋輔", 67, "male", "劇団座長", "me:オレ:hide:秀さん:yui:お凜"),
+        ("actoress", "由比ヶ浜凜", 59, "female", "劇団員", "me:アタシ"),
         # family
         ("mam", "枡田百合枝", 57, "female", "農家", "me:あたし"),
         ("dad", "枡田武彦", 60, "male", "農家", "me:おれ"),
@@ -30,8 +35,6 @@ CHARAS = (
         ("h_idol", "光咲紅", 17, "female", "アイドル", "me:ベニ"),
         ("h_actor", "茅ヶ崎紅香", 30, "female", "女優", "me:私"),
         ("h_later", "原崎秀子", 50, "female", "主婦", "me:ワタシ"),
-        ("manager", "園原謙太", 55, "male", "芸能事務所社長", "me:僕"),
-        ("actoress", "由比ヶ浜凜", 59, "female", "劇団員", "me:アタシ"),
         # mob
         ("woman1", "山本静江", 48, "female", "野次馬", "me:あたし:masuda:あんた"),
         ("woman2", "江森典代", 46, "female", "野次馬", "me:わたし"),
@@ -42,7 +45,8 @@ STAGES = (
         ("tokyo", "東京"),
         ("niigata", "新潟"),
         # Places
-        ("office", "会社"), # web新聞社
+        ("office", "ウェブ日報"), # web新聞社
+        ("apart", "アパート"),
         ("thesite", "事件現場"),
         ("town", "糸川町"),
         ("theater", "小劇場"),
@@ -78,6 +82,7 @@ ITEMS = (
         ("na_sugioka", "杉岡"),
         ("na_takamori", "高森"),
         ("na_miki", "根屋"),
+        ("na_coworker", "仙石"),
         )
 
 INFOS = (
