@@ -3,7 +3,7 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.golden.story import world, story
+from src.golden.story import world, story, ep_intro, ep_unfortune, ep_decision
 from src.golden.config import THEMES
 
 
@@ -19,6 +19,9 @@ class StoryTest(unittest.TestCase):
     def setUp(self):
         self.w = world()
         self.story = story(self.w)
+        self.ep1 = ep_intro(self.w)
+        self.ep2 = ep_unfortune(self.w)
+        self.ep3 = ep_decision(self.w)
 
     def test_is_all_actions(self):
         self.assertTrue(utl.is_all_actions_in(self.story))
@@ -30,6 +33,9 @@ class StoryTest(unittest.TestCase):
         utl.exists_basic_infos_by_data(self,
                 [
                     ("story", self.story, self.w.fukuo, self.w.hiroko),
+                    ("ep1", self.ep1, self.w.fukuo ,self.w.hiroko),
+                    ("ep2", self.ep2, self.w.fukuo ,self.w.hiroko),
+                    ("ep3", self.ep3, self.w.fukuo ,self.w.hiroko),
                 ])
 
     def test_has_outline_infos(self):
@@ -41,6 +47,24 @@ class StoryTest(unittest.TestCase):
                         w.kana.be(w.i.goldsyndrome),
                         w.fukuo.deal(w.fund),
                         w.fukuo.think(w.kanacell),
+                        True),
+                    ("ep1", self.ep1,
+                        w.fukuo.deal("guard", w.kana),
+                        w.kana.be(w.i.goldsyndrome),
+                        w.fukuo.deal(w.kana, "預ける", w.stage.labo),
+                        w.kana.deal("奪われる", w.kanacell),
+                        True),
+                    ("ep2", self.ep2,
+                        w.fukuo.think(w.kana, "guard"),
+                        w.kana.deal(w.kanacell, "奪われる"),
+                        w.fukuo.be(w.kana, w.stage.home, "匿う"),
+                        w.hiroko.be(w.i.neurosis),
+                        True),
+                    ("ep3", self.ep3,
+                        w.fukuo.do("stop", w.hiroko),
+                        w.hiroko.think(w.i.killkana),
+                        w.fukuo.deal(w.hiroko, w.i.golden),
+                        w.fukuo.deal(w.kana, w.i.god),
                         True),
                 ])
 
