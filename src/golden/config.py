@@ -10,18 +10,25 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("kana", "吹尾香奈恵", 18, "female", "患者", "me:わたし"),
-        ("fukuo", "吹尾清二郎", 40, "male", "技師", "me:僕"),
-        ("hiroko", "吹尾博子", 39, "female", "研究助手", "me:私"),
+        ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし"),
+        ("fukuo", "吹尾,清二郎", 40, "male", "技師", "me:僕"),
+        ("hiroko", "吹尾,博子", 39, "female", "研究助手", "me:私"),
         # sub
-        ("doc", "黒鉄章介", 55, "male", "研究者", "me:私"),
+        ("doc", "黒鉄,章介", 55, "male", "研究者", "me:私"),
         # mob
+        ("medic1", "医師", 49, "male", "内科医"),
+        ("medic2", "医師", 45, "male", "内科医"),
         )
 
 STAGES = (
         # Area
+        ("niigata", "新潟"),
+        ("sado", "佐渡"),
         # Place
         ("home", "吹尾家"),
+        ("kanaroom", "香奈恵の部屋"),
+        ("hospital", "地元病院"),
+        ("univhospital", "大学病院"),
         ("labo", "研究所"),
         )
 
