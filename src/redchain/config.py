@@ -9,38 +9,38 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("masuda", "枡田延彦", 29, "male", "記者",
+        ("masuda", "枡田,延彦", 29, "male", "記者",
             "me:俺:my:私:sugisan:杉岡さん:chief:チーフ:nametaka:高森:neya:根屋さん:namehide:秀子"),
-        ("hideko", "紅崎秀子", 50, "female", "主婦", "me:私"),
-        ("benio", "紅緒", 19, "female", "無職", "me:ワタシ"),
-        ("doc", "室笠仙三", 79, "male", "医者", "me:儂"),
-        ("priest", "左海青州", 58, "male", "住職", "me:私"),
+        ("hideko", "紅崎,秀子", 50, "female", "主婦", "me:私"),
+        ("benio", "紅崎,紅緒", 19, "female", "無職", "me:ワタシ"),
+        ("doc", "室笠,仙三", 79, "male", "医者", "me:儂"),
+        ("priest", "左海,青州", 58, "male", "住職", "me:私"),
         # office
-        ("tanabe", "田辺厚司", 48, "male", "上司", "me:おれ:masu:枡田"),
-        ("miki", "根屋美希", 30, "female", "事務", "me:わたし:masu:枡田君"),
+        ("tanabe", "田辺,厚司", 48, "male", "上司", "me:おれ:masu:枡田"),
+        ("miki", "根屋,美希", 30, "female", "事務", "me:わたし:masu:枡田君"),
         # town
-        ("hino", "日野勝子", 45, "female", "役場職員", "me:わたし"),
-        ("takamori", "高森信幸", 30, "male", "警官", "me:オレ:masu:枡やん"),
-        ("sugioka", "杉岡卓馬", 36, "male", "新聞記者", "me:僕"),
+        ("hino", "日野,勝子", 45, "female", "役場職員", "me:わたし"),
+        ("takamori", "高森,信幸", 30, "male", "警官", "me:オレ:masu:枡やん"),
+        ("sugioka", "杉岡,卓馬", 36, "male", "新聞記者", "me:僕"),
         ("policechief", "警察署長", 55, "male", "警察署長"),
         # relations
-        ("shoko", "三枝祥子", 54, "female", "女優", "me:あたし"),
-        ("manager", "園原謙太", 72, "male", "芸能事務所社長", "me:僕:namehide:秀子"),
-        ("coworker", "仙石洋輔", 64, "male", "劇団座長", "me:オレ:hidesan:秀さん:yui:お凜"),
-        ("actoress", "由比ヶ浜凜", 55, "female", "劇団員", "me:アタシ"),
-        ("cafemaster", "笹野聖美", 58, "female", "喫茶店店長", "me:わたし"),
-        ("shopowner", "伊勢谷豊", 61, "male", "ビデオ店店長", "me:私:beni:紅"),
+        ("shoko", "三枝,祥子", 54, "female", "女優", "me:あたし"),
+        ("manager", "園原,謙太", 72, "male", "芸能事務所社長", "me:僕:namehide:秀子"),
+        ("coworker", "仙石,洋輔", 64, "male", "劇団座長", "me:オレ:hidesan:秀さん:yui:お凜"),
+        ("actoress", "由比ヶ浜,凜", 55, "female", "劇団員", "me:アタシ"),
+        ("cafemaster", "笹野,聖美", 58, "female", "喫茶店店長", "me:わたし"),
+        ("shopowner", "伊勢谷,豊", 61, "male", "ビデオ店店長", "me:私:beni:紅"),
         # family
-        ("mam", "枡田百合枝", 57, "female", "農家", "me:あたし"),
-        ("dad", "枡田武彦", 60, "male", "農家", "me:おれ"),
+        ("mam", "枡田,百合枝", 57, "female", "農家", "me:あたし"),
+        ("dad", "枡田,武彦", 60, "male", "農家", "me:おれ"),
         # hideko history
-        ("h_idol", "光咲紅", 17, "female", "アイドル", "me:ベニ:my:わたし"),
-        ("h_actor", "紅崎秀子", 30, "female", "女優", "me:私"),
-        ("h_later", "原崎秀子", 50, "female", "主婦", "me:ワタシ"),
+        ("h_idol", "光咲,紅", 17, "female", "アイドル", "me:ベニ:my:わたし"),
+        ("h_actor", "紅崎,秀子", 30, "female", "女優", "me:私"),
+        ("h_later", "原崎,秀子", 50, "female", "主婦", "me:ワタシ"),
         # mob
-        ("woman1", "山本静江", 48, "female", "野次馬", "me:あたし:masuda:あんた"),
-        ("woman2", "江森典代", 46, "female", "野次馬", "me:わたし"),
-        ("man1", "山根太蔵", 48, "male", "会社員", "me:僕"),
+        ("woman1", "山本,静江", 48, "female", "野次馬", "me:あたし:masuda:あんた"),
+        ("woman2", "江森,典代", 46, "female", "野次馬", "me:わたし"),
+        ("man1", "山根,太蔵", 48, "male", "会社員", "me:僕"),
         )
 
 STAGES = (
