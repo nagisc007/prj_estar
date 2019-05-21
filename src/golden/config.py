@@ -15,6 +15,7 @@ CHARAS = (
         ("hiroko", "吹尾,博子", 39, "female", "研究助手", "me:私"),
         # sub
         ("doc", "黒鉄,章介", 55, "male", "研究者", "me:私"),
+        ("believer", "正木,爽秋", 49, "male", "宗教家", "me:私"),
         # mob
         ("medic1", "医師", 49, "male", "内科医"),
         ("medic2", "医師", 45, "male", "内科医"),
@@ -51,10 +52,12 @@ INFOS = (
         ("golden", "黄金化"),
         ("neurosis", "ノイローゼ"),
         ("heal", "治療"),
+        ("gatherfund", "資金集め"),
         )
 
 FLAGS = (
         )
 
 THEMES = {
+        "means": "黄金の意味",
         }

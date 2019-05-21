@@ -8,12 +8,19 @@ sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
 from src.golden import config as cnf
+THM = cnf.THEMES
 
 
 # episodes
 def ep_intro(w: wd.World):
     f, hiroko, kana, doc = w.fukuo, w.hiroko, w.kana, w.doc
     scenes = [
+            w.scene("宗教の誘い",
+                f.be("tv見ていた", w.stage.home),
+                hiroko.deal("応対", w.believer),
+                f.ask("何だった？"),
+                hiroko.reply("宗教"),
+                ),
             w.scene("黄金になる娘",
                 kana.be(w.i.goldsyndrome, w.stage.home, w.day.current),
                 f.deal("guard", kana),
@@ -22,12 +29,14 @@ def ep_intro(w: wd.World):
                 kana.talk("きれい"),
                 f.talk(hiroko),
                 ),
-            w.scene("黄金化症候群",
+            w.scene("謎の病",
                 f.go(w.stage.hospital),
                 kana.deal("診察"),
                 w.medic1.talk("大きな病院で診てもらった方が"),
                 f.go(w.stage.univhospital),
                 w.medic2.talk("専門の機関を紹介"),
+                ),
+            w.scene("黄金化症候群",
                 f.go(w.stage.labo),
                 doc.talk(f, "黄金化症候群"),
                 f.know("不治の病"),
@@ -52,18 +61,36 @@ def ep_intro(w: wd.World):
 
 
 def ep_unfortune(w: wd.World):
-    f, hiroko, kana = w.fukuo, w.hiroko, w.kana
+    f, hiroko, kana, doc = w.fukuo, w.hiroko, w.kana, w.doc
     scenes = [
-            w.scene("奪われる黄金細胞",
+            w.scene("研究対象",
+                f.meet(kana),
+                f.hear(doc, "容態"),
+                f.be("娘の状態が安定していると聞いて安心して帰る"),
                 ),
-            w.scene("研究される娘",
+            w.scene("奪われる黄金細胞",
+                f.be("穏やかな日々"),
+                hiroko.talk("娘のこと", "今後のこと"),
+                f.come(w.stage.home, w.day.case1),
+                f.know("tv", "研究所に強盗"),
+                f.deal(doc, "大丈夫か確認"),
+                ),
+            w.scene("有名になる娘",
                 f.look("tv", "取り上げられる"),
                 f.think(kana, "guard"),
+                f.go(w.stage.labo),
+                f.ask(doc, "どういうつもりだ"),
+                doc.reply("研究費用を集める為"),
+                doc.explain(f, w.i.gatherfund),
+                ),
+            w.scene("細胞の強奪",
                 kana.deal(w.kanacell, "奪われる"),
-                ),
-            w.scene("有名になる",
-                ),
-            w.scene("更なる強奪",
+                f.know("強奪"),
+                w.tag.comment("本当は横流ししている"),
+                f.come(w.stage.labo),
+                f.look(kana),
+                kana.be("ボロボロの皮膚"),
+                kana.talk("痛いよ"),
                 ),
             w.scene("家に引き取る",
                 f.be(kana, w.stage.home, "匿う"),
@@ -73,9 +100,17 @@ def ep_unfortune(w: wd.World):
                 f.be("睡眠不足"),
                 kana.deal("奪われる", w.kanacell),
                 ),
+            w.scene("広がる黄金人間",
+                w.tag.comment("ある程度分裂を終えると採取した黄金細胞はがん細胞になる"),
+                kana.deal("誘拐される"),
+                f.do("拘束銃で確保"),
+                f.deal("防犯と戦闘整備"),
+                ),
             w.scene("限界点",
                 hiroko.talk(f, "もう限界"),
                 hiroko.be(w.i.neurosis),
+                f.think("どうすべきか"),
+                f.look(kana),
                 ),
             ]
     return [w.chaptertitle("不幸の始まり"),
@@ -86,11 +121,17 @@ def ep_unfortune(w: wd.World):
 def ep_decision(w: wd.World):
     f, hiroko, kana = w.fukuo, w.hiroko, w.kana
     scenes = [
+            # TODO: 博士たちが裏で研究資金を集める為横流ししていたことの提示
             w.scene("決断",
                 f.think(w.kanacell, "資金集めに使う"),
                 hiroko.think(w.i.killkana),
                 f.do("stop", hiroko),
                 f.deal(hiroko, w.i.golden),
+                ),
+            w.scene("香奈恵の気持ち",
+                # TODO
+                f.know(THM["means"]),
+                w.tag.comment("香奈恵が本当に望んでいたことを提示"),
                 ),
             w.scene("そして神が生まれた",
                 f.deal("案内", w.stage.home, w.day.goddess),
