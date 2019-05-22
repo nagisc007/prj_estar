@@ -107,6 +107,8 @@ def ep_unfortune(w: wd.World):
                 f.deal("防犯と戦闘整備"),
                 ),
             w.scene("限界点",
+                f.look("博士たち逮捕"),
+                f.know("博士たちが横流ししていた"),
                 hiroko.talk(f, "もう限界"),
                 hiroko.be(w.i.neurosis),
                 f.think("どうすべきか"),
@@ -119,19 +121,40 @@ def ep_unfortune(w: wd.World):
 
 
 def ep_decision(w: wd.World):
-    f, hiroko, kana = w.fukuo, w.hiroko, w.kana
+    f, hiroko, kana, suzuno = w.fukuo, w.hiroko, w.kana, w.suzuno
     scenes = [
-            # TODO: 博士たちが裏で研究資金を集める為横流ししていたことの提示
-            w.scene("決断",
+            w.scene("迷い",
+                f.be("資金不足"),
+                hiroko.talk(f, "自分たちだけじゃ無理"),
+                suzuno.come(w.stage.home),
+                suzuno.talk("自分が助ける"),
+                suzuno.deal("米国の機関を紹介する"),
+                hiroko.deal("賛成"),
+                f.talk("反対"),
                 f.think(w.kanacell, "資金集めに使う"),
                 hiroko.think(w.i.killkana),
                 f.do("stop", hiroko),
                 f.deal(hiroko, w.i.golden),
                 ),
+            w.scene("暴走",
+                f.look("香奈恵がいない"),
+                f.know(hiroko, "研究機関に明け渡す"),
+                f.deal(kana, "取り返す"),
+                suzuno.deal("謝罪"),
+                suzuno.behav("泣く"),
+                f.behav(suzuno, "慰める"),
+                f.hear("物音"),
+                f.go(w.stage.kanaroom),
+                f.deal(hiroko, "stop"),
+                hiroko.talk("この子が全部悪いの"),
+                ),
             w.scene("香奈恵の気持ち",
-                # TODO
                 f.know(THM["means"]),
                 w.tag.comment("香奈恵が本当に望んでいたことを提示"),
+                kana.talk("ごめんなさい"),
+                hiroko.behav("泣く"),
+                hiroko.be("黄金化"),
+                f.think("病じゃない"),
                 ),
             w.scene("そして神が生まれた",
                 f.deal("案内", w.stage.home, w.day.goddess),

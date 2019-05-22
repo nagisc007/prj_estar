@@ -11,10 +11,11 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし"),
-        ("fukuo", "吹尾,清二郎", 40, "male", "技師", "me:僕"),
+        ("fukuo", "吹尾,清二郎", 42, "male", "技師", "me:僕"),
         ("hiroko", "吹尾,博子", 39, "female", "研究助手", "me:私"),
         # sub
         ("doc", "黒鉄,章介", 55, "male", "研究者", "me:私"),
+        ("suzuno", "厚木,鈴乃", 42, "female", "研究助手", "me:私"),
         ("believer", "正木,爽秋", 49, "male", "宗教家", "me:私"),
         # mob
         ("medic1", "医師", 49, "male", "内科医"),
