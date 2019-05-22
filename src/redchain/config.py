@@ -24,9 +24,9 @@ CHARAS = (
         ("sugioka", "杉岡,卓馬", 36, "male", "新聞記者", "me:僕"),
         ("policechief", "警察署長", 55, "male", "警察署長"),
         # relations
-        ("shoko", "三枝,祥子", 54, "female", "女優", "me:あたし"),
+        ("shoko", "三枝,祥子", 54, "female", "女優", "me:あたし:coworker:仙ちゃん"),
         ("manager", "園原,謙太", 72, "male", "芸能事務所社長", "me:僕:namehide:秀子"),
-        ("coworker", "仙石,洋輔", 64, "male", "劇団座長", "me:オレ:hidesan:秀さん:yui:お凜:hideko:秀さん"),
+        ("coworker", "仙石,洋輔", 64, "male", "劇団座長", "me:オレ:hidesan:秀さん:yui:お凜:hideko:秀さん:shoko:お祥"),
         ("actoress", "由比ヶ浜,凜", 55, "female", "劇団員", "me:アタシ"),
         ("cafemaster", "笹野,聖美", 58, "female", "喫茶店店長", "me:わたし"),
         ("shopowner", "伊勢谷,豊", 61, "male", "ビデオ店店長", "me:私:beni:紅"),
