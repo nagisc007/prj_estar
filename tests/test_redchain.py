@@ -3,7 +3,12 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.redchain.story import world, story, ep_intro, ep_idolyears, ep_actoryears, ep_lateyears, ep_truth
+from src.redchain.story import world, story
+from src.redchain.chapter01 import story as ep_intro
+from src.redchain.chapter02 import story as ep_actoryears
+from src.redchain.chapter03 import story as ep_idolyears
+from src.redchain.chapter04 import story as ep_lateyears
+from src.redchain.chapter05 import story as ep_truth
 from src.redchain.config import THEMES
 
 
