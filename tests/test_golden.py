@@ -46,7 +46,7 @@ class StoryTest(unittest.TestCase):
                         w.fukuo.deal("guard", w.kana),
                         w.kana.be(w.i.goldsyndrome),
                         w.fukuo.deal(w.fund),
-                        w.fukuo.think(w.kanacell),
+                        w.fukuo.deal(w.kana, w.i.god),
                         True),
                     ("ep1", self.ep1,
                         w.fukuo.deal("guard", w.kana),
