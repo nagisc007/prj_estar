@@ -4,7 +4,7 @@
 import unittest
 from storybuilder.builder import testutils as utl
 from src.golden.story import world, story, ep_intro, ep_unfortune, ep_decision
-from src.golden.config import THEMES
+from src.golden.config import THEMES, MOTIFS
 
 
 _FILENAME = "golden.story.py"
@@ -51,8 +51,8 @@ class StoryTest(unittest.TestCase):
                     ("ep1", self.ep1,
                         w.fukuo.deal("guard", w.kana),
                         w.kana.be(w.i.goldsyndrome),
-                        w.fukuo.deal(w.kana, "預ける", w.stage.labo),
-                        w.kana.deal("奪われる", w.kanacell),
+                        w.fukuo.meet(w.stage.labo, w.doc),
+                        w.fukuo.deal(w.kana, w.stage.labo, "預ける"),
                         True),
                     ("ep2", self.ep2,
                         w.fukuo.think(w.kana, "guard"),
@@ -72,3 +72,8 @@ class StoryTest(unittest.TestCase):
         for k, v in THEMES.items():
             with self.subTest(k=k, v=v):
                 self.assertTrue(utl.has_the_keyword_in(self.story, THEMES[k]))
+
+    def test_has_motifs(self):
+        for k, v in MOTIFS.items():
+            with self.subTest(k=k, v=v):
+                self.assertTrue(utl.has_the_keyword_in_description_in(self.story, MOTIFS[k]))

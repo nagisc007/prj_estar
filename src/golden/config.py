@@ -10,16 +10,16 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし"),
-        ("fukuo", "吹尾,清二郎", 42, "male", "技師", "me:僕"),
-        ("hiroko", "吹尾,博子", 39, "female", "塾講師", "me:私"),
+        ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし:dad:お父さん:mam:お母さん"),
+        ("fukuo", "吹尾,清二郎", 42, "male", "技師", "me:僕:H:吹尾"),
+        ("hiroko", "吹尾,博子", 39, "female", "塾講師", "me:私:fukuo:あなた"),
         # sub
         ("doc", "黒鉄,章介", 55, "male", "研究者", "me:私"),
         ("suzuno", "厚木,鈴乃", 42, "female", "研究助手", "me:私"),
         ("believer", "正木,爽秋", 49, "male", "宗教家", "me:私"),
         # mob
         ("medic1", "医師", 49, "male", "内科医"),
-        ("medic2", "医師", 45, "male", "内科医"),
+        ("medic2", "医師", 45, "male", "内科医", "me:私"),
         )
 
 STAGES = (
@@ -30,10 +30,10 @@ STAGES = (
         ("home", "吹尾家"),
         ("hospital", "地元病院"),
         ("univhospital", "大学病院"),
-        ("labo", "研究所"),
+        ("labo", "遺伝子医学研究センター"),
         # Part
         ("kanaroom", "香奈恵の部屋"),
-        ("hirokoroom", "博子の部屋"),
+        ("hirokoroom", "博子　の部屋"),
         ("docroom", "博士の研究室"),
         )
 
@@ -74,4 +74,8 @@ THEMES = {
         "means": "黄金の意味",
         "money": "お金の問題",
         "relation": "金による人間関係の崩壊",
+        }
+
+MOTIFS = {
+        "gold": "金",
         }
