@@ -10,7 +10,7 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし:dad:お父さん:mam:お母さん"),
+        ("kana", "吹尾,香奈恵", 18, "female", "患者", "me:わたし:dad:お父さん:mam:お母さん:suzuno:鈴乃さん"),
         ("fukuo", "吹尾,清二郎", 42, "male", "技師", "me:僕:H:吹尾"),
         ("hiroko", "吹尾,博子", 39, "female", "塾講師", "me:私:fukuo:あなた"),
         # sub
@@ -38,7 +38,8 @@ STAGES = (
         )
 
 DAYS = (
-        ("current", "現在"),
+        ("current", "現在", 6,23, 2019),
+        ("hospitalize", "研究所入院", 7,5, 2019),
         ("case1", "最初の事件日"),
         ("takehome", "連れ帰った日"),
         ("goddess", "女神になった日"),
