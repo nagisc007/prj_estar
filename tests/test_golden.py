@@ -57,7 +57,7 @@ class StoryTest(unittest.TestCase):
                     ("ep2", self.ep2,
                         w.fukuo.think(w.kana, "guard"),
                         w.kana.deal(w.kanacell, "奪われる"),
-                        w.fukuo.be(w.kana, w.stage.home, "匿う"),
+                        w.fukuo.go(w.stage.labo),
                         w.hiroko.be(w.i.neurosis),
                         True),
                     ("ep3", self.ep3,
