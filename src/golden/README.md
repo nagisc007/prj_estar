@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.5.- | 2019.5.15 | Fantasy, Human | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「金」](https://estar.jp/official_contests/159346) |
+| v0.1.0 | Released | 2019.5.26 | 2019.5.26 | Fantasy, Human | 8K | [エブリスタ](https://estar.jp/novels/25485733) | [妄想コンテスト「金」](https://estar.jp/official_contests/159346) |
 
 **「彼女が不幸の元凶なのか」**
 

@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Project: I and I
-- Project: golden girl
 - Project: the red-chain
+
+## [0.0.7] - 2019-05-26
+### Added
+- Project: golden girl
+### Changed
+- Updated: storybuilder (keyword check)
 
 ## [0.0.6] - 2019-05-13
 ### Added
@@ -54,7 +59,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.7...HEAD
+[0.0.7]: https://github.com/nagisc007/prj_estar/releases/v0.0.7
 [0.0.6]: https://github.com/nagisc007/prj_estar/releases/v0.0.6
 [0.0.5]: https://github.com/nagisc007/prj_estar/releases/v0.0.5
 [0.0.4]: https://github.com/nagisc007/prj_estar/releases/v0.0.4
