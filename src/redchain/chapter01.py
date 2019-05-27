@@ -12,6 +12,7 @@ THM = cnf.THEMES
 
 
 # scenes
+# TODO: 仕事を続けるかどうかについて悩んでいたと明示しておく
 
 
 # episodes
