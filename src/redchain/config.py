@@ -20,9 +20,11 @@ CHARAS = (
         # town
         ("hino", "日野,勝子", 45, "female", "役場職員", "me:わたし"),
         ("takamori", "高森,信幸", 30, "male", "警官", "me:オレ:masu:枡やん"),
-        ("sugioka", "杉岡,卓馬", 36, "male", "新聞記者", "me:僕"),
+        ("sugioka", "杉岡,卓馬", 36, "male", "新聞記者", "me:僕:masuda:枡田君"),
         ("policechief", "警察署長", 55, "male", "警察署長"),
-        ("priest", "左海,青州", 58, "male", "住職", "me:私"),
+        ("priest", "左海,青州", 58, "male", "住職", "me:僕"),
+        ("priwife", "左海,水絵", 59, "female", "住職の妻", "me:わたし"),
+        ("okumura", "奥村,健作", 54, "male", "社会部デスク", "me:俺"),
         # relations
         ("shoko", "三枝,祥子", 54, "female", "女優", "me:あたし:coworker:仙ちゃん"),
         ("manager", "園原,謙太", 72, "male", "芸能事務所社長", "me:僕:namehide:秀子"),
@@ -32,9 +34,10 @@ CHARAS = (
         ("shopowner", "伊勢谷,豊", 61, "male", "ビデオ店店長", "me:私:beni:紅"),
         ("husband", "原崎,正彦", 30, "male", "運送業", "me:僕",
             "秀子の内縁の夫。二十年前に死去"),
+        ("saipriest", "宮本,泉源", 41, "male", "住職", "me:私"),
         # family
         ("mam", "枡田,百合枝", 57, "female", "農家", "me:あたし"),
-        ("dad", "枡田,武彦", 60, "male", "農家", "me:おれ"),
+        ("dad", "枡田,武彦", 58, "male", "農家", "me:おれ"),
         # hideko history
         ("h_idol", "光咲,紅", 17, "female", "アイドル", "me:ベニ:my:わたし"),
         ("h_actor", "紅崎,秀子", 30, "female", "女優", "me:私"),
@@ -57,14 +60,15 @@ STAGES = (
         ("town", "糸川町"),
         ("theater", "小劇場"),
         ("idoloffice", "芸能事務所"),
-        ("medicals", "診療院"),
+        ("medicals", "室笠医院"),
         ("policestation", "警察署"),
         ("townoffice", "町役場"),
-        ("temple", "寺院"),
+        ("temple", "常縁寺"),
         ("bar", "居酒屋"),
         ("cafe", "喫茶店"),
         ("starcafe", "スタア珈琲"),
         ("snack", "スナック"),
+        ("saitamatemple", "西妙寺"),
         # Rides
         ("car", "車"),
         ("train", "電車"),
