@@ -8,27 +8,15 @@ sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
 from src.mymine import config as cnf
+from src.mymine import chapter01 as chap1
+from src.mymine import chapter02 as chap2
+from src.mymine import chapter03 as chap3
+from src.mymine import chapter04 as chap4
+from src.mymine import chapter05 as chap5
 THM = cnf.THEMES
 
 
 # episodes
-def ep_intro(w: wd.World):
-    k = w.kyoko
-    return [w.chaptertitle("そして彼に出会った"),
-            k.be(w.stage.univ, w.day.current),
-            k.look(w.another),
-            k.think(THM["problem"]),
-            k.meet(w.shota),
-            ]
-
-
-def ep_parting(w: wd.World):
-    k = w.kyoko
-    return [w.chaptertitle("お別れという卒業"),
-            k.deal("vanish", w.shota),
-            ]
-
-
 # main
 def world():
     w = wd.World("I am my mine")
@@ -38,8 +26,11 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("わたしとワタシと私"),
-            ep_intro(w),
-            ep_parting(w),
+            chap1.story(w),
+            chap2.story(w),
+            chap3.story(w),
+            chap4.story(w),
+            chap5.story(w),
             )
 
 

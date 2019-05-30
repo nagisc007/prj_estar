@@ -30,16 +30,21 @@ STAGES = (
         ("univ", "大学"),
         ("apart", "アパート"),
         ("manshion", "マンション"),
+        # Part
+        ("living", "リビング"),
         )
 
 DAYS = (
+        # main
         ("childhood", "幼少期"),
         ("current", "現在"),
         ("married", "結婚した未来"),
+        # sub
         )
 
 ITEMS = (
         ("another", "もう一人の自分"),
+        ("circle", "サークル"),
         )
 
 INFOS = (
@@ -50,4 +55,7 @@ FLAGS = (
 
 THEMES = {
         "problem": "自分の分身をどうにかする",
+        }
+
+MOTIFS = {
         }
