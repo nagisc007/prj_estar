@@ -9,6 +9,7 @@ from src.redchain.chapter02 import story as ep_actoryears
 from src.redchain.chapter03 import story as ep_idolyears
 from src.redchain.chapter04 import story as ep_lateyears
 from src.redchain.chapter05 import story as ep_truth
+from src.redchain import chapter06 as chap6
 from src.redchain.config import THEMES
 
 
@@ -29,6 +30,7 @@ class StoryTest(unittest.TestCase):
         self.ep3 = ep_idolyears(self.w)
         self.ep4 = ep_lateyears(self.w)
         self.ep5 = ep_truth(self.w)
+        self.ep6 = chap6.story(self.w)
 
     def test_is_all_actions(self):
         self.assertTrue(utl.is_all_actions_in(self.story))
@@ -45,6 +47,7 @@ class StoryTest(unittest.TestCase):
                     ("ep3", self.ep3, self.w.masuda, self.w.h_idol),
                     ("ep4", self.ep4, self.w.masuda, self.w.h_later),
                     ("ep5", self.ep5, self.w.masuda, self.w.benio),
+                    ("ep6", self.ep6, self.w.masuda, self.w.hideko),
                 ])
 
     def test_has_outline_infos(self):
@@ -86,6 +89,12 @@ class StoryTest(unittest.TestCase):
                         w.masuda.know(w.doc),
                         w.masuda.talk(w.doc, w.i.doc_secret),
                         w.masuda.know(w.anotherbody, w.benio),
+                        True),
+                    ("ep6", self.ep6,
+                        w.masuda.think(w.hideko, w.i.her_reason),
+                        w.masuda.hear(w.movie, "舞台はこの町"),
+                        w.masuda.look(w.stage.thesite),
+                        w.masuda.think("仕事を続ける"),
                         True),
                 ])
 

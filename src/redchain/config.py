@@ -43,6 +43,7 @@ CHARAS = (
         ("h_actor", "紅崎,秀子", 30, "female", "女優", "me:私"),
         ("h_later", "原崎,秀子", 50, "female", "主婦", "me:ワタシ"),
         # mob
+        ("actor", "堀内,裕一郎", 65, "male", "俳優", "me:僕"),
         ("woman1", "山本,静江", 48, "female", "野次馬", "me:あたし:masuda:あんた"),
         ("woman2", "江森,典代", 46, "female", "野次馬", "me:わたし"),
         ("man1", "山根,太蔵", 48, "male", "会社員", "me:僕"),
@@ -117,6 +118,7 @@ INFOS = (
         ("deal_deads", "遺体の扱い"),
         ("fox", "黒髪の女狐"),
         ("idolname", "レインボースターズ"),
+        ("her_reason", "秀子が町にきた理由"),
         )
 
 FLAGS = (
