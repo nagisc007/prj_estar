@@ -26,6 +26,7 @@ STAGES = (
         ("tokyo", "旧東京"),
         ("kofu", "旧甲府"),
         # Place
+        ("ruintown", "町"),
         ("tower", "鉄塔"),
         ("home", "家"),
         # Part
@@ -42,13 +43,20 @@ ITEMS = (
         )
 
 INFOS = (
+        # main
+        ("suicide", "自殺しようとしたこと"),
+        # sub
+        ("broadcast", "生存放送"),
+        ("george_gone", "条志の行方"),
         )
 
 FLAGS = (
         )
 
 THEMES = {
+        "alive": "生きること",
         }
 
 MOTIFS = {
+        "report": "報告",
         }
