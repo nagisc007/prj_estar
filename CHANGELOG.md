@@ -8,7 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Project: Today I've lived
 - Project: I and I
+
+## [0.0.8] - 2019-06-01
+### Added
 - Project: the red-chain
+- Production: the red-chain
+### Fixed
+- Updated: storybuilder (empty title bug)
 
 ## [0.0.7] - 2019-05-26
 ### Added
@@ -60,7 +66,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.7...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/nagisc007/prj_estar/releases/v0.0.8
 [0.0.7]: https://github.com/nagisc007/prj_estar/releases/v0.0.7
 [0.0.6]: https://github.com/nagisc007/prj_estar/releases/v0.0.6
 [0.0.5]: https://github.com/nagisc007/prj_estar/releases/v0.0.5

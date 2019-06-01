@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.5.- | 2019.5.13 | Human, Mystery | 30K | [エブリスタ](https://estar.jp/) | [執筆応援キャンペーン「犯罪／サイコ／サスペンス」](https://estar.jp/official_contests/159257) |
+| v0.4.0 | Develop | 2019.5.31 | 2019.6.1 | Human, Mystery | 45K | [エブリスタ](https://estar.jp/novels/25483030) | [執筆応援キャンペーン「犯罪／サイコ／サスペンス」](https://estar.jp/official_contests/159257) |
 
 **「その繋がりの先に、悲しい真実を見ないように」**
 
@@ -23,7 +23,7 @@
 
 ## Stages
 
-- 糸川市……北陸の小さな町
+- 糸川町……北陸の小さな町
 
 ## License
 
