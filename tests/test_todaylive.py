@@ -3,7 +3,7 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.todaylive.story import world, story
+from src.todaylive.story import world, story, story_outline, episode_outlines
 from src.todaylive.config import THEMES, MOTIFS
 
 
@@ -35,14 +35,7 @@ class StoryTest(unittest.TestCase):
     def test_has_outline_infos(self):
         w = self.w
         utl.exists_outline_infos_by_data(self,
-                [
-                    ("story", self.story,
-                        w.ito.think("彼に会いたい"),
-                        w.ito.hear(w.i.broadcast),
-                        w.ito.go(w.stage.tower),
-                        w.ito.know(w.i.george_gone),
-                        True),
-                ])
+                story_outline(w) + episode_outlines(w))
 
     def test_has_themes(self):
         for k, v in THEMES.items():
