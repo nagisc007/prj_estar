@@ -12,7 +12,7 @@ CHARAS = (
         # main
         ("ito", "蔦貝,糸", 17, "female", "学生", "me:わたし"),
         ("shima", "島,航大", 25, "male", "技師", "me:俺"),
-        ("george", "島,条志", 30, "male", "技師", "me:僕"),
+        ("george", "大垣,条志", 30, "male", "技師", "me:僕"),
         # sub
         ("miyuki", "蔦貝,美幸", 25, "female", "研究者", "me:私"),
         # family
@@ -21,6 +21,7 @@ CHARAS = (
         ("mam", "蔦貝,母", 40, "female", "母親", "me:私", "災害で亡くなった"),
         ("dad", "蔦貝,父", 50, "male", "父親", "me:僕", "災害で亡くなった"),
         # mob
+        ("man1", "野麦,太輔", 38, "male", "漁師", "me:オレ"),
         )
 
 STAGES = (
@@ -29,6 +30,7 @@ STAGES = (
         ("kofu", "旧甲府"),
         # Place
         ("ruintown", "町"),
+        ("city", "荒廃した都内"),
         ("tower", "鉄塔"),
         ("home", "家"),
         ("barrack", "バラック"),
@@ -49,6 +51,7 @@ ITEMS = (
         # main
         ("mybag", "伯父の登山用リュック"),
         ("broadbox", "放送設備"),
+        ("portableradio", "ポータブルラジオ"),
         # sub
         )
 
