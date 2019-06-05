@@ -71,10 +71,10 @@ class StoryTest(unittest.TestCase):
                         True),
                     # chapter 02
                     ("chapter2", self.ch2,
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
+                        w.kyoko.think(w.shota, "知りたい"),
+                        w.shota.look(w.another),
+                        w.kyoko.deal("一緒に暮らす"),
+                        w.kyoko.deal(w.shota, w.i.proposed),
                         True),
                     # chapter 03
                     ("chapter3", self.ch3,
