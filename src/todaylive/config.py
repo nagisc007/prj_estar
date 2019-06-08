@@ -10,7 +10,7 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("ito", "蔦貝,糸", 17, "female", "学生", "me:わたし:uncle:伯父さん:kito:弥生さん"),
+        ("ito", "蔦貝,糸", 17, "female", "学生", "me:わたし:uncle:伯父さん:kito:弥生さん:shima:島さん"),
         ("shima", "島,航大", 25, "male", "技師", "me:俺"),
         ("george", "大垣,条志", 30, "male", "技師", "me:僕"),
         # sub
@@ -38,6 +38,7 @@ STAGES = (
         ("barrack", "バラック"),
         # Part
         ("broadroom", "放送室"),
+        ("mainfloor", "大展望台"),
         )
 
 DAYS = (
@@ -55,6 +56,7 @@ ITEMS = (
         ("broadbox", "放送設備"),
         ("portableradio", "ポータブルラジオ"),
         # sub
+        ("hisglass", "ゴーグル"),
         )
 
 INFOS = (
