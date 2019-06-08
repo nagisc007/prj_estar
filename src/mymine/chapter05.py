@@ -21,6 +21,18 @@ def ep_parting(w: wd.World):
             k.deal("vanish", w.shota),
             ]
 
+# outline
+def base_info(w: wd.World):
+    return ("chapter5", story(w), w.kyoko, w.shota)
+
+def story_outline(w: wd.World):
+    return ("chapter5", story(w),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            True)
+
 # main
 def story(w: wd.World):
     return [w.chaptertitle("わたしとワタシ"),

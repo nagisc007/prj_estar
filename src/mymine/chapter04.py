@@ -16,6 +16,17 @@ THM = cnf.THEMES
 
 # episodes
 
+# outline
+def base_info(w: wd.World):
+    return ("chapter4", story(w), w.kyoko, w.shota)
+
+def story_outline(w: wd.World):
+    return ("chapter4", story(w),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            w.kyoko.be(),
+            True)
 
 # main
 def story(w: wd.World):

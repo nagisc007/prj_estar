@@ -3,7 +3,7 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.mymine.story import world, story
+from src.mymine.story import world, story, base_infos, outline_infos
 from src.mymine.config import THEMES, MOTIFS
 from src.mymine import chapter01 as chap1
 from src.mymine import chapter02 as chap2
@@ -37,67 +37,10 @@ class StoryTest(unittest.TestCase):
         self.assertTrue(utl.followed_all_flags_with_error_info(self, self.story))
 
     def test_has_basic_infos(self):
-        utl.exists_basic_infos_by_data(self,
-                [
-                    ("story", self.story, self.w.kyoko, self.w.shota),
-                    # chapter 01
-                    ("chapter1", self.ch1, self.w.kyoko, self.w.shota),
-                    # chapter 02
-                    ("chapter2", self.ch2, self.w.kyoko, self.w.shota),
-                    # chapter 03
-                    ("chapter3", self.ch3, self.w.kyoko, self.w.shota),
-                    # chapter 04
-                    ("chapter4", self.ch4, self.w.kyoko, self.w.shota),
-                    # chapter 05
-                    ("chapter5", self.ch5, self.w.kyoko, self.w.shota),
-                ])
+        utl.exists_basic_infos_by_data(self, base_infos(self.w))
 
     def test_has_outline_infos(self):
-        w = self.w
-        utl.exists_outline_infos_by_data(self,
-                [
-                    ("story", self.story,
-                        w.kyoko.think(THEMES["problem"]),
-                        w.kyoko.look(w.another),
-                        w.kyoko.meet(w.shota),
-                        w.kyoko.deal("vanish", w.shota),
-                        True),
-                    # chapter 01
-                    ("chapter1", self.ch1,
-                        w.kyoko.think("他人と付き合えない"),
-                        w.kyoko.look(w.another),
-                        w.kyoko.go(w.circle, "逃げ出す"),
-                        w.kyoko.meet(w.shota),
-                        True),
-                    # chapter 02
-                    ("chapter2", self.ch2,
-                        w.kyoko.think(w.shota, "知りたい"),
-                        w.shota.look(w.another),
-                        w.kyoko.deal("一緒に暮らす"),
-                        w.kyoko.deal(w.shota, w.i.proposed),
-                        True),
-                    # chapter 03
-                    ("chapter3", self.ch3,
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        True),
-                    # chapter 04
-                    ("chapter4", self.ch4,
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        True),
-                    # chapter 05
-                    ("chapter5", self.ch5,
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        w.kyoko.be(),
-                        True),
-                ])
+        utl.exists_outline_infos_by_data(self, outline_infos(self.w))
 
     def test_has_themes(self):
         for k, v in THEMES.items():

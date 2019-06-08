@@ -16,7 +16,32 @@ from src.mymine import chapter05 as chap5
 THM = cnf.THEMES
 
 
-# episodes
+# test data
+def base_infos(w: wd.World):
+    return [
+            ("story", story(w), w.kyoko, w.shota),
+            chap1.base_info(w),
+            chap2.base_info(w),
+            chap3.base_info(w),
+            chap4.base_info(w),
+            chap5.base_info(w),
+            ]
+
+def outline_infos(w: wd.World):
+    return [
+            ("story", story(w),
+                w.kyoko.think(THM["problem"]),
+                w.kyoko.look(w.another),
+                w.kyoko.meet(w.shota),
+                w.kyoko.deal("vanish", w.shota),
+                True),
+            chap1.story_outline(w),
+            chap2.story_outline(w),
+            chap3.story_outline(w),
+            chap4.story_outline(w),
+            chap5.story_outline(w),
+            ]
+
 # main
 def world():
     w = wd.World("I am my mine")

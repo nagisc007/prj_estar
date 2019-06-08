@@ -57,6 +57,17 @@ def ep_unknownboy(w: wd.World):
             sc_meetboy(w),
             )
 
+# test data
+def base_info(w: wd.World):
+    return ("chapter1", story(w), w.kyoko, w.shota)
+
+def story_outline(w: wd.World):
+    return ("chapter1", story(w),
+            w.kyoko.think("他人と付き合えない"),
+            w.kyoko.look(w.another),
+            w.kyoko.go(w.circle, "逃げ出す"),
+            w.kyoko.meet(w.shota),
+            True)
 
 # main
 def story(w: wd.World):

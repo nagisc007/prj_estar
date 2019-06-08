@@ -30,8 +30,10 @@ STAGES = (
         ("univ", "大学"),
         ("apart", "アパート"),
         ("manshion", "マンション"),
+        ("famires", "ファミレス"),
         # Part
         ("living", "リビング"),
+        ("classroom", "教室"),
         )
 
 DAYS = (
@@ -39,6 +41,7 @@ DAYS = (
         ("childhood", "幼少期"),
         ("current", "現在"),
         ("encounter", "出会った日"),
+        ("proposed", "プロポーズされた日"),
         ("married", "結婚した未来"),
         # sub
         )
@@ -52,6 +55,9 @@ INFOS = (
         # chapter 1
         # chapter 2
         ("proposed", "プロポーズされた"),
+        # chapter 3
+        ("meeting", "自分会議"),
+        ("birth_another", "アナザー誕生"),
         )
 
 FLAGS = (

@@ -66,6 +66,18 @@ def ep_confess(w: wd.World):
             sc_hispropose(w),
             )
 
+# outline
+def base_info(w: wd.World):
+    return ("chapter2", story(w), w.kyoko, w.shota)
+
+def story_outline(w: wd.World):
+    return ("chapter2", story(w),
+            w.kyoko.think(w.shota, "知りたい"),
+            w.shota.look(w.another),
+            w.kyoko.deal("一緒に暮らす"),
+            w.kyoko.deal(w.shota, w.i.proposed),
+            True)
+
 # main
 def story(w: wd.World):
     return [w.maintitle("わたしと彼"),
