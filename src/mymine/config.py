@@ -20,6 +20,9 @@ CHARAS = (
         # family
         ("mother", "岩根,朝子", 40, "female", "パート"),
         ("father", "岩根,雪雄", 50, "male", "電気店"),
+        # family (shota)
+        ("sho_mam", "宮内,母", 45, "female", "母"),
+        ("sho_dad", "宮内,父", 52, "male", "父"),
         # anothers
         ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし"),
         ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ"),
@@ -36,6 +39,7 @@ STAGES = (
         ("manshion", "マンション"),
         ("famires", "ファミレス"),
         ("ma_apart", "松本のアパート"),
+        ("hishome", "翔太郎の実家"),
         # Part
         ("living", "リビング"),
         ("classroom", "教室"),
@@ -47,12 +51,17 @@ DAYS = (
         ("current", "現在"),
         ("encounter", "出会った日"),
         ("proposed", "プロポーズされた日"),
+        ("empty", "誰もいなくなった日"),
         ("married", "結婚した未来"),
+        ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
         # sub
         )
 
 ITEMS = (
+        # main
         ("another", "もう一人の自分"),
+        ("his_phone", "翔太郎の携帯（ガラケー）"),
+        # sub
         ("circle", "サークル"),
         )
 
@@ -65,6 +74,9 @@ INFOS = (
         ("birth_another", "アナザー誕生"),
         # chapter 4
         ("look_another", "アナザー感知人"),
+        # chapter 5
+        ("shota_truth", "翔太郎の真実"),
+        ("another_truth", "アナザーの意味"),
         )
 
 FLAGS = (
