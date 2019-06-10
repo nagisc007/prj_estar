@@ -10,7 +10,7 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         ("kyoko", "岩根,今日子", 20, "female", "大学生",
-            "me:わたし"),
+            "me:私"),
         ("shota", "宮内,翔太郎", 25, "male", "無職",
             "me:俺"),
         # univ
@@ -20,6 +20,10 @@ CHARAS = (
         # family
         ("mother", "岩根,朝子", 40, "female", "パート"),
         ("father", "岩根,雪雄", 50, "male", "電気店"),
+        # anothers
+        ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし"),
+        ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ"),
+        ("univ_kyoko", "岩根,明日子", 20, "female", "大学生", "me:私"),
         )
 
 STAGES = (
@@ -31,6 +35,7 @@ STAGES = (
         ("apart", "アパート"),
         ("manshion", "マンション"),
         ("famires", "ファミレス"),
+        ("ma_apart", "松本のアパート"),
         # Part
         ("living", "リビング"),
         ("classroom", "教室"),
@@ -58,6 +63,8 @@ INFOS = (
         # chapter 3
         ("meeting", "自分会議"),
         ("birth_another", "アナザー誕生"),
+        # chapter 4
+        ("look_another", "アナザー感知人"),
         )
 
 FLAGS = (
