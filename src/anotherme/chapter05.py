@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Story: chapter 05: I am my mine
+"""Story: chapter 05: The another me
 """
 import os
 import sys
@@ -7,7 +7,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
-from src.mymine import config as cnf
+from src.anotherme import config as cnf
 THM = cnf.THEMES
 
 
@@ -100,7 +100,7 @@ def story(w: wd.World):
 
 
 def main(): # pragma: no cover
-    from src.mymine.story import world
+    from src.anotherme.story import world
     w = world()
     return w.build(story(w))
 

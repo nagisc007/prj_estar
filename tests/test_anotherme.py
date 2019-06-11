@@ -3,23 +3,23 @@
 """
 import unittest
 from storybuilder.builder import testutils as utl
-from src.mymine.story import world, story, base_infos, outline_infos
-from src.mymine.config import THEMES, MOTIFS
-from src.mymine import chapter01 as chap1
-from src.mymine import chapter02 as chap2
-from src.mymine import chapter03 as chap3
-from src.mymine import chapter04 as chap4
-from src.mymine import chapter05 as chap5
+from src.anotherme.story import world, story, base_infos, outline_infos
+from src.anotherme.config import THEMES, MOTIFS
+from src.anotherme import chapter01 as chap1
+from src.anotherme import chapter02 as chap2
+from src.anotherme import chapter03 as chap3
+from src.anotherme import chapter04 as chap4
+from src.anotherme import chapter05 as chap5
 
 
-_FILENAME = "mymine.story.py"
+_FILENAME = "anotherme.story.py"
 
 
 class StoryTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        utl.print_test_title(_FILENAME, "my mine project")
+        utl.print_test_title(_FILENAME, "The another me project")
 
     def setUp(self):
         self.w = world()

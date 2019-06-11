@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Story: I am my mine
+"""Story: The another me project.
 """
 import os
 import sys
@@ -7,12 +7,12 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
 sys.path.append('storybuilder')
 
 from storybuilder.builder import world as wd
-from src.mymine import config as cnf
-from src.mymine import chapter01 as chap1
-from src.mymine import chapter02 as chap2
-from src.mymine import chapter03 as chap3
-from src.mymine import chapter04 as chap4
-from src.mymine import chapter05 as chap5
+from src.anotherme import config as cnf
+from src.anotherme import chapter01 as chap1
+from src.anotherme import chapter02 as chap2
+from src.anotherme import chapter03 as chap3
+from src.anotherme import chapter04 as chap4
+from src.anotherme import chapter05 as chap5
 THM = cnf.THEMES
 
 

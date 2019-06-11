@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Config: I am my mine
+"""Config: The another me
 """
 import os
 import sys

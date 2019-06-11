@@ -15,7 +15,7 @@ import test_emperor100
 import test_lv1yusha
 import test_redchain
 import test_golden
-import test_mymine
+import test_anotherme
 import test_todaylive
 
 
@@ -40,7 +40,7 @@ def suite():
         # writing cheer
         unittest.makeSuite(test_redchain.StoryTest),
         # others
-        unittest.makeSuite(test_mymine.StoryTest),
+        unittest.makeSuite(test_anotherme.StoryTest),
         ))
 
     return suite
