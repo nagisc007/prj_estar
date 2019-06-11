@@ -11,7 +11,7 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("ito", "蔦貝,糸", 17, "female", "学生", "me:わたし:uncle:伯父さん:kito:弥生さん:shima:島さん"),
-        ("shima", "島,航大", 25, "male", "技師", "me:俺"),
+        ("shima", "島,航大", 25, "male", "技師", "me:俺:geo:ジョージ"),
         ("george", "大垣,条志", 30, "male", "技師", "me:僕"),
         # sub
         ("miyuki", "蔦貝,美幸", 25, "female", "研究者", "me:私"),
@@ -67,6 +67,7 @@ INFOS = (
         ("suicide", "自殺しようとしたこと"),
         ("radio", "ラジオの放送の仕方"),
         ("myalive", "生存報告"),
+        ("hisreport", "ただ今三時。みなさん、元気ですか？　僕は今日も生きてます"),
         # sub
         ("hurted", "左腕の傷跡"),
         ("broadcast", "生存放送"),
