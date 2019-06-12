@@ -77,12 +77,14 @@ def base_info(w: wd.World):
     return ("chapter4", story(w), w.kyoko, w.matsumoto)
 
 def story_outline(w: wd.World):
-    return ("chapter4", story(w),
+    return [
+            ("chapter4", story(w),
             w.kyoko.think("自分が増えてどうするか"),
             w.kyoko.look(w.another),
             w.kyoko.deal("四人の暮らし"),
             w.kyoko.know(w.matsumoto, w.i.look_another),
-            True)
+            True),
+            ]
 
 # main
 def story(w: wd.World):

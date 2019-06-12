@@ -14,7 +14,11 @@ CHARAS = (
         ("shota", "宮内,翔太郎", 25, "male", "無職",
             "me:俺"),
         # univ
+        ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし"),
         ("matsumoto", "松本,亘", 20, "male", "大学生"),
+        # work
+        ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク"),
+        ("minori", "鈴森,実里", 45, "female", "ベテラン派遣社員", "me:私"),
         # others
         ("asumi", "金井,亜純", 19, "female", "パート"),
         # family
@@ -37,6 +41,7 @@ STAGES = (
         ("univ", "大学"),
         ("apart", "アパート"),
         ("manshion", "マンション"),
+        ("office", "パート事務所"),
         ("famires", "ファミレス"),
         ("ma_apart", "松本のアパート"),
         ("hishome", "翔太郎の実家"),
@@ -48,9 +53,9 @@ STAGES = (
 DAYS = (
         # main
         ("childhood", "幼少期"),
-        ("current", "現在"),
+        ("current", "現在", 6,20, 2019),
         ("encounter", "出会った日"),
-        ("proposed", "プロポーズされた日"),
+        ("proposed", "プロポーズされた日", 7,7, 2019),
         ("empty", "誰もいなくなった日"),
         ("married", "結婚した未来"),
         ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
@@ -62,11 +67,15 @@ ITEMS = (
         ("another", "もう一人の自分"),
         ("his_phone", "翔太郎の携帯（ガラケー）"),
         # sub
-        ("circle", "サークル"),
         )
 
 INFOS = (
         # chapter 1
+        ("relation", "人付き合い"),
+        ("circle", "サークル（ゴミ拾い）"),
+        ("vanish_another", "アナザー消したい"),
+        ("partwork", "パートの仕事"),
+        ("stalker", "ストーカーの噂"),
         # chapter 2
         ("proposed", "プロポーズされた"),
         # chapter 3

@@ -35,12 +35,11 @@ def outline_infos(w: wd.World):
                 w.kyoko.meet(w.shota),
                 w.kyoko.deal("vanish", w.shota),
                 True),
-            chap1.story_outline(w),
-            chap2.story_outline(w),
-            chap3.story_outline(w),
-            chap4.story_outline(w),
-            chap5.story_outline(w),
-            ]
+            ] + chap1.story_outline(w) \
+                    + chap2.story_outline(w) \
+                    + chap3.story_outline(w) \
+                    + chap4.story_outline(w) \
+                    + chap5.story_outline(w)
 
 # main
 def world():
