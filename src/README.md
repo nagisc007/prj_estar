@@ -6,12 +6,13 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#wc3](lostbook/READMD.md) | 彼女の本が、消えます | [執筆応援キャンペーン「本／図書館／本屋さん」](https://estar.jp/official_contests/159350) |
 | [#m102](todaylive/README.md) | 生存報告、今日も私は生きてます | [妄想コンテスト「３時」](https://estar.jp/official_contests/159354) |
 | [#hm2](anotherme/README.md) | わたしとワタシと私 | [氷室冴子青春文学賞](https://estar.jp/official_contests/159347) |
 | [#m101](golden/README.md) | 幸福の黄金少女 | [妄想コンテスト「金」](https://estar.jp/official_contests/159346) |
 | [#wc1](redchain/README.md) | 赤い繋がり | [執筆応援キャンペーン「犯罪／サイコ／サスペンス」](https://estar.jp/official_contests/159257) |
 | [#nf1](lv1yusha/README.md) | レベル１勇者の旅立ち | [次に読みたいファンタジー「旅」](https://estar.jp/official_contests/159045) |
-| [#cw1](mofu/README.md) | もふもふのきもち | [未定](https://estar.jp/) |
+| [#wc2](mofu/README.md) | もふもふのきもち | [未定](https://estar.jp/) |
 | [#m100c](emperor100/README.md) | 皇帝百代の呪（バグ） | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100b](s100b/README.md) | はじめましての百文字 | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100](s100/README.md) | 君の為に百の妄想を騙ろう | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
