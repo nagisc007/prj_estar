@@ -18,6 +18,7 @@ import test_golden
 import test_anotherme
 import test_todaylive
 import test_lostbook
+import test_umbrella
 
 
 def suite():
@@ -36,6 +37,7 @@ def suite():
         unittest.makeSuite(test_emperor100.StoryTest),
         unittest.makeSuite(test_golden.StoryTest),
         unittest.makeSuite(test_todaylive.StoryTest),
+        unittest.makeSuite(test_umbrella.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
