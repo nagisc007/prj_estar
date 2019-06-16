@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.5.- | 2019.5.27 | SF, Human | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「３時」](https://estar.jp/official_contests/159354) |
+| v0.1.1 | Released | 2019.6.12 | 2019.6.16 | SF, Human | 8K | [エブリスタ](https://estar.jp/novels/25493236) | [妄想コンテスト「３時」](https://estar.jp/official_contests/159354) |
 
 **「この声が誰かに届いている限り、私は生き続ける」**
 
@@ -24,7 +24,7 @@
 
 ## Stages
 
-- フジカワ……生き残りが暮らす集落
+- 元病院……生き残りが暮らす施設
 - 電波塔……かつて東京タワーと呼ばれていた赤い鉄塔
 
 ## License
