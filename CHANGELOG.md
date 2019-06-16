@@ -8,8 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Project: The night umbrella
 - Project: Lost her books
-- Project: Today I've lived
 - Project: I and I
+
+## [0.1.0] - 2019-06-16
+### Added
+- Production: Today I've lived
+### Fixed
+- Updated: storybuilder (emphasis)
 
 ## [0.0.8] - 2019-06-01
 ### Added
@@ -68,7 +73,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.0.8...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/nagisc007/prj_estar/releases/v0.1.0
 [0.0.8]: https://github.com/nagisc007/prj_estar/releases/v0.0.8
 [0.0.7]: https://github.com/nagisc007/prj_estar/releases/v0.0.7
 [0.0.6]: https://github.com/nagisc007/prj_estar/releases/v0.0.6
