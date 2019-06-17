@@ -24,11 +24,6 @@ class StoryTest(unittest.TestCase):
     def setUp(self):
         self.w = world()
         self.story = story(self.w)
-        self.ch1 = chap1.story(self.w)
-        self.ch2 = chap2.story(self.w)
-        self.ch3 = chap3.story(self.w)
-        self.ch4 = chap4.story(self.w)
-        self.ch5 = chap5.story(self.w)
 
     def test_is_all_actions(self):
         self.assertTrue(utl.is_all_actions_in(self.story))
@@ -43,11 +38,7 @@ class StoryTest(unittest.TestCase):
         utl.exists_outline_infos_by_data(self, outline_infos(self.w))
 
     def test_has_themes(self):
-        for k, v in THEMES.items():
-            with self.subTest(k=k, v=v):
-                self.assertTrue(utl.has_the_keyword_in(self.story, THEMES[k]))
+        utl.followed_themes(self, self.story, THEMES)
 
     def test_has_motifs(self):
-        for k, v in MOTIFS.items():
-            with self.subTest(k=k, v=v):
-                self.assertTrue(utl.has_the_keyword_in(self.story, MOTIFS[k]))
+        utl.followed_motifs(self, self.story, MOTIFS)

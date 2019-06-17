@@ -10,17 +10,21 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         ("kyoko", "岩根,今日子", 20, "female", "大学生",
-            "me:私"),
+            "me:私:sayama:幸子さん:child:きょう子:student:キョウコ"),
         ("shota", "宮内,翔太郎", 25, "male", "無職",
-            "me:俺"),
+            "me:俺:kyoko:今日子"),
         # univ
-        ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし"),
+        ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
         ("matsumoto", "松本,亘", 20, "male", "大学生"),
+        ("takamura", "高村,滋", 44, "male", "大学教員", "me:僕"),
+        ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私"),
         # work
-        ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク"),
+        ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク:kyoko:今日子ちゃん"),
         ("minori", "鈴森,実里", 45, "female", "ベテラン派遣社員", "me:私"),
         # others
         ("asumi", "金井,亜純", 19, "female", "パート"),
+        ("hotta", "堀田,優一", 50, "male", "理科教員", "me:ぼく"),
+        ("miura", "三浦,啓司", 58, "male", "精神科医", "me:私"),
         # family
         ("mother", "岩根,朝子", 40, "female", "パート"),
         ("father", "岩根,雪雄", 50, "male", "電気店"),
@@ -41,13 +45,14 @@ STAGES = (
         ("univ", "大学"),
         ("apart", "アパート"),
         ("manshion", "マンション"),
-        ("office", "パート事務所"),
+        ("office", "アクセルリンクス"),
         ("famires", "ファミレス"),
         ("ma_apart", "松本のアパート"),
         ("hishome", "翔太郎の実家"),
         # Part
         ("living", "リビング"),
         ("classroom", "教室"),
+        ("lechall", "講堂"),
         )
 
 DAYS = (
@@ -70,9 +75,13 @@ ITEMS = (
         )
 
 INFOS = (
+        # main
+        ("imagefriend", "イマジナリーフレンド"),
+        ("IF", "ＩＦ"),
         # chapter 1
         ("relation", "人付き合い"),
-        ("circle", "サークル（ゴミ拾い）"),
+        ("circle", "環境保全同好会"),
+        ("cir_name", "カンポカ"),
         ("vanish_another", "アナザー消したい"),
         ("partwork", "パートの仕事"),
         ("stalker", "ストーカーの噂"),
@@ -96,4 +105,5 @@ THEMES = {
         }
 
 MOTIFS = {
+        "imagefriend": "イマジナリーフレンド",
         }
