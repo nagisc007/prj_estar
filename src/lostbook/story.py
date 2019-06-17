@@ -17,10 +17,17 @@ THM = cnf.THEMES
 # test data
 def story_baseinfos(w: wd.World):
     return [
+            ("story", story(w), w.nako, w.saya),
             ]
 
 def story_outlines(w: wd.World):
     return [
+            ("story", story(w),
+                w.nako.think("全ての本を集める"),
+                w.nako.know(w.i.vanishshop),
+                w.nako.deal("本を集める"),
+                w.nako.go(w.saya, "彼女に会う"),
+                True),
             ]
 
 # main
@@ -32,6 +39,11 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("彼女の本が、消えます"),
+            w.nako.be(w.stage.town, w.day.current),
+            w.nako.know(w.i.vanishshop),
+            w.nako.think("全ての本を集める"),
+            w.nako.deal("本を集める"),
+            w.nako.go(w.saya, "彼女に会う"),
             )
 
 
