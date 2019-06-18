@@ -10,9 +10,9 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("nako", "朝川,奈子", 18, "female", "高校生", "me:わたし"),
-        ("saya", "葛城,沙夜", 28, "female", "作家", "me:私"),
-        ("somei", "館林,宗明", 68, "male", "本屋", "me:僕"),
+        ("nao", "朝川,那緒", 18, "female", "高校生", "me:俺"),
+        ("saya", "葛城,沙夜", 28, "female", "作家", "me:わたし"),
+        ("akiko", "館林,明子", 68, "male", "本屋", "me:私"),
         # sub
         # mob
         )
@@ -21,10 +21,10 @@ STAGES = (
         # Area
         ("tochigi", "栃木県"),
         # Place
-        ("town", "本宮町"),
+        ("town", "本宮町"),# NOTE: さくら市と那須川町をベースに
         # Part
         ("home", "朝川家"),
-        ("myroom", "奈子の部屋"),
+        ("myroom", "那緒の部屋"),
         ("school", "県立高校"),
         )
 
