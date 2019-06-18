@@ -17,10 +17,17 @@ THM = cnf.THEMES
 # test data
 def story_baseinfos(w: wd.World):
     return [
+            ("story", story(w), w.miyu, w.gentleman),
             ]
 
 def story_outlines(w: wd.World):
     return [
+            ("story", story(w),
+                w.miyu.think(w.i.myfinish),
+                w.miyu.feel(w.i.worklimit),
+                w.miyu.meet(w.gentleman),
+                w.miyu.know(w.i.meaning),
+                True),
             ]
 
 # main
@@ -32,6 +39,11 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("宵の傘"),
+            w.miyu.be(w.stage.rooftop, w.day.current),
+            w.miyu.feel(w.i.worklimit),
+            w.miyu.think(w.i.myfinish),
+            w.miyu.meet(w.gentleman),
+            w.miyu.know(w.i.meaning),
             )
 
 
