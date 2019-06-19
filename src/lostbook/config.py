@@ -22,6 +22,7 @@ STAGES = (
         ("tochigi", "栃木県"),
         # Place
         ("town", "本宮町"),# NOTE: さくら市と那須川町をベースに
+        ("bookshop", "本屋"),
         # Part
         ("home", "朝川家"),
         ("myroom", "那緒の部屋"),
@@ -43,6 +44,9 @@ INFOS = (
         # theme
         # main
         ("vanishshop", "本屋が無くなる"),
+        ("her_addr", "彼女の住所"),
+        ("her_mind", "彼女の決意"),
+        ("her_reason", "彼女の事情"),
         # sub
         )
 

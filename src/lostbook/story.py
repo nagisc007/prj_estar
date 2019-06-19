@@ -42,30 +42,54 @@ def ep_intro(w: wd.World):
     return (w.chaptertitle("本屋が無くなる町"),
             sc_myfavorite(w),
             sc_knownews(w),
+                w.nao.think("彼女の本を全部そろえたい"),
+                w.nao.think("人生を救われた"),
+                w.nao.go(w.stage.bookshop),
+                w.nao.know(w.i.vanishshop),
             )
 
 def ep_buyout(w: wd.World):
     return (w.chaptertitle("買い占めなきゃ"),
             sc_herbook(w),
+                w.nao.deal("店が潰れるまでに収集しなきゃ"),
+                w.nao.know(w.i.vanishshop),
+                w.nao.deal("本を買い集める"),
+                w.nao.know("金が足りない"),
             )
 
 def ep_working(w: wd.World):
     return (w.chaptertitle("働く日々"),
+                w.nao.deal("働く"),
+                w.nao.deal("金を貯める"),
+                w.nao.look("バイト探し"),
+                w.nao.know("閉店が早まる"),
             )
 
 def ep_closedshop(w: wd.World):
     return (w.chaptertitle("閉店する"),
             sc_holdshop(w),
+                w.nao.think("彼女に会いたい"),
+                w.nao.know("全ては集められない"),
+                w.nao.deal(w.akiko, "頼む"),
+                w.nao.know(w.i.her_addr),
             )
 
 def ep_lastbook(w: wd.World):
     return (w.chaptertitle("最後の本"),
             sc_getlastbook(w),
+                w.nao.go(w.saya),
+                w.nao.know(w.i.her_addr),
+                w.nao.meet(w.saya),
+                w.nao.know(w.i.her_mind),
             )
 
 
 def ep_remainheart(w: wd.World):
     return (w.chaptertitle("消えても残るもの"),
+                w.nao.know(w.i.her_reason),
+                w.nao.meet(w.saya),
+                w.nao.ask(w.i.her_reason),
+                w.nao.deal("想いを伝えた"),
             )
 
 # test data
@@ -81,6 +105,42 @@ def story_outlines(w: wd.World):
                 w.nao.know(w.i.vanishshop),
                 w.nao.deal("本を集める"),
                 w.nao.go(w.saya, "彼女に会う"),
+                True),
+            ("ep0", ep_intro(w),
+                w.nao.think("彼女の本を全部そろえたい"),
+                w.nao.think("人生を救われた"),
+                w.nao.go(w.stage.bookshop),
+                w.nao.know(w.i.vanishshop),
+                True),
+            ("ep1", ep_buyout(w),
+                w.nao.deal("店が潰れるまでに収集しなきゃ"),
+                w.nao.know(w.i.vanishshop),
+                w.nao.deal("本を買い集める"),
+                w.nao.know("金が足りない"),
+                True),
+            ("ep2", ep_working(w),
+                w.nao.deal("働く"),
+                w.nao.deal("金を貯める"),
+                w.nao.look("バイト探し"),
+                w.nao.know("閉店が早まる"),
+                True),
+            ("ep3", ep_closedshop(w),
+                w.nao.think("彼女に会いたい"),
+                w.nao.know("全ては集められない"),
+                w.nao.deal(w.akiko, "頼む"),
+                w.nao.know(w.i.her_addr),
+                True),
+            ("ep4", ep_lastbook(w),
+                w.nao.go(w.saya),
+                w.nao.know(w.i.her_addr),
+                w.nao.meet(w.saya),
+                w.nao.know(w.i.her_mind),
+                True),
+            ("ep5", ep_remainheart(w),
+                w.nao.know(w.i.her_reason),
+                w.nao.meet(w.saya),
+                w.nao.ask(w.i.her_reason),
+                w.nao.deal("想いを伝えた"),
                 True),
             ]
 
