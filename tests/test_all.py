@@ -19,6 +19,7 @@ import test_anotherme
 import test_todaylive
 import test_lostbook
 import test_umbrella
+import test_emergence
 
 
 def suite():
@@ -38,6 +39,7 @@ def suite():
         unittest.makeSuite(test_golden.StoryTest),
         unittest.makeSuite(test_todaylive.StoryTest),
         unittest.makeSuite(test_umbrella.StoryTest),
+        unittest.makeSuite(test_emergence.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer

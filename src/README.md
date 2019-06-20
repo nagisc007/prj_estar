@@ -6,8 +6,9 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
-| [#m103](umbrella/READMD.md) | 宵の傘 | [妄想コンテスト「傘」](https://estar.jp/official_contests/159357) |
-| [#wc3](lostbook/READMD.md) | 彼女の本が、消えます | [執筆応援キャンペーン「本／図書館／本屋さん」](https://estar.jp/official_contests/159350) |
+| [#m104](emergence/README.md) | くれなゐの羽化 | [妄想コンテスト「赤」](https://estar.jp/official_contests/159362) |
+| [#m103](umbrella/README.md) | 宵の傘 | [妄想コンテスト「傘」](https://estar.jp/official_contests/159357) |
+| [#wc3](lostbook/README.md) | 彼女の本が、消えます | [執筆応援キャンペーン「本／図書館／本屋さん」](https://estar.jp/official_contests/159350) |
 | [#m102](todaylive/README.md) | 生存報告、今日も私は生きてます | [妄想コンテスト「３時」](https://estar.jp/official_contests/159354) |
 | [#hm2](anotherme/README.md) | わたしとワタシと私 | [氷室冴子青春文学賞](https://estar.jp/official_contests/159347) |
 | [#m101](golden/README.md) | 幸福の黄金少女 | [妄想コンテスト「金」](https://estar.jp/official_contests/159346) |
@@ -17,7 +18,7 @@
 | [#m100c](emperor100/README.md) | 皇帝百代の呪（バグ） | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100b](s100b/README.md) | はじめましての百文字 | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
 | [#m100](s100/README.md) | 君の為に百の妄想を騙ろう | [妄想コンテスト「100」](https://estar.jp/_ofcl_evt_outline?e=159345) |
-| [#m99](hiyori/READMD.md) | 田植え日和と恋の雨 | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
+| [#m99](hiyori/README.md) | 田植え日和と恋の雨 | [妄想コンテスト「◯◯日和」](https://estar.jp/_ofcl_evt_outline?e=159287) |
 | [#m98](tonari/README.md) | わたしの隣はいつも空席 | [妄想コンテスト「となり」](https://estar.jp/_ofcl_evt_outline?e=158968) |
 | [#m97](okaeshi/README.md) | 九条冴子は返さない | [妄想コンテスト「お返し」](https://estar.jp/_ofcl_evt_outline?e=158796) |
 | [#m96](tokeru/README.md) | その傭兵をとかすもの | [妄想コンテスト「とける」](https://estar.jp/_ofcl_evt_outline?e=158669) |
