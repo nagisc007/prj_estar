@@ -10,10 +10,17 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("nao", "朝川,那緒", 18, "female", "高校生", "me:俺"),
+        ("nao", "朝川,那緒", 18, "male", "高校生", "me:僕"),
         ("saya", "葛城,沙夜", 28, "female", "作家", "me:わたし"),
-        ("akiko", "館林,明子", 68, "male", "本屋", "me:私"),
+        ("akiko", "館林,明子", 68, "female", "本屋", "me:私"),
         # sub
+        ("anzu", "如月,杏", 18, "female", "高校生", "me:わたし"),
+        ("akikosun", "館林,息子", 30, "male", "会社員", "me:ぼく"),
+        # family
+        ("dad", "朝川,父", 48, "male", "会社員", "me:俺"),
+        ("mam", "朝川,母", 47, "female", "事務員", "me:私"),
+        # school
+        ("teacher", "担任", 35, "male", "教師", "me:おれ"),
         # mob
         )
 
@@ -23,15 +30,25 @@ STAGES = (
         # Place
         ("town", "本宮町"),# NOTE: さくら市と那須川町をベースに
         ("bookshop", "本屋"),
-        # Part
-        ("home", "朝川家"),
-        ("myroom", "那緒の部屋"),
         ("school", "県立高校"),
+        ("home", "朝川家"),
+        ("partfactory", "弁当工場"),
+        ("herhome", "葛城家"),
+        # Part
+        ("myroom", "那緒の部屋"),
+        ("dyning", "食堂"),
+        ("oldlib_mark", "旧図書室跡"),
+        ("classroom", "教室"),
+        ("partroom", "仕事控室"),
+        ("partline", "工場のライン"),
+        ("bus", "バス"),
+        ("herroom", "彼女の部屋"),
         )
 
 DAYS = (
         # main
         ("current", "現在"),
+        ("known", "潰れることを知った日", 7, 19, 2019),
         # sub
         )
 
@@ -48,6 +65,9 @@ INFOS = (
         ("her_mind", "彼女の決意"),
         ("her_reason", "彼女の事情"),
         # sub
+        ("oldschool_reason", "旧校舎が消えた事情"),
+        # books
+        ("booktitle1", "真夜中のロンド"),
         )
 
 FLAGS = (
