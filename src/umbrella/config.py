@@ -11,7 +11,7 @@ sys.path.append('storybuilder')
 CHARAS = (
         # main
         ("miyu", "霧野,美由", 25, "female", "会社員", "me:わたし"),
-        ("gentleman", "謎の紳士", 50, "male", "謎の男", "me:私"),
+        ("ryuichi", "高山,龍一", 50, "male", "ＡＩ指導員", "me:私"),
         # sub
         )
 
@@ -32,6 +32,7 @@ DAYS = (
 
 ITEMS = (
         # main
+        ("umbrella", "真っ黒な傘"),
         # sub
         )
 
@@ -41,6 +42,9 @@ INFOS = (
         ("myfinish", "全てを終わりにしたい"),
         ("worklimit", "仕事の限界"),
         ("meaning", "光の意味"),
+        ("miyu_truth", "彼女はＡＩだった"),
+        ("starlight", "落ちてくる光"),
+        ("feature", "傘の機能"),
         # sub
         )
 
