@@ -10,15 +10,15 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("nao", "朝川,那緒", 18, "male", "高校生", "me:僕"),
-        ("saya", "葛城,沙夜", 28, "female", "作家", "me:わたし"),
-        ("akiko", "館林,明子", 68, "female", "本屋", "me:私"),
+        ("nao", "朝川,那緒", 18, "male", "高校生", "me:僕:akiko:明子さん"),
+        ("saya", "山本,沙夜", 28, "female", "作家", "me:わたし"),
+        ("akiko", "葛城,明子", 68, "female", "本屋", "me:私:nao:朝川君"),
         # sub
-        ("anzu", "如月,杏", 18, "female", "高校生", "me:わたし"),
-        ("akikosun", "館林,息子", 30, "male", "会社員", "me:ぼく"),
+        ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし"),
+        ("akikosun", "葛城,息子", 30, "male", "会社員", "me:ぼく"),
         # family
-        ("dad", "朝川,父", 48, "male", "会社員", "me:俺"),
-        ("mam", "朝川,母", 47, "female", "事務員", "me:私"),
+        ("dad", "朝川,父", 48, "male", "会社員", "me:俺:nao:お前"),
+        ("mam", "朝川,母", 47, "female", "事務員", "me:私:nao:あんた"),
         # school
         ("teacher", "担任", 35, "male", "教師", "me:おれ"),
         # mob
@@ -29,7 +29,7 @@ STAGES = (
         ("tochigi", "栃木県"),
         # Place
         ("town", "本宮町"),# NOTE: さくら市と那須川町をベースに
-        ("bookshop", "本屋"),
+        ("bookshop", "かつらぎ書店"),
         ("school", "県立高校"),
         ("home", "朝川家"),
         ("partfactory", "弁当工場"),
@@ -48,13 +48,15 @@ STAGES = (
 DAYS = (
         # main
         ("current", "現在"),
-        ("known", "潰れることを知った日", 7, 19, 2019),
+        ("known", "潰れることを知った日", 7, 12, 2019),
+        ("termend1", "一学期の終業式", 7,19, 2019),
         # sub
         )
 
 ITEMS = (
         # main
         # sub
+        ("poetbook", "詩の手帖"),
         )
 
 INFOS = (
