@@ -13,14 +13,43 @@ THM = cnf.THEMES
 
 # scenes
 def sc_standroof(w: wd.World):
-    miyu = w.miyu
+    miyu, ryu = w.miyu, w.ryuichi
     return w.scene("屋上に立つ者",
             w.miyu.be(w.stage.rooftop, w.day.current),
+            miyu.feel().d("足元から吹き上がるビル風は夜になってもまだ昼間の温もりを携えていた"),
+            miyu.look().d("すっかり空を闇の帳が覆ってしまっても尚この街は輝くことを止めない"),
+            miyu.look().d("$meの目には空から幾つもビルに向かって落ちていく細い光の筋が見えた。",
+                "それは夜にだけ降る雨のようで",
+                "旅立った先輩の置土産で屋上を知った$meだけの宝物だ"),
             w.miyu.feel(w.i.worklimit),
+            miyu.think().d("でも今日はそれを目にしても気分が晴れない。",
+                "ずっと朝から",
+                "いえ",
+                "もっと前",
+                "一月？",
+                "半年か……一年より以前からかも知れない。",
+                "$meという精神を蝕んでいる見えないカビみたいな存在が", "いる"),
+            miyu.look().d("フェンスが設置されていないから",
+                "顔を出せば車が行き交う五十メートル下の道路を見ることが出来るだろう"),
+            miyu.think().d("けれどそれは絶対にしない",
+                "というのが$senpaiとの約束だった"),
+            miyu.look().d("グレィのロングスカートを膝裏に巻き込んで座ると",
+                "よく二人で他愛のない仕事の愚痴を言い合ったことを思い出す"),
+            # NOTE: 二人の印象的な会話内容
             w.miyu.think(w.i.myfinish),
             miyu.look("都会のビル群"),
             miyu.be("時間帯は夜"),
-            miyu.look(w.i.starlight),
+            miyu.look(w.i.starlight).d("光の雨は次々と降り注ぎ",
+                "明るくなっているビルの窓へと消えていく"),
+            miyu.look().d("綺麗だ",
+                "と言った先輩と",
+                "寂しい光だ",
+                "と言った$meの間にも沢山降っていたけれど",
+                "ここ数日は光に濡れてしまいそうなくらいの数が",
+                "$meを目掛けて落ちてきていた"),
+            miyu.look().d("その視界が",
+                "黒いものによって不意に遮られる"),
+            ryu.talk("呼びかけ").t("ここは立入禁止ですよ"),
             )
 
 def sc_mysteryousman(w: wd.World):
@@ -49,6 +78,7 @@ def sc_umbrella(w: wd.World):
 def sc_truth(w: wd.World):
     miyu, ryu = w.miyu, w.ryuichi
     return w.scene("真実は",
+            # NOTE: 光として見えるのはAIへの制御信号。傘はそれを遮断する装置
             ryu.explain("自分はAI教師"),
             ryu.talk(w.i.feature.deflag()),
             )

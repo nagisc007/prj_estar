@@ -10,9 +10,10 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("miyu", "霧野,美由", 25, "female", "会社員", "me:わたし"),
+        ("miyu", "霧野,美由", 25, "female", "会社員", "me:わたし:senpai:日岡先輩"),
         ("ryuichi", "高山,龍一", 50, "male", "ＡＩ指導員", "me:私"),
         # sub
+        ("senpai", "日岡,葉月", 30, "female", "会社員", "me:私"),
         )
 
 STAGES = (
