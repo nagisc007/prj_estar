@@ -23,6 +23,7 @@ STAGES = (
         ("building", "ビル"),
         # Part
         ("rooftop", "屋上"),
+        ("office", "オフィス"),
         )
 
 DAYS = (

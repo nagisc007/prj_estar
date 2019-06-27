@@ -15,6 +15,7 @@ THM = cnf.THEMES
 def sc_standroof(w: wd.World):
     miyu, ryu = w.miyu, w.ryuichi
     return w.scene("屋上に立つ者",
+            # TODO: どこかに生真面目さ＝AIっぽさ
             w.miyu.be(w.stage.rooftop, w.day.current),
             miyu.feel().d("足元から吹き上がるビル風は夜になってもまだ昼間の温もりを携えていた"),
             miyu.look().d("すっかり空を闇の帳が覆ってしまっても尚この街は輝くことを止めない"),
@@ -55,24 +56,33 @@ def sc_standroof(w: wd.World):
 def sc_mysteryousman(w: wd.World):
     miyu, ryu = w.miyu, w.ryuichi
     return w.scene("謎の男性",
+            # TODO: 傘は光を通さない、男の顔は見えない
             ryu.talk("最初の言葉"),
             w.miyu.meet(w.ryuichi),
             miyu.look("傘持つ男"),
             miyu.ask(w.umbrella, w.i.feature.flag()),
+            ryu.ask("悩みがあるなら話してみなさい"),
+            ryu.talk("自分は何者でもない"),
             )
 
 def sc_lookback(w: wd.World):
     miyu, ryu = w.miyu, w.ryuichi
     return w.scene("私の回想",
+            # TODO: 仕事の失敗（AIにどんな仕事をさせるか等）
             miyu.remember("仕事の失敗"),
             miyu.remember("上司との関係"),
+            miyu.talk("内心ではそんなこともできないの？と思われている"),
             miyu.remember("同僚との関係"),
+            miyu.talk("味方はいないんです"),
+            miyu.talk("どんどん機械化され人が減っていく"),
             )
 
 def sc_umbrella(w: wd.World):
     miyu, ryu = w.miyu, w.ryuichi
     return w.scene("傘の意味",
+            miyu.talk("少し楽になってきました"),
             w.miyu.know(w.i.meaning),
+            ryu.talk("傘は守るためにあるんだ"),
             )
 
 def sc_truth(w: wd.World):
