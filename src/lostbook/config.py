@@ -16,7 +16,7 @@ CHARAS = (
         # sub
         ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし:nao:朝川"),
         ("tamura", "田村,典行", 18, "male", "高校生", "me:オレ:nao:朝川:anzu:杏"),
-        ("ak_sun", "葛城,息子", 30, "male", "会社員", "me:ぼく"),
+        ("ak_sun", "葛城,正人", 30, "male", "会社員", "me:ぼく:nao:朝川君"),
         ("yamamoto", "山本,真夜", 68, "female", "元教員", "me:私"),
         # family
         ("dad", "朝川,父", 48, "male", "会社員", "me:俺:nao:那緒:y_nao:お前"),
@@ -46,7 +46,6 @@ STAGES = (
         ("classroom", "教室"),
         ("partroom", "仕事控室"),
         ("partline", "工場のライン"),
-        ("bus", "バス"),
         ("herroom", "彼女の部屋"),
         )
 
@@ -56,11 +55,13 @@ DAYS = (
         ("known", "潰れることを知った日", 7, 12, 2019),
         ("termend1", "一学期の終業式", 7,19, 2019),
         ("workfirst", "初出勤日", 7,23, 2019),
+        ("closed", "閉店日", 7,31, 2019),
         # sub
         )
 
 ITEMS = (
         # main
+        ("herbook", "真夜中のロンド"),
         # sub
         ("poetbook", "詩の手帖"),
         )
@@ -77,6 +78,7 @@ INFOS = (
         ("club", "歴史研究同好会"),
         ("na_club", "歴研"),
         ("oldclub", "真夜中の図書研究会"),
+        ("our_memory", "私たちの思い出"),
         # books
         ("booktitle1", "真夜中のロンド"),
         )
