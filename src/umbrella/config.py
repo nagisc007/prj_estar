@@ -10,10 +10,14 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("miyu", "霧野,美由", 25, "female", "会社員", "me:わたし:senpai:日岡先輩"),
+        ("miyu", "霧野,美由", 25, "female", "会社員", "me:わたし:senpai:水無月先輩:M:Ｍ先輩"),
         ("ryuichi", "高山,龍一", 50, "male", "ＡＩ指導員", "me:私"),
         # sub
-        ("senpai", "日岡,葉月", 30, "female", "会社員", "me:私"),
+        ("senpai", "水無月,朝陽", 30, "female", "会社員", "me:私:miyu:霧野"),
+        # mob
+        ("joshi", "三田村,佐和子", 45, "female", "上司", "me:私"),
+        ("asobi", "湯村,ゆう子", 28, "female", "会社員", "me:ウチ"),
+        ("sensity", "井浦,東子", 24, "female", "会社員", "me:わたし"),
         )
 
 STAGES = (
@@ -48,6 +52,7 @@ INFOS = (
         ("starlight", "落ちてくる光"),
         ("feature", "傘の機能"),
         # sub
+        ("senpaiword1", "先輩の言葉"),
         )
 
 FLAGS = (
