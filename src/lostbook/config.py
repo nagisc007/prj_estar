@@ -86,6 +86,7 @@ INFOS = (
         ("her_reason", "彼女の事情"),
         ("anothername", "月乃夜"),
         # sub
+        ("oldghost", "旧校舎の亡霊"),
         ("oldschool_reason", "旧校舎が消えた事情"),
         ("club", "歴史研究同好会"),
         ("na_club", "歴研"),
