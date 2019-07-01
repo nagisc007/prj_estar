@@ -14,7 +14,7 @@ CHARAS = (
         ("saya", "山本,沙夜", 28, "female", "作家", "me:わたし:nao:朝川那緒君:asakawa:朝川君"),
         ("akiko", "葛城,明子", 68, "female", "本屋", "me:私:nao:朝川君"),
         # sub
-        ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし:nao:朝川"),
+        ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし:nao:朝川:tamura:田村"),
         ("tamura", "田村,典行", 18, "male", "高校生", "me:オレ:nao:朝川:anzu:杏"),
         ("ak_sun", "葛城,正人", 30, "male", "会社員", "me:ぼく:nao:朝川君"),
         ("yamamoto", "山本,真夜", 68, "female", "元教員", "me:私"),
@@ -22,7 +22,7 @@ CHARAS = (
         ("dad", "朝川,父", 48, "male", "会社員", "me:俺:nao:那緒:y_nao:お前"),
         ("mam", "朝川,母", 47, "female", "事務員", "me:私:nao:那緒:y_nao:あんた"),
         # school
-        ("teacher", "担任", 35, "male", "教師", "me:おれ"),
+        ("teacher", "小林,雄太", 35, "male", "教師", "me:おれ"),
         # mob
         ("sanae", "奥貫,早苗", 42, "female", "パート", "me:あたし:nao:朝川君"),
         ("sy_mam", "山本,母親", 60, "female", "母親", "me:あたし"),
