@@ -14,13 +14,16 @@ THM = cnf.THEMES
 # scenes
 def sc_visited(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
-    return w.scene("彼の訪問",
+    return w.scene("訪問者",
+            # TODO: 翔太郎の説明、見える説明、プロポーズ
             shota.come(w.stage.apart, w.day.encounter),
+            kyoko.deal(shota, w.i.proposed),
             )
 
 def sc_canlook(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
     return w.scene("見える人",
+            # TODO: いつの間にか帰っている。わたし会議まで
             shota.look(w.another),
             kyoko.think(shota, "知りたい"),
             )
@@ -28,11 +31,21 @@ def sc_canlook(w: wd.World):
 def sc_mymeeting(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
     return w.scene("わたし会議",
+            # TODO: 三人で翔太郎について。意見の相違、結論出ない
+            )
+
+def sc_notfound(w: wd.World):
+    return w.scene("彼は見つからない",
             )
 
 def sc_hisvisit(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
     return w.scene("彼の再訪",
+            # TODO: 本気のプロポーズ、三番目誕生
+            )
+
+def sc_birthnew(w: wd.World):
+    return w.scene("三番目の今日子",
             )
 
 def sc_livewith(w: wd.World):
@@ -44,7 +57,6 @@ def sc_livewith(w: wd.World):
 def sc_hispropose(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
     return w.scene("プロポーズ",
-            kyoko.deal(shota, w.i.proposed),
             )
 
 # episodes
@@ -57,12 +69,14 @@ def ep_intro(w: wd.World):
 def ep_rebellion(w: wd.World):
     return (w.chaptertitle("ワタシの反乱"),
             sc_mymeeting(w),
+            sc_notfound(w),
             sc_hisvisit(w),
-            sc_livewith(w),
+            sc_birthnew(w),
             )
 
 def ep_confess(w: wd.World):
     return (w.chaptertitle("彼の告白"),
+            sc_livewith(w),
             sc_hispropose(w),
             )
 
