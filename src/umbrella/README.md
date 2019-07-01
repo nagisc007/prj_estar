@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.6.- | 2019.6.17 | Fantasy, Human | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「傘」](https://estar.jp/official_contests/159357) |
+| v0.1.0 | Released | 2019.6.30 | 2019.7.1 | Fantasy, Human, SF | 8K | [エブリスタ](https://estar.jp/novels/25500960) | [妄想コンテスト「傘」](https://estar.jp/official_contests/159357) |
 
 **「本当はその傘を、広げたくなかったんだ」**
 
@@ -19,6 +19,7 @@
 ## Characters
 
 - 霧野美由……主人公の女性
+- 水無月朝陽……霧野の先輩
 - ？？？……謎の男性
 
 ## Stages
