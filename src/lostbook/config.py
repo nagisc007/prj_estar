@@ -12,9 +12,9 @@ CHARAS = (
         # main
         ("nao", "朝川,那緒", 18, "male", "高校生", "me:僕:akiko:明子さん:anzu:高田さん:tamura:田村:sanae:奥貫さん:saya:沙夜さん"),
         ("saya", "山本,沙夜", 28, "female", "作家", "me:わたし:nao:朝川那緒君:asakawa:朝川君"),
-        ("akiko", "葛城,明子", 68, "female", "本屋", "me:私:nao:朝川君"),
+        ("akiko", "葛城,明子", 68, "female", "本屋", "me:私:nao:朝川君:anzu:高田さん"),
         # sub
-        ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし:nao:朝川:tamura:田村"),
+        ("anzu", "高田,杏", 18, "female", "高校生", "me:わたし:nao:朝川:tamura:田村:akiko:葛城さん"),
         ("tamura", "田村,典行", 18, "male", "高校生", "me:オレ:nao:朝川:anzu:杏"),
         ("ak_sun", "葛城,正人", 30, "male", "会社員", "me:ぼく:nao:朝川君"),
         ("yamamoto", "山本,真夜", 68, "female", "元教員", "me:私"),
@@ -30,6 +30,7 @@ CHARAS = (
         # book
         ("bookhero", "雨宮,月子", 17, "female", "高校生", "me:わたし"),
         ("bookrival", "日下,希子", 17, "female", "高校生", "me:私"),
+        ("bookman", "柏木,正人", 32, "male", "理事長息子", "me:ぼく"),
         )
 
 STAGES = (
@@ -38,10 +39,11 @@ STAGES = (
         # Place
         ("town", "田倉町"),# NOTE: さくら市と那須川町をベースに
         ("bookshop", "かつらぎ書店"),
-        ("school", "県立高校"),
+        ("school", "田倉高校"),
         ("home", "朝川家"),
         ("partfactory", "弁当工場"),
         ("herhome", "葛城家"),
+        ("stlibrary", "ストックホルム市立図書館"),
         # Ride
         ("bus", "バス"),
         # Part
@@ -63,6 +65,9 @@ DAYS = (
         ("workfirst", "初出勤日", 7,23, 2019),
         ("closed", "閉店日", 7,31, 2019),
         ("schoolday", "登校日", 8,9, 2019),
+        ("reading", "ロンドの読破日", 8, 11, 2019),
+        ("departing", "別れの日", 8,23, 2019),
+        ("newschool", "新学期", 8,26, 2019),
         # sub
         )
 
@@ -92,6 +97,8 @@ INFOS = (
         ("na_club", "歴研"),
         ("oldclub", "真夜中の図書研究会"),
         ("our_memory", "私たちの思い出"),
+        # words
+        ("designer", "アスプルンド"),
         # books
         ("booktitle1", "真夜中のロンド"),
         )
