@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.6.- | 2019.6.17 | Human, Love, Mystery | 20K | [エブリスタ](https://estar.jp/) | [執筆応援キャンペーン「本／図書館／本屋さん」](https://estar.jp/official_contests/159350) |
+| v0.2.0 | Released | 2019.6.30 | 2019.7.4 | Human, Love, Mystery | 34K | [エブリスタ](https://estar.jp/novels/25501141) | [執筆応援キャンペーン「本／図書館／本屋さん」](https://estar.jp/official_contests/159350) |
 
 **「大好きなものを、どうしても失いたくなかったんだ」**
 
@@ -17,12 +17,16 @@
 ## Characters
 
 - 朝川那緒……主人公の男子高校生
-- 葛城沙夜……同人誌の彼女
-- 館林明子……本屋の主人
+- 山本沙夜……同人誌の彼女
+- 高田杏……那緒と同じ歴史研究同好会の部員
+- 田村典行……那緒の友人で、同じ歴史研究同好会の部員
+- 葛城明子……本屋の主人
 
 ## Stages
 
-- 本宮町……本屋が消える町
+- 田倉町……本屋が消える町
+- 田倉高校……那緒たちの通う高校
+- かつらぎ書店……町唯一の本屋
 
 ## License
 
