@@ -2,15 +2,18 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.6.- | 2019.6.20 | Fantasy, Human, Mystery | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「赤」](https://estar.jp/official_contests/159362) |
+| v0.1.0 | Develop | 2019.6.- | 2019.7.6 | Fantasy, Human, Mystery | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「赤」](https://estar.jp/official_contests/159362) |
 
 **「羽化する時には、誰もが血を流すのよ」**
 
-女子高生が次々と巨大な白い蛹になるという事件が起こっていた。原因を調べるうち、
+女子高生が次々と巨大な白い蛹になるという事件が起こっていた。原因を調べるうち、それがある一人の自殺女性に繋がっていることを知る。
 
 ## Description
 
-*in preparation*
+不登校になった親友の家を訪れると、そこで彼女は巨大な白い蛹になっていた。  
+彼女が所属していた怪奇クラブの顧問に協力してもらい、彼女を助け出す方法を探す。  
+しかし、第二、第三の被害者が出て、地域ではちょっとした話題となる。  
+（※後日更新）
 
 ## Characters
 

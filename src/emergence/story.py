@@ -14,13 +14,39 @@ THM = cnf.THEMES
 # scenes
 
 # episodes
-# test data
+def ep_intro(w: wd.World):
+    return (w.chaptertitle("冒頭"),
+            w.miyako.think(w.aya, w.info("見てない")),
+                w.miyako.look(w.aya, w.i.herstatus),
+                w.miyako.think(w.aya, w.i.herrefusal),
+            )
+
+def ep_chrysalis(w: wd.World):
+    return (w.chaptertitle("蛹の少女たち"),
+            w.miyako.come(w.stage.ayaroom, w.day.discover1),
+            w.miyako.look(w.aya, w.sanagi),
+                w.miyako.look(w.kirimura, w.i.hercause),
+            )
+
+def ep_reasons(w: wd.World):
+    return (w.chaptertitle("彼女たちの理由"),
+                w.miyako.know(w.i.aya_mind),
+            )
+
+# outline
 def story_baseinfos(w: wd.World):
     return [
+            ("story", story(w), w.miyako, w.aya),
             ]
 
 def story_outlines(w: wd.World):
     return [
+            ("story", story(w),
+                w.miyako.look(w.aya, w.i.herstatus),
+                w.miyako.think(w.aya, w.i.herrefusal),
+                w.miyako.look(w.kirimura, w.i.hercause),
+                w.miyako.know(w.i.aya_mind),
+                True),
             ]
 
 # main
@@ -32,6 +58,9 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("くれなゐの羽化"),
+            ep_intro(w),
+            ep_chrysalis(w),
+            ep_reasons(w),
             )
 
 
