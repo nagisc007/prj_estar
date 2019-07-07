@@ -12,10 +12,16 @@ THM = cnf.THEMES
 
 
 # scenes
+def sc_redmoon(w: wd.World):
+    miyako = w.miyako
+    return w.scene("赤い月",
+            miyako.look(w.info("赤い月"),"赤い月を見ていた"),
+            )
 
 # episodes
 def ep_intro(w: wd.World):
     return (w.chaptertitle("冒頭"),
+            sc_redmoon(w),
             w.miyako.think(w.aya, w.info("見てない")),
                 w.miyako.look(w.aya, w.i.herstatus),
                 w.miyako.think(w.aya, w.i.herrefusal),
