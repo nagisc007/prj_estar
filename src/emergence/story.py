@@ -15,6 +15,7 @@ THM = cnf.THEMES
 def sc_redmoon(w: wd.World):
     miyako, aya = w.miyako, w.aya
     return w.scene("赤い月",
+            # TODO: 赤（凶兆）、虫（蜘蛛）、友人関係、久々の返事（ヒントワード）
             miyako.be(w.stage.myroom),
             miyako.look("赤い月を見ていた"),
             aya.talk("ブラッドムーンて言うんだ", "皆既月食"),
@@ -33,7 +34,7 @@ def sc_hermother(w: wd.World):
                 "$ayaとは連絡がつかないままだった"),
                 w.miyako.look(w.aya, w.i.herstatus),
                 w.miyako.think(w.aya, w.i.herrefusal),
-            )
+            ).omit()
 
 def sc_boringday(w: wd.World):
     miyako, kiri = w.miyako, w.kirimura
@@ -45,7 +46,7 @@ def sc_boringday(w: wd.World):
                 "ただＬＩＮＥの既読だけが細い糸のような繋がりだった"),
             # TODO: ayaの学校での状況、いじめ、孤立がち
             miyako.remember("そういえば$ayaが美術部だったことを思い出す"),
-            )
+            ).omit()
 
 def sc_strangeman(w: wd.World):
     miyako, kiri = w.miyako, w.kirimura
@@ -115,13 +116,13 @@ def sc_catchmyheart(w: wd.World):
     return w.scene("囚われる心",
             miyako.be(w.stage.myhome),
             # TODO: 家族の食卓、野木さんの母がおかしい、宗教？
-            )
+            ).omit()
 
 def sc_crazy(w: wd.World):
     miyako = w.miyako
     return w.scene("狂った女",
             # TODO: 壊れている野木、桔梗の話
-            )
+            ).omit()
 
 def sc_rebirth(w: wd.World):
     miyako, kikyo = w.miyako, w.kikyo
@@ -156,17 +157,17 @@ def ep_intro(w: wd.World):
 
 def ep_chrysalis(w: wd.World):
     return (w.chaptertitle("蛹の少女たち"),
-            sc_hermother(w),
-            sc_boringday(w),
+            sc_hermother(w),# NOTE: omit
+            sc_boringday(w),# NOTE: omit
             sc_strangeman(w),
             sc_transformed(w),
             )
 
 def ep_reasons(w: wd.World):
-    return (w.chaptertitle("彼女たちの理由"),
+    return (w.chaptertitle("彼女の理由"),
             sc_othergirls(w),
-            sc_catchmyheart(w),
-            sc_crazy(w),
+            sc_catchmyheart(w),# NOTE: omit
+            sc_crazy(w),# NOTE: omit
             sc_rebirth(w),
             sc_mymind(w),
             )
