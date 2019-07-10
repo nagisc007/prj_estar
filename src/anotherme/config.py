@@ -9,15 +9,15 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("kyoko", "岩根,今日子", 20, "female", "大学生",
-            "me:私:sayama:幸子さん:child:きょう子:student:キョウコ:minori:鈴森さん"),
-        ("shota", "宮内,翔太郎", 25, "male", "無職",
-            "me:俺:kyoko:今日子"),
+        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子さん:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん"),
+        ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
         ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん"),
         ("takamura", "高村,滋", 44, "male", "大学教員", "me:僕"),
         ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私"),
+        ("saito", "斉藤,三紀", 21, "female", "大学生（浪人）", "me:わたし:kyoko:岩根さん"),
+        ("isoya", "磯谷,教授", 48, "male", "ドイツ語教授", "me:ボク"),
         # work
         ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク:kyoko:今日子ちゃん"),
         ("minori", "鈴森,実里", 45, "female", "ベテラン派遣社員", "me:私"),
@@ -32,8 +32,8 @@ CHARAS = (
         ("sho_mam", "宮内,母", 45, "female", "母"),
         ("sho_dad", "宮内,父", 52, "male", "父"),
         # anothers
-        ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし"),
-        ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ"),
+        ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし:my:きょう子:kyoko:きょうこお姉ちゃん:student:キョウコ姉:shota:ショータロ"),
+        ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ:kyoko:今日子:child:きょう子:shota:翔太郎"),
         ("univ_kyoko", "岩根,明日子", 20, "female", "大学生", "me:私"),
         )
 
@@ -50,6 +50,7 @@ STAGES = (
         ("ma_apart", "松本のアパート"),
         ("hishome", "翔太郎の実家"),
         # Part
+        ("myapart", "二〇四号室"),
         ("living", "リビング"),
         ("classroom", "教室"),
         ("lechall", "講堂"),
@@ -59,12 +60,13 @@ DAYS = (
         # main
         ("childhood", "幼少期"),
         ("current", "現在", 6,20, 2019),
-        ("encounter", "出会った日"),
+        ("encounter", "出会った日", 6,20, 2019),
         ("proposed", "プロポーズされた日", 7,7, 2019),
         ("empty", "誰もいなくなった日"),
         ("married", "結婚した未来"),
         ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
         # sub
+        ("encounter_next", "出会った日", 6,21, 2019),
         )
 
 ITEMS = (
@@ -78,6 +80,7 @@ INFOS = (
         # main
         ("imagefriend", "イマジナリーフレンド"),
         ("IF", "ＩＦ"),
+        ("meeting", "私会議"),
         # chapter 1
         ("relation", "人付き合い"),
         ("circle", "環境保全同好会"),
