@@ -53,7 +53,7 @@ ITEMS = (
         ("sanagi", "蛹"),
         ("aya_letter", "彼女の手紙"),
         ("hermessage1", "※美耶古へのメッセージ"),# TODO: メッセ内容
-        ("spider", "※蜘蛛の名前"),# TODO:妖魔名
+        ("spider", "夢蝕蛾"),# TODO:妖魔名
         ("religion", "神月教"),
         # sub
         )
