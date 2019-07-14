@@ -12,64 +12,63 @@ THM = cnf.THEMES
 
 
 # scenes
-def sc_disliked(w: wd.World):
+def sc_dadtalk(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
-    return w.scene("自分を嫌う自分",
-            kyoko.look(w.another),
-            kyoko.be(w.stage.apart, w.day.proposed),
-            kyoko.think("自分が増えてどうするか"),
+    return w.scene("父の話",
+            # TODO: 父が部屋を見て、話す、いい人、苦手。IFたち怯える
             )
 
 def sc_univlife(w: wd.World):
     kyoko, shota, matsu = w.kyoko, w.shota, w.matsumoto
-    return w.scene("アナザーとの大学生活",
-            kyoko.come(w.stage.univ),
+    return w.scene("三番目との大学生活",
+            # TODO: 三番目の意味、夏休みに入る
+            kyoko.come(w.stage.univ, w.day.current),
             kyoko.meet(matsu),
             )
 
 def sc_rebellion(w: wd.World):
     kyoko, shota, matsu = w.kyoko, w.shota, w.matsumoto
-    return w.scene("アナザーたちの反乱",
+    return w.scene("三番目の反乱",
+            # TODO: ボランティア日、三番目が邪魔する、翔太郎が救世主
             kyoko.deal("四人の暮らし"),
             kyoko.deal("みんな出ていった"),
             )
 
-def sc_matsumoto(w: wd.World):
-    kyoko, shota, matsu = w.kyoko, w.shota, w.matsumoto
-    return w.scene("松本",
-            matsu.talk("呼び止められる"),
-            kyoko.deal(matsu, "会話"),
-            matsu.ask("最近一緒にいる奴いないな"),
-            matsu.ask("男じゃなく、女"),
-            kyoko.think(matsu, w.i.look_another),
+def sc_shotarowork(w: wd.World):
+    return w.scene("翔太郎と一緒",
+            # TODO: 翔太郎とカフェ（伏線）、
             )
 
-def sc_knownanother(w: wd.World):
-    kyoko, shota, matsu, asumi = w.kyoko, w.shota, w.matsumoto, w.asumi
-    return w.scene("アナザーと暮らす男",
-            kyoko.come(w.stage.ma_apart),
-            kyoko.look(asumi),
-            matsu.feel("驚き"),
-            asumi.talk("自分が見えるの？"),
-            kyoko.know(matsu, w.i.look_another),
+def sc_promisedate(w: wd.World):
+    return w.scene("デートの約束",
+            )
+
+def sc_sapporo(w: wd.World):
+    return w.scene("札幌",
+            )
+
+def sc_hotel(w: wd.World):
+    return w.scene("ホテルで",
             )
 
 # episodes
 def ep_intro(w: wd.World):
-    return (w.chaptertitle("四人目のアナザー"),
-            sc_disliked(w),
+    return (w.chaptertitle("父と私"),
+            sc_dadtalk(w),
             )
 
 def ep_anotherproblem(w: wd.World):
-    return (w.chaptertitle("もう一人は我慢しない"),
+    return (w.chaptertitle("三番目の反乱"),
             sc_univlife(w),
             sc_rebellion(w),
+            sc_shotarowork(w),
             )
 
 def ep_moreanother(w: wd.World):
-    return (w.chaptertitle("自分以外のアナザー"),
-            sc_matsumoto(w),
-            sc_knownanother(w),
+    return (w.chaptertitle("そして彼は消えた"),
+            sc_promisedate(w),
+            sc_sapporo(w),
+            sc_hotel(w),
             )
 
 # outline
@@ -78,12 +77,6 @@ def base_info(w: wd.World):
 
 def story_outline(w: wd.World):
     return [
-            ("chapter4", story(w),
-            w.kyoko.think("自分が増えてどうするか"),
-            w.kyoko.look(w.another),
-            w.kyoko.deal("四人の暮らし"),
-            w.kyoko.know(w.matsumoto, w.i.look_another),
-            True),
             ]
 
 # main

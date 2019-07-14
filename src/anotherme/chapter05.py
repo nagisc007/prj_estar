@@ -43,6 +43,11 @@ def sc_hischildhood(w: wd.World):
     return w.scene("彼の子供時代のこと",
             )
 
+def sc_alone(w: wd.World):
+    return w.scene("今日子ひとり",
+            # TODO: 彼とか好きじゃなく、ただ自分の理解者が欲しかっただけだった
+            )
+
 def sc_knowntruth(w: wd.World):
     kyoko, shota = w.kyoko, w.shota
     return w.scene("知らされた真実",
