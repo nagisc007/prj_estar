@@ -616,7 +616,7 @@ def story_outline(w: wd.World):
 
 # main
 def story(w: wd.World):
-    return [w.maintitle("わたしと彼"),
+    return [w.maintitle(cnf.TITLE["chap2"]),
             ep_intro(w),
             ep_rebellion(w),
             ep_confess(w),

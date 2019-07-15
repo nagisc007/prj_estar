@@ -9,7 +9,7 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子さん:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん"),
+        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん"),
         ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
@@ -60,7 +60,8 @@ DAYS = (
         # main
         ("childhood", "幼少期"),
         ("current", "現在", 6,20, 2019),
-        ("encounter", "出会った日", 6,20, 2019),
+        ("encounter", "松本と出会った日", 6,21, 2019),
+        ("shotaro", "翔太郎と出会った日", 6,25, 2019),
         ("proposed", "プロポーズされた日", 7,7, 2019),
         ("dadvisit", "父が来た日", 7,14, 2019),
         ("seaday", "海の日", 7,15, 2019),
@@ -111,4 +112,12 @@ THEMES = {
 
 MOTIFS = {
         "imagefriend": "イマジナリーフレンド",
+        }
+
+TITLE = {
+        "chap1": "第１話　私とワタシ",
+        "chap2": "第２話　私と彼",
+        "chap3": "第３話　私とわたしたち",
+        "chap4": "第４話　私と父",
+        "chap5": "第５話　私とわたし",
         }
