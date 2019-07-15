@@ -10,7 +10,7 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん"),
-        ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子"),
+        ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子:child:きょう子ちゃん"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
         ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん"),
