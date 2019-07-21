@@ -9,14 +9,14 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん"),
+        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん:kunugi:椚木先輩:matsumoto:松本"),
         ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子:child:きょう子ちゃん"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
-        ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん"),
+        ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん:saito:斉藤さん"),
         ("takamura", "高村,滋", 44, "male", "大学教員", "me:僕"),
-        ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私"),
-        ("saito", "斉藤,三紀", 21, "female", "大学生（浪人）", "me:わたし:kyoko:岩根さん"),
+        ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私:kyoko:岩根:sayama:砂山:matsumoto:松本:saito:斉藤さん"),
+        ("saito", "斉藤,三紀", 21, "female", "大学生（浪人）", "me:わたし:kyoko:岩根さん:kunugi:椚木さん"),
         ("isoya", "磯谷,教授", 48, "male", "ドイツ語教授", "me:ボク"),
         # work
         ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク:kyoko:今日子ちゃん"),
@@ -26,8 +26,8 @@ CHARAS = (
         ("hotta", "堀田,優一", 50, "male", "理科教員", "me:ぼく"),
         ("miura", "三浦,啓司", 58, "male", "精神科医", "me:私"),
         # family
-        ("mother", "岩根,朝子", 40, "female", "パート"),
-        ("father", "岩根,雪雄", 50, "male", "電気店"),
+        ("mother", "岩根,朝子", 40, "female", "介護職員", "me:わたし:kyoko:今日子"),
+        ("father", "岩根,雪雄", 50, "male", "会社員", "me:僕:kyoko:今日子さん"),
         # family (shota)
         ("sho_mam", "宮内,母", 45, "female", "母"),
         ("sho_dad", "宮内,父", 52, "male", "父"),
@@ -62,7 +62,9 @@ DAYS = (
         ("current", "現在", 6,20, 2019),
         ("encounter", "松本と出会った日", 6,21, 2019),
         ("shotaro", "翔太郎と出会った日", 6,25, 2019),
-        ("proposed", "プロポーズされた日", 7,7, 2019),
+        ("proposed", "プロポーズされた日", 6,21, 2019),
+        ("favor", "夏風邪", 6,22, 2019),
+        ("volunteer", "ボランティア日", 6,30, 2019),
         ("dadvisit", "父が来た日", 7,14, 2019),
         ("seaday", "海の日", 7,15, 2019),
         ("empty", "誰もいなくなった日"),
