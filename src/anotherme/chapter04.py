@@ -12,10 +12,36 @@ THM = cnf.THEMES
 
 
 # scenes
+def sc_afraid(w: wd.World):
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
+    return w.scene("怯え",
+            kyoko.be(w.stage.living, w.day.volunteer),
+            # TODO: 会うことになった、四番目との対峙、怯え
+            )
+
+def sc_testperiot(w: wd.World):
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
+    return w.scene("テスト期間",
+            kyoko.be(w.stage.library, w.day.report1),
+            # TODO: 試験が手に付かない、四番目の影
+            )
+
+def sc_meetingdad(w: wd.World):
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
+    return w.scene("父の出迎え",
+            kyoko.be(w.stage.station, w.day.dadvisit),
+            )
+
 def sc_dadtalk(w: wd.World):
-    kyoko, shota = w.kyoko, w.shota
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
     return w.scene("父の話",
+            kyoko.be(w.stage.famires),
             # TODO: 父が部屋を見て、話す、いい人、苦手。IFたち怯える
+            )
+
+def sc_dadcomming(w: wd.World):
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
+    return w.scene("父と私たち",
             )
 
 def sc_univlife(w: wd.World):
@@ -24,7 +50,7 @@ def sc_univlife(w: wd.World):
             # TODO: 三番目の意味、夏休みに入る
             kyoko.come(w.stage.univ, w.day.current),
             kyoko.meet(matsu),
-            )
+            ).omit()
 
 def sc_rebellion(w: wd.World):
     kyoko, shota, matsu = w.kyoko, w.shota, w.matsumoto
@@ -35,6 +61,7 @@ def sc_rebellion(w: wd.World):
             )
 
 def sc_shotarowork(w: wd.World):
+    kyoko, shota, child, stu, univ = w.kyoko, w.shota, w.child_kyoko, w.student_kyoko, w.univ_kyoko
     return w.scene("翔太郎と一緒",
             # TODO: 翔太郎とカフェ（伏線）、
             )
@@ -53,19 +80,23 @@ def sc_hotel(w: wd.World):
 
 # episodes
 def ep_intro(w: wd.World):
-    return (w.chaptertitle("父と私"),
-            sc_dadtalk(w),
+    return (w.chaptertitle("混乱する私"),
+            sc_afraid(w),
             )
 
 def ep_anotherproblem(w: wd.World):
-    return (w.chaptertitle("三番目の反乱"),
-            sc_univlife(w),
+    return (w.chaptertitle("父親と友だちと私たちと"),
+            sc_testperiot(w),
+            sc_meetingdad(w),
+            sc_dadtalk(w),
+            sc_dadcomming(w),
+            sc_univlife(w),# NOTE: omit
             sc_rebellion(w),
-            sc_shotarowork(w),
             )
 
 def ep_moreanother(w: wd.World):
     return (w.chaptertitle("そして彼は消えた"),
+            sc_shotarowork(w),
             sc_promisedate(w),
             sc_sapporo(w),
             sc_hotel(w),
@@ -81,7 +112,7 @@ def story_outline(w: wd.World):
 
 # main
 def story(w: wd.World):
-    return [w.chaptertitle("わたしとワタシ"),
+    return [w.chaptertitle(cnf.TITLE["chap4"]),
             ep_intro(w),
             ep_anotherproblem(w),
             ep_moreanother(w),
