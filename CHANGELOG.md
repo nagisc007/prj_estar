@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Project: Disliked
 - Project: I and I
 
 ## [0.4.0] - 2019-07-13
