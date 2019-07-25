@@ -16,10 +16,17 @@ THM = cnf.THEMES
 # outline
 def story_baseinfos(w: wd.World):
     return [
+            ("story", story(w), w.satomi, w.bot),
             ]
 
 def story_outlines(w: wd.World):
     return [
+            ("story", story(w),
+                w.satomi.be(),
+                w.satomi.be(),
+                w.satomi.be(),
+                w.satomi.be(),
+                True),
             ]
 
 # main
@@ -31,6 +38,7 @@ def world():
 
 def story(w: wd.World):
     return (w.maintitle("背景、あなたが嫌いです"),
+            w.satomi.be(w.stage.myhome, w.day.current, w.bot),
             )
 
 

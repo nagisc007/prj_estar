@@ -2,23 +2,29 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.7.- | 2019.7.21 | SF, Human, Love | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「あなたを嫌いな理由」](https://estar.jp/official_contests/159365) |
+| v0.1.0 | Develop | 2019.7.- | 2019.7.25 | SF, Human, Love | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「あなたを嫌いな理由」](https://estar.jp/official_contests/159365) |
 
 **「本当はずっと、思っていたんです。嫌いだって」**
 
-*in preparation*
+最愛の人が死ぬ。それはいつか訪れる。けれど人格と記憶の全てを移植した「喪失緩和ボット」が開発され、女性はそれを使い始める。
 
 ## Description
 
-*in preparation*
+彼女は夫をある事件で失い、その喪失感を緩和する為に夫が開発していた「喪失緩和ボット」を利用することを考える。  
+ボットは本来ペット用として開発されたもので、人型はいなかったが、夫の知人の協力を得て、特別に改良したものだ。  
+スマホとなった夫と過ごす。  
+しかし彼女はそれに対してずっと「あなたが嫌いだった」と告白をするのだ。
 
 ## Characters
 
-*in preparation*
+- 女性
+- 子供
+- 亡くなった夫
+- 喪失緩和ボット
 
 ## Stages
 
-*in preparation*
+- 近未来の東京田町
 
 ## License
 
