@@ -6,8 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Project: Disliked
 - Project: I and I
+
+## [0.5.0] - 2019-07-28
+### Added
+- Production: Disliked
 
 ## [0.4.0] - 2019-07-13
 ### Added
@@ -86,7 +89,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/nagisc007/prj_estar/releases/v0.5.0
 [0.4.0]: https://github.com/nagisc007/prj_estar/releases/v0.4.0
 [0.3.0]: https://github.com/nagisc007/prj_estar/releases/v0.3.0
 [0.2.0]: https://github.com/nagisc007/prj_estar/releases/v0.2.0
