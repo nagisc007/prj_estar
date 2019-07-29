@@ -14,7 +14,7 @@ CHARAS = (
         ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子:child:きょう子ちゃん"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
-        ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん:saito:斉藤さん"),
+        ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん:saito:斉藤さん:asumi:亜純:shota:宮内"),
         ("takamura", "高村,滋", 44, "male", "大学教員", "me:僕"),
         ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私:kyoko:岩根:sayama:砂山:matsumoto:松本:saito:斉藤さん"),
         ("saito", "斉藤,三紀", 21, "female", "大学生（浪人）", "me:わたし:kyoko:岩根さん:kunugi:椚木さん"),
@@ -76,6 +76,8 @@ DAYS = (
         ("seaday", "海の日", 7,15, 2019),
         ("empty", "誰もいなくなった日", 8,10, 2019),
         ("married", "結婚した未来"),
+        ("meeting", "サークル集会日", 8,24, 2019),
+        ("medical", "診察日", 9,4, 2019),
         ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
         # sub
         ("encounter_next", "出会った日", 6,21, 2019),
