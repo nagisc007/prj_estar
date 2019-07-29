@@ -9,7 +9,8 @@ sys.path.append('storybuilder')
 
 # configs
 CHARAS = (
-        ("kyoko", "岩根,今日子", 20, "female", "大学生", "me:私:shota:翔太郎:sayama:幸子:child:きょう子:student:キョウコ:minori:鈴森さん:saito:斉藤さん:kunugi:椚木先輩:matsumoto:松本"),
+        ("kyoko", "岩根,今日子", 20, "female", "大学生",
+            "me:私:shota:翔太郎:miya:宮内君:sayama:幸子:child:きょう子:student:キョウコ:univ:明日子:minori:鈴森さん:saito:斉藤さん:kunugi:椚木先輩:matsumoto:松本:dad:父さん:father:雪雄さん"),
         ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子:child:きょう子ちゃん"),
         # univ
         ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
@@ -20,21 +21,23 @@ CHARAS = (
         ("isoya", "磯谷,教授", 48, "male", "ドイツ語教授", "me:ボク"),
         # work
         ("arase", "荒瀬,省二", 40, "male", "現場監督", "me:ボク:kyoko:今日子ちゃん"),
-        ("minori", "鈴森,実里", 45, "female", "ベテラン派遣社員", "me:私"),
+        ("minori", "鈴森,実里", 45, "female", "ベテラン派遣社員", "me:私:kyoko:岩根さん"),
         # others
         ("asumi", "金井,亜純", 19, "female", "パート"),
         ("hotta", "堀田,優一", 50, "male", "理科教員", "me:ぼく"),
         ("miura", "三浦,啓司", 58, "male", "精神科医", "me:私"),
+        ("cur_mam", "湯沢,マリ", 35, "female", "店主", "me:ワタシ"),
+        ("cur_dad", "湯沢,武志", 44, "male", "店主", "me:僕"),
         # family
         ("mother", "岩根,朝子", 40, "female", "介護職員", "me:わたし:kyoko:今日子"),
-        ("father", "岩根,雪雄", 50, "male", "会社員", "me:僕:kyoko:今日子さん"),
+        ("father", "岩根,雪雄", 50, "male", "会社員", "me:僕:kyoko:今日子さん:asako:朝子さん"),
         # family (shota)
         ("sho_mam", "宮内,母", 45, "female", "母"),
         ("sho_dad", "宮内,父", 52, "male", "父"),
         # anothers
         ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし:my:きょう子:kyoko:きょうこお姉ちゃん:student:キョウコ姉:shota:ショータロ"),
         ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ:kyoko:今日子:child:きょう子:shota:翔太郎"),
-        ("univ_kyoko", "岩根,明日子", 20, "female", "大学生", "me:私"),
+        ("univ_kyoko", "岩根,明日子", 20, "female", "大学生", "me:私:kyoko:今日子:child:きょう子:student:キョウコ:shota:宮内君"),
         )
 
 STAGES = (
@@ -50,6 +53,7 @@ STAGES = (
         ("station", "札幌駅"),
         ("ma_apart", "松本のアパート"),
         ("hishome", "翔太郎の実家"),
+        ("curry", "スープ湯珈利"),
         # Part
         ("myapart", "二〇四号室"),
         ("living", "リビング"),
@@ -67,10 +71,10 @@ DAYS = (
         ("proposed", "プロポーズされた日", 6,21, 2019),
         ("favor", "夏風邪", 6,22, 2019),
         ("volunteer", "ボランティア日", 6,30, 2019),
-        ("report1", "試験期間１", 7,3, 2019),
+        ("report1", "試験期間１", 7,31, 2019),
         ("dadvisit", "父が来た日", 7,14, 2019),
         ("seaday", "海の日", 7,15, 2019),
-        ("empty", "誰もいなくなった日"),
+        ("empty", "誰もいなくなった日", 8,10, 2019),
         ("married", "結婚した未来"),
         ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
         # sub
