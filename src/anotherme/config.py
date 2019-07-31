@@ -10,10 +10,10 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         ("kyoko", "岩根,今日子", 20, "female", "大学生",
-            "me:私:shota:翔太郎:miya:宮内君:sayama:幸子:child:きょう子:student:キョウコ:univ:明日子:minori:鈴森さん:saito:斉藤さん:kunugi:椚木先輩:matsumoto:松本:dad:父さん:father:雪雄さん"),
+            "me:私:shota:翔太郎:miya:宮内君:sayama:幸子:child:きょう子:student:キョウコ:univ:明日子:minori:鈴森さん:saito:斉藤さん:kunugi:椚木先輩:matsumoto:松本:asumi:亜純:dad:父さん:father:雪雄さん"),
         ("shota", "宮内,翔太郎", 25, "male", "無職", "me:ボク:kyoko:今日子:child:きょう子ちゃん"),
         # univ
-        ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子"),
+        ("sayama", "砂山,幸子", 20, "female", "大学生", "me:わたし:kyoko:今日子:saito:斉藤ちゃん"),
         ("matsumoto", "松本,亘", 20, "male", "大学生", "me:俺:kyoko:岩根:kunugi:椚木さん:saito:斉藤さん:asumi:亜純:shota:宮内"),
         ("takamura", "高村,滋", 44, "male", "大学教員", "me:僕"),
         ("kunugi", "椚木,円香", 22, "female", "大学生", "me:私:kyoko:岩根:sayama:砂山:matsumoto:松本:saito:斉藤さん"),
@@ -25,7 +25,7 @@ CHARAS = (
         # others
         ("asumi", "金井,亜純", 19, "female", "パート"),
         ("hotta", "堀田,優一", 50, "male", "理科教員", "me:ぼく"),
-        ("miura", "三浦,啓司", 58, "male", "精神科医", "me:私"),
+        ("miura", "三浦,啓司", 58, "male", "精神科医", "me:私:kyoko:岩根さん"),
         ("cur_mam", "湯沢,マリ", 35, "female", "店主", "me:ワタシ"),
         ("cur_dad", "湯沢,武志", 44, "male", "店主", "me:僕"),
         # family
@@ -33,7 +33,7 @@ CHARAS = (
         ("father", "岩根,雪雄", 50, "male", "会社員", "me:僕:kyoko:今日子さん:asako:朝子さん"),
         # family (shota)
         ("sho_mam", "宮内,母", 45, "female", "母"),
-        ("sho_dad", "宮内,父", 52, "male", "父"),
+        ("sho_dad", "宮内,父", 52, "male", "父", "me:僕:kyoko:今日子さん:shota:翔太郎"),
         # anothers
         ("child_kyoko", "岩根,きょう子", 10, "female", "小学生", "me:わたし:my:きょう子:kyoko:きょうこお姉ちゃん:student:キョウコ姉:shota:ショータロ"),
         ("student_kyoko", "岩根,キョウコ", 15, "female", "中学生", "me:ワタシ:kyoko:今日子:child:きょう子:shota:翔太郎"),
@@ -76,9 +76,9 @@ DAYS = (
         ("seaday", "海の日", 7,15, 2019),
         ("empty", "誰もいなくなった日", 8,10, 2019),
         ("married", "結婚した未来"),
-        ("meeting", "サークル集会日", 8,24, 2019),
+        ("meeting", "サークル集会日", 8,23, 2019),
         ("medical", "診察日", 9,4, 2019),
-        ("shotadead", "翔太郎が亡くなった日"),# NOTE: 10年前
+        ("shotadead", "翔太郎が亡くなった日", 8,10, 2009),# NOTE: 10年前
         # sub
         ("encounter_next", "出会った日", 6,21, 2019),
         )
