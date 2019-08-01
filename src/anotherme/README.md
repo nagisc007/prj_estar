@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.7.- | 2019.6.19 | Fantasy, Human, Youth | 50K | [エブリスタ](https://estar.jp/) | [氷室冴子青春文学賞](https://estar.jp/official_contests/159347) |
+| v1.0.0 | Released | 2019.7.31 | 2019.8.1 | Fantasy, Human, Youth | 50K | [エブリスタ](https://estar.jp/novels/25507358) | [氷室冴子青春文学賞](https://estar.jp/official_contests/159347) |
 
 **「わたしが、ワタシを、私にする」**
 
