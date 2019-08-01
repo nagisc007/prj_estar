@@ -21,6 +21,7 @@ import test_lostbook
 import test_umbrella
 import test_emergence
 import test_disliked
+import test_festa
 
 
 def suite():
@@ -42,6 +43,7 @@ def suite():
         unittest.makeSuite(test_umbrella.StoryTest),
         unittest.makeSuite(test_emergence.StoryTest),
         unittest.makeSuite(test_disliked.StoryTest),
+        unittest.makeSuite(test_festa.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
