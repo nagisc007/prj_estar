@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#natsu1](bghost/README.md) | 青春ゴースト | [ナツイチ小説大賞](https://estar.jp/official_contests/159383) |
 | [#m106](festa/README.md) | 夜祭り | [妄想コンテスト「ひんやり」](https://estar.jp/official_contests/159368) |
 | [#m105](disliked/README.md) | 拝啓、あなたが嫌いです | [妄想コンテスト「あなたを嫌いな理由」](https://estar.jp/official_contests/159365) |
 | [#m104](emergence/README.md) | くれなゐの羽化 | [妄想コンテスト「赤」](https://estar.jp/official_contests/159362) |

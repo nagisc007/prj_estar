@@ -22,6 +22,7 @@ import test_umbrella
 import test_emergence
 import test_disliked
 import test_festa
+import test_bghost
 
 
 def suite():
@@ -51,6 +52,7 @@ def suite():
         unittest.makeSuite(test_lostbook.StoryTest),
         # others
         unittest.makeSuite(test_anotherme.StoryTest),
+        unittest.makeSuite(test_bghost.StoryTest),
         ))
 
     return suite
