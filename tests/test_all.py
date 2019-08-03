@@ -23,6 +23,7 @@ import test_emergence
 import test_disliked
 import test_festa
 import test_bghost
+import test_forbidden
 
 
 def suite():
@@ -50,6 +51,7 @@ def suite():
         # writing cheer
         unittest.makeSuite(test_redchain.StoryTest),
         unittest.makeSuite(test_lostbook.StoryTest),
+        unittest.makeSuite(test_forbidden.StoryTest),
         # others
         unittest.makeSuite(test_anotherme.StoryTest),
         unittest.makeSuite(test_bghost.StoryTest),

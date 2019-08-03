@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#wc4](forbidden/README.md) | ヒトの形をした愛 | [執筆応援キャンペーン「苦しい恋／禁断の恋」](https://estar.jp/official_contests/159363) |
 | [#natsu1](bghost/README.md) | 青春ゴースト | [ナツイチ小説大賞](https://estar.jp/official_contests/159383) |
 | [#m106](festa/README.md) | 夜祭り | [妄想コンテスト「ひんやり」](https://estar.jp/official_contests/159368) |
 | [#m105](disliked/README.md) | 拝啓、あなたが嫌いです | [妄想コンテスト「あなたを嫌いな理由」](https://estar.jp/official_contests/159365) |
