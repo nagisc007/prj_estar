@@ -24,6 +24,7 @@ import test_disliked
 import test_festa
 import test_bghost
 import test_forbidden
+import test_hiyari
 
 
 def suite():
@@ -46,6 +47,7 @@ def suite():
         unittest.makeSuite(test_emergence.StoryTest),
         unittest.makeSuite(test_disliked.StoryTest),
         unittest.makeSuite(test_festa.StoryTest),
+        unittest.makeSuite(test_hiyari.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
