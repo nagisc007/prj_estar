@@ -51,13 +51,27 @@ def sc_mydream(w: wd.World):
 
 def sc_schoollife(w: wd.World):
     h = hikawa = w.hikawa
+    kiri = w.kirimura
     return w.scene("私の人生",
+            h.move("職員室に入ってくると", "$kirimura先生と目が合った"),
+            hikawa.talk("どうも"),
+            kiri.talk("……"),
+            h.look("無言で頭を下げると", "袖の汚れた白衣を羽織って出ていってしまう"),
+            h.think("気持ち悪い", "と$meでなくとも思っている。",
+                "それなのに意外と彼を慕う生徒がいるのは驚きだ"),
+            h.deal("スマートフォンを見ると夫から連絡が入っていた。"),
+            # NOTE: 何か二人の現在の関係性を見せるメッセージ
+            h.think("こうして$meはいつも不安になる"),
+            h.think("もしあの日に戻れるなら", "失敗してしまった選択をやり直すことができるだろうか"),
             # TODO: 学校での私生活、職員室で霧村と
             )
 
 def sc_ghostdream(w: wd.World):
     h = hikawa = w.hikawa
+    sudo, takao = w.sudo, w.takao
     return w.scene("幽霊の夢",
+            h.look("首元の冷気に驚いて目を覚ますと",
+                ""),
             # TODO: また夜祭り、そこで繰り返しの悲劇、やり直したい何か
             )
 
