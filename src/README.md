@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#m108](vanishcat/README.md) | バイバイ・マイディア | [妄想コンテスト「あの子がいなくなった」](https://estar.jp/official_contests/159400) |
 | [#m107](hitogomi/README.md) | 星降ろしの神話 | [妄想コンテスト「人ごみ」](https://estar.jp/official_contests/159394) |
 | [#wc4](forbidden/README.md) | ヒトの形をした愛 | [執筆応援キャンペーン「苦しい恋／禁断の恋」](https://estar.jp/official_contests/159363) |
 | [#natsu1](bghost/README.md) | 青春ゴースト | [ナツイチ小説大賞](https://estar.jp/official_contests/159383) |

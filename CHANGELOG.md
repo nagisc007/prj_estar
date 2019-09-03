@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Project: Blue ghost
 - Project: Night festa
 - Project: Hitogomi
+- project: Vanish cat
 
 ## [0.6.0] - 2019-08-01
 ### Added

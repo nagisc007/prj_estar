@@ -26,6 +26,7 @@ import test_bghost
 import test_forbidden
 import test_hiyari
 import test_hitogomi
+import test_vanishcat
 
 
 def suite():
@@ -50,6 +51,7 @@ def suite():
         unittest.makeSuite(test_festa.StoryTest),
         unittest.makeSuite(test_hiyari.StoryTest),
         unittest.makeSuite(test_hitogomi.StoryTest),
+        unittest.makeSuite(test_vanishcat.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
