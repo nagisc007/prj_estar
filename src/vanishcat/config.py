@@ -10,14 +10,19 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
+        ("kisaragi", "如月,祐司", 30, "male", "SE", "me:私"),
         # sub
+        ("irene", "アイリーン", 10, "female", "猫", "me:私"),
         # mob
         )
 
 STAGES = (
         # Area
+        ("Atami", "熱海市"),
         # Place
+        ("myhome", "自宅"),
         # Part
+        ("living", "リビング"),
         )
 
 DAYS = (
