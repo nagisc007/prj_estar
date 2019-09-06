@@ -28,6 +28,9 @@ STAGES = (
 DAYS = (
         # main
         ("current", "現在"),
+        ("vanishold", "アイリーンの消えた日"),
+        ("deadold", "アイリーンの亡くなった日"),
+        ("first", "最初の日"),
         # sub
         )
 

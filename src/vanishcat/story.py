@@ -13,36 +13,47 @@ THM = cnf.THEMES
 
 # scenes
 def sc_catlife(w: wd.World):
+    h = kisa = w.kisaragi
+    irene = w.irene
     return w.scene("猫の居る生活",
+            h.be(w.stage.living, w.day.first),
+            h.look("真っ白なソファの上に", "雉色をした猫が気怠そうに前足に顎を載せている"),
             # NOTE: リビングで仕事をしながら、猫を愛でる、しかしそれは機械猫
             )
 
 def sc_mywork(w: wd.World):
     return w.scene("仕事にて",
+            # NOTE: 仕事で外出、心配になるが、トラブルで帰れず
             )
 
 def sc_lostcat(w: wd.World):
     return w.scene("猫のいない家",
+            # NOTE: 帰宅すると猫いない、探す、GPSで妙なところに反応
             )
 
 def sc_brokencat(w: wd.World):
     return w.scene("壊された猫",
+            # NOTE: 破壊されてしまっていた
             )
 
 def sc_revivecat(w: wd.World):
     return w.scene("何度も蘇る猫",
+            # NOTE: 脳部分だけ移植して、同じ猫ボディで再び猫生活
             )
 
 def sc_vanishing(w: wd.World):
     return w.scene("消える猫",
+            # NOTE: 目覚めたら消えている猫、また探す、だがGPSの場所には何もない
             )
 
 def sc_waitcat(w: wd.World):
     return w.scene("待ちぼうけ",
+            # NOTE: 最初の猫が出ていってしまったときを思い出す、それは猫ではなく彼女だった
             )
 
 def sc_findword(w: wd.World):
     return w.scene("彼女が消えた意味、残した言葉",
+            # NOTE: 猫ではなく彼女の脳みそ、それが残したのは別離という答え
             )
 
 # episodes
