@@ -1,8 +1,8 @@
-# バイバイ・マイディア
+# いつも彼女はいなくなる
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.9.- | 2019.9.3 | Human, SF | 5K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「あの子がいなくなった」](https://estar.jp/official_contests/159400) |
+| v0.1.0 | Released | 2019.9.13 | 2019.9.14 | Human, SF | 8K | [エブリスタ](https://estar.jp/novels/25535292) | [妄想コンテスト「あの子がいなくなった」](https://estar.jp/official_contests/159400) |
 
 **「どうしていつも、いなくなってしまうのだろうか」**
 

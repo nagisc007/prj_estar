@@ -1,8 +1,8 @@
-# 凍った町に落ちる
+# 凍った町の少女
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.8.- | 2019.8.11 | Human, Fantasy | 8K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「ひんやり」](https://estar.jp/official_contests/159368) |
+| v0.1.0 | Released | 2019.8.11 | 2019.9.14 | Human, Fantasy | 2K | [エブリスタ](https://estar.jp/novels/25520582) | [妄想コンテスト「ひんやり」](https://estar.jp/official_contests/159368) |
 
 **「全てが凍ったまま止まればいいのに」**
 
