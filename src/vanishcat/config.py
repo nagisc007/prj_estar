@@ -10,7 +10,7 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("kisaragi", "如月,祐司", 30, "male", "SE", "me:僕:S:僕:ary:アリィ:arisa:有紗:kieth:キースi:kase:加瀬:aisaka:逢坂"),
+        ("kisaragi", "如月,祐司", 30, "male", "SE", "me:僕:S:僕:ary:アリィ:arisa:有紗:kieth:キース:kase:加瀬:aisaka:逢坂"),
         # sub
         ("ary", "アリィ", 10, "female", "猫", "me:私:kisa:祐司"),
         ("arisa", "日陰,有紗", 28, "female", "会社員", "me:私"),
