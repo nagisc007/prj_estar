@@ -10,10 +10,10 @@ sys.path.append('storybuilder')
 # configs
 CHARAS = (
         # main
-        ("goro", "皆井,吾朗", 41, "male", "会社員", "me:俺:S:吾朗:luna:瑠那:takahashi:高橋:tsukada:塚田さん"),
+        ("goro", "皆井,吾朗", 41, "male", "会社員", "me:俺:S:吾朗:luna:瑠那さん:takahashi:高橋:tsukada:塚田"),
         ("luna", "皆井,瑠那", 35, "female", "ハープ奏者", "me:私:goro:吾朗さん"),
         # sub
-        ("takahashi", "高橋,優太", 32, "male", "ヴァイオリニスト", "me:僕:luna:瑠那さん"),
+        ("takahashi", "高橋,優太", 32, "male", "ヴァイオリニスト", "me:僕:luna:皆井さん"),
         ("tsukada", "塚田,善司", 51, "male", "会社員", "me:オレ:goro:皆井"),
         # mob
         ("satou", "佐藤,麻美", 40, "female", "チェリスト", "me:わたし"),
@@ -41,6 +41,7 @@ DAYS = (
         ("goout", "仕事にでかける日"),
         ("current", "現在"),
         ("fight", "喧嘩した日"),
+        ("working", "仕事日"),
         # sub
         )
 
