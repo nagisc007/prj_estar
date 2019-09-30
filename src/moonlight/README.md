@@ -2,7 +2,7 @@
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.9.- | 2019.9.3 | Love, Fantasy | 5K | [エブリスタ](https://estar.jp/) | [妄想コンテスト「月明かりの下で」](https://estar.jp/official_contests/159402) |
+| v0.1.0 | Released | 2019.9.29 | 2019.9.30 | Love, Fantasy | 8K | [エブリスタ](https://estar.jp/novels/25542584) | [妄想コンテスト「月明かりの下で」](https://estar.jp/official_contests/159402) |
 
 **「月を、聴いていたのです」**
 

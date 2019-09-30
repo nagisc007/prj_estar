@@ -9,7 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Project: Forbidden love
 - Project: Blue ghost
 - Project: Night festa
-- project: Girl hearing a moonlight
+
+## [0.8.0] - 2019-09-30
+### Added
+- Production: Girl hearing a moonlight
 
 ## [0.7.0] - 2019-09-14
 ### Added
@@ -101,7 +104,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/nagisc007/prj_estar/releases/v0.8.0
 [0.7.0]: https://github.com/nagisc007/prj_estar/releases/v0.7.0
 [0.6.0]: https://github.com/nagisc007/prj_estar/releases/v0.6.0
 [0.5.0]: https://github.com/nagisc007/prj_estar/releases/v0.5.0
