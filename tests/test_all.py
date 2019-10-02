@@ -17,7 +17,6 @@ import test_redchain
 import test_golden
 import test_anotherme
 import test_todaylive
-import test_lostbook
 import test_umbrella
 import test_emergence
 import test_disliked
@@ -58,7 +57,6 @@ def suite():
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
         unittest.makeSuite(test_redchain.StoryTest),
-        unittest.makeSuite(test_lostbook.StoryTest),
         unittest.makeSuite(test_forbidden.StoryTest),
         # others
         unittest.makeSuite(test_anotherme.StoryTest),
