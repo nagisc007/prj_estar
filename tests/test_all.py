@@ -27,6 +27,7 @@ import test_hiyari
 import test_hitogomi
 import test_vanishcat
 import test_moonlight
+import test_letter
 
 
 def suite():
@@ -53,6 +54,7 @@ def suite():
         unittest.makeSuite(test_hitogomi.StoryTest),
         unittest.makeSuite(test_vanishcat.StoryTest),
         unittest.makeSuite(test_moonlight.StoryTest),
+        unittest.makeSuite(test_letter.StoryTest),
         # next fantasy
         unittest.makeSuite(test_lv1yusha.StoryTest),
         # writing cheer
