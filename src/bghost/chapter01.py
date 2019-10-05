@@ -11,22 +11,72 @@ from src.bghost import config as cnf
 THM = cnf.THEMES
 
 # scenes
+def sc_horrortalk(w: wd.World):
+    h = ryoma = w.ryoma
+    takeru, w.akari = w.takeru, w.akari
+    return w.scene("恐い話",
+            h.be(w.stage.classroom, w.day.kaidan),
+            # NOTE: 主人公視点一人称で
+            # NOTE: 空き教室に集まっていつものメンバで恐い話をする
+            # NOTE: そこから懐かしい小学校時代の思い出と、別の学校に行った彼女のこと
+            )
+
+def sc_oldschool(w: wd.World):
+    return w.scene("解体になる小学校",
+            # NOTE: 通った小学校が解体になると聞く
+            # NOTE: 忘れ物を思い出す。取りに行こうぜ
+            )
+
+def sc_lostarticle(w: wd.World):
+    return w.scene("あの頃の忘れ物",
+            # NOTE: 旧校舎に忍び込む。忘れ物を取りに。そこで幽霊を見る
+            )
+
+def sc_checkghost(w: wd.World):
+    return w.scene("幽霊を探しに",
+            # NOTE: 幽霊の確認に戻り、懐かしい転校していった彼女と再会
+            )
+
+def sc_clubagain(w: wd.World):
+    return w.scene("もう一度同好会を",
+            # NOTE: 同好会をやろうと提案。夏休みの間だけ。そして幽霊を探そうと
+            )
+
+def sc_findghost(w: wd.World):
+    return w.scene("幽霊を見つけた",
+            # NOTE: 幽霊を見つける、少年の。本物？
+            )
+
+def sc_casehim(w: wd.World):
+    return w.scene("幽霊の事情",
+            )
+
+def sc_clubwork(w: wd.World):
+    return w.scene("同好会の最後の仕事だ",
+            )
 
 # episodes
 def ep_intro(w: wd.World):
     return (w.chaptertitle("冒頭"),
+            sc_horrortalk(w),
             )
 
 def ep_oldschool(w: wd.World):
     return (w.chaptertitle("旧校舎"),
+            sc_oldschool(w),
+            sc_lostarticle(w),
             )
 
 def ep_boyghost(w: wd.World):
     return (w.chaptertitle("少年の幽霊"),
+            sc_clubagain(w),
+            sc_findghost(w),
             )
 
 def ep_lastwork(w: wd.World):
     return (w.chaptertitle("同好会最後の仕事"),
+            sc_casehim(w),
+            sc_clubwork(w),
             # NOTE: 小学校が廃校になり、同窓会に集まる仲良しメンバ、そこにイレギュラーな彼女
             # NOTE: 地縛霊という少年を見つける、本物？　少年ホームレス？
             )
@@ -35,6 +85,7 @@ def ep_lastwork(w: wd.World):
 # outline
 def story_baseinfo(w: wd.World):
     return [
+            ("story-ch1", story(w), w.ryoma, w.miko),
             ]
 
 def story_outline(w: wd.World):
