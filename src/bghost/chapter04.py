@@ -13,24 +13,35 @@ THM = cnf.THEMES
 # episodes
 def ep_genuineghost(w: wd.World):
     return (w.chaptertitle("本物の幽霊？"),
+                w.ryoma.explain(w.info("少年の問題を彼女と一緒に取り組む")),
+                w.ryoma.explain(w.info("少年の問題が解決する")),
             )
 
 def ep_oldmemory(w: wd.World):
     return (w.chaptertitle("小学校の思い出"),
+                w.ryoma.explain(w.info("彼女に忘れ物を届けに行く")),
             )
 
 def ep_vanishgirl(w: wd.World):
     return (w.chaptertitle("いなくなった少女"),
             # NOTE: 本物のゴーストを見つけてしまう、彼女を成仏させるために苦労する
+                w.ryoma.explain(w.info("彼女が亡くなっていると知る")),
             )
 
 # outline
 def story_baseinfo(w: wd.World):
     return [
+            ("story-ch4", story(w), w.ryoma, w.miko),
             ]
 
 def story_outline(w: wd.World):
     return [
+            ("story-ch4", story(w),
+                w.ryoma.explain(w.info("少年の問題を彼女と一緒に取り組む")),
+                w.ryoma.explain(w.info("少年の問題が解決する")),
+                w.ryoma.explain(w.info("彼女に忘れ物を届けに行く")),
+                w.ryoma.explain(w.info("彼女が亡くなっていると知る")),
+                True),
             ]
 
 # main

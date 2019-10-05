@@ -13,24 +13,35 @@ THM = cnf.THEMES
 # episodes
 def ep_neverrest(w: wd.World):
     return (w.chaptertitle("成仏しない幽霊"),
+                w.ryoma.explain(w.info("少年の幽霊が嘘と発覚")),
+                w.ryoma.explain(w.info("馬鹿らしくなって同好会は空中分解")),
             )
 
 def ep_hisconfession(w: wd.World):
     return (w.chaptertitle("幽霊の告白"),
+                w.ryoma.explain(w.info("少年の本当の悩みを聞く")),
             )
 
 def ep_burstschool(w: wd.World):
     return (w.chaptertitle("旧校舎の崩壊"),
             # NOTE: それぞれがバラバラになる、ゴーストが嘘と発覚
+                w.ryoma.explain(w.info("一人で少年の悩みを解決する")),
             )
 
 # outline
 def story_baseinfo(w: wd.World):
     return [
+            ("story-ch3", story(w), w.ryoma, w.miko),
             ]
 
 def story_outline(w: wd.World):
     return [
+            ("story-ch3", story(w),
+                w.ryoma.explain(w.info("少年の幽霊が嘘と発覚")),
+                w.ryoma.explain(w.info("馬鹿らしくなって同好会は空中分解")),
+                w.ryoma.explain(w.info("少年の本当の悩みを聞く")),
+                w.ryoma.explain(w.info("一人で少年の悩みを解決する")),
+                True),
             ]
 
 # main

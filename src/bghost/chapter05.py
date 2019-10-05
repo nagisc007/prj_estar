@@ -13,14 +13,18 @@ THM = cnf.THEMES
 # episodes
 def ep_lookforher(w: wd.World):
     return (w.chaptertitle("彼女を探して"),
+                w.ryoma.explain(w.info("彼女が幽霊になった事情を知る")),
             )
 
 def ep_lastwork(w: wd.World):
     return (w.chaptertitle("最後の仕事"),
+                w.ryoma.explain(w.info("彼女は成仏できない")),
+                w.ryoma.explain(w.info("彼女の心残りは良馬だと知る")),
             )
 
 def ep_goodbyegirl(w: wd.World):
     return (w.chaptertitle("そして、さよなら"),
+                w.ryoma.explain(w.info("彼女を成仏させる")),
             )
 
 def ep_epilogue(w: wd.World):
@@ -31,10 +35,17 @@ def ep_epilogue(w: wd.World):
 # outline
 def story_baseinfo(w: wd.World):
     return [
+            ("story", story(w), w.ryoma, w.miko),
             ]
 
 def story_outline(w: wd.World):
     return [
+            ("story", story(w),
+                w.ryoma.explain(w.info("彼女が幽霊になった事情を知る")),
+                w.ryoma.explain(w.info("彼女は成仏できない")),
+                w.ryoma.explain(w.info("彼女の心残りは良馬だと知る")),
+                w.ryoma.explain(w.info("彼女を成仏させる")),
+                True),
             ]
 
 # main
