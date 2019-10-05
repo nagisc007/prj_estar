@@ -59,18 +59,21 @@ def sc_clubwork(w: wd.World):
 def ep_intro(w: wd.World):
     return (w.chaptertitle("冒頭"),
             sc_horrortalk(w),
+                w.ryoma.explain(w.info("小学校が取り壊されると知る")),
             )
 
 def ep_oldschool(w: wd.World):
     return (w.chaptertitle("旧校舎"),
             sc_oldschool(w),
             sc_lostarticle(w),
+                w.ryoma.explain(w.info("小学校に忘れ物を取りに行く")),
             )
 
 def ep_boyghost(w: wd.World):
     return (w.chaptertitle("少年の幽霊"),
             sc_clubagain(w),
             sc_findghost(w),
+                w.ryoma.explain(w.info("幽霊の少年を見つける")),
             )
 
 def ep_lastwork(w: wd.World):
@@ -79,6 +82,7 @@ def ep_lastwork(w: wd.World):
             sc_clubwork(w),
             # NOTE: 小学校が廃校になり、同窓会に集まる仲良しメンバ、そこにイレギュラーな彼女
             # NOTE: 地縛霊という少年を見つける、本物？　少年ホームレス？
+                w.ryoma.explain(w.info("同好会で少年を成仏させてやることにした")),
             )
 
 
@@ -90,6 +94,12 @@ def story_baseinfo(w: wd.World):
 
 def story_outline(w: wd.World):
     return [
+            ("story", story(w),
+                w.ryoma.explain(w.info("小学校が取り壊されると知る")),
+                w.ryoma.explain(w.info("小学校に忘れ物を取りに行く")),
+                w.ryoma.explain(w.info("幽霊の少年を見つける")),
+                w.ryoma.explain(w.info("同好会で少年を成仏させてやることにした")),
+                True),
             ]
 
 # main
