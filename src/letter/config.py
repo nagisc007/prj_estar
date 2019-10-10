@@ -64,7 +64,7 @@ INFOS = (
         # theme
         # main
         ("ALS", "筋萎縮性側索硬化症"),
-        ("als", "ALS"),
+        ("als", "ＡＬＳ"),
         # sub
         )
 
