@@ -21,7 +21,7 @@ CHARAS = (
         ("ono", "大野,善司", 55, "male", "技師", "me:儂"),
         # future
         ("hiroshi", "平松,博史", 35, "male", "技師", "me:僕:S:博史"),
-        ("helper", "助手", 29, "female", "助手", "me:わたし"),
+        ("helper", "鳴丘,加奈", 29, "female", "助手", "me:わたし"),
         # mob
         ("doctor", "西部,浩介", 44, "male", "医師", "me:私"),
         )
