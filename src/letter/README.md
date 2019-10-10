@@ -1,8 +1,8 @@
-# 彼女はそれでも手紙を書きたかった
+# それでも彼女は手紙を書きたかった
 
 | version | status | released | modified | genre | size | site | contest |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| v0.1.0 | Develop | 2019.10.- | 2019.10.2 | Love, SF | 8K | [エブリスタ](https://estar.jp) | [妄想コンテスト「手紙」](https://estar.jp/official_contests/159406) |
+| v0.1.0 | Released | 2019.10.10 | 2019.10.10 | Love, SF | 8K | [エブリスタ](https://estar.jp/novels/25547041) | [妄想コンテスト「手紙」](https://estar.jp/official_contests/159406) |
 
 **「文字を書けない君は、それでも手紙を書いてくれたんだね」**
 

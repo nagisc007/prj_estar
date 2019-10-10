@@ -6,12 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Project: The letter
 - Project: Forbidden love
 - Project: Blue ghost
 - Project: Night festa
 ### Removed
 - Project: The lost her book
+
+## [0.9.0] - 2019-10-10
+### Added
+- Production: The letter
 
 ## [0.8.0] - 2019-09-30
 ### Added
@@ -107,7 +110,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Production: slime love story
 - Production: kujo saeko
 
-[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.8.0...HEAD
+[Unreleased]: https://github.com/nagisc007/prj_estar/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/nagisc007/prj_estar/releases/v0.9.0
 [0.8.0]: https://github.com/nagisc007/prj_estar/releases/v0.8.0
 [0.7.0]: https://github.com/nagisc007/prj_estar/releases/v0.7.0
 [0.6.0]: https://github.com/nagisc007/prj_estar/releases/v0.6.0
