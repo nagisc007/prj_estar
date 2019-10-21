@@ -28,6 +28,7 @@ import test_hitogomi
 import test_vanishcat
 import test_moonlight
 import test_letter
+import test_bokurano
 
 
 def suite():
@@ -63,6 +64,7 @@ def suite():
         # others
         unittest.makeSuite(test_anotherme.StoryTest),
         unittest.makeSuite(test_bghost.StoryTest),
+        unittest.makeSuite(test_bokurano.StoryTest),
         ))
 
     return suite

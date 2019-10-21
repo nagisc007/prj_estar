@@ -6,6 +6,7 @@
 
 | Number | Title | Contest |
 | --- | --- | --- |
+| [#wc5](bokurano/README.md) | ボクたちの理解者 | [執筆応援キャンペーン「痛い青春・切ない青春」](https://estar.jp/official_contests/159401) |
 | [#m110](letter/README.md) | 彼女はそれでも手紙を書きたかった | [妄想コンテスト「手紙」](https://estar.jp/official_contests/159406) |
 | [#m109](moonlight/README.md) | 月を聴く少女 | [妄想コンテスト「月明かりの下で」](https://estar.jp/official_contests/159402) |
 | [#m108](vanishcat/README.md) | バイバイ・マイディア | [妄想コンテスト「あの子がいなくなった」](https://estar.jp/official_contests/159400) |
